@@ -1,6 +1,8 @@
-
+import { AccountsTemplates } from 'meteor/useraccounts:core';
+import '../../ui/layouts/myLayout.html';
 
 AccountsTemplates.configure({
+
     // Behavior
     confirmPassword: true,
     enablePasswordChange: true,
