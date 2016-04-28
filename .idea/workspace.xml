@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="66e17441-ae0b-4dd1-b155-18502bbab159" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/imports/api/driver.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/imports/startup/client/useraccounts-configuration.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/startup/client/index.js" afterPath="$PROJECT_DIR$/imports/startup/client/index.js" />
     </list>
     <ignored path="GTracker.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -560,7 +557,7 @@
       <workItem from="1461808420433" duration="247000" />
       <workItem from="1461808683086" duration="28288000" />
       <workItem from="1461877061402" duration="2275000" />
-      <workItem from="1461879572376" duration="3684000" />
+      <workItem from="1461879572376" duration="3738000" />
     </task>
     <task id="LOCAL-00001" summary="remove default code">
       <created>1461808730895</created>
@@ -583,11 +580,18 @@
       <option name="project" value="LOCAL" />
       <updated>1461884130823</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="move user config file in to lib&#10;(to run on both client and server)">
+      <created>1461885523170</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1461885523170</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34494000" />
+    <option name="totallyTimeSpent" value="34548000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -635,7 +639,8 @@
     <MESSAGE value="remove default code" />
     <MESSAGE value="design SignIn and SignUp with validation and materialize view" />
     <MESSAGE value="Add routing, SASS and refine the default layout with nav + side bar" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add routing, SASS and refine the default layout with nav + side bar" />
+    <MESSAGE value="move user config file in to lib&#10;(to run on both client and server)" />
+    <option name="LAST_COMMIT_MESSAGE" value="move user config file in to lib&#10;(to run on both client and server)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
