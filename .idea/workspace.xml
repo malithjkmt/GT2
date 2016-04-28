@@ -3,6 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="66e17441-ae0b-4dd1-b155-18502bbab159" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/ui/pages/nav.html" afterPath="$PROJECT_DIR$/imports/ui/pages/nav.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/ui/pages/nav.js" afterPath="$PROJECT_DIR$/imports/ui/pages/nav.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/useraccounts-configuration.js" afterPath="$PROJECT_DIR$/lib/useraccounts-configuration.js" />
     </list>
     <ignored path="GTracker.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -45,29 +48,27 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="nav.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="nav.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/imports/ui/pages/nav.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+            <state relative-caret-position="85">
+              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
               <folding>
-                <marker date="1461881610481" expanded="true" signature="20:590" placeholder="..." />
-                <marker date="1461881610481" expanded="true" signature="28:578" placeholder="..." />
-                <marker date="1461881610481" expanded="true" signature="56:569" placeholder="..." />
-                <marker date="1461881610481" expanded="true" signature="88:558" placeholder="..." />
+                <marker date="1461887174271" expanded="true" signature="20:729" placeholder="..." />
+                <marker date="1461887174271" expanded="true" signature="28:717" placeholder="..." />
+                <marker date="1461887174271" expanded="true" signature="56:708" placeholder="..." />
+                <marker date="1461887174271" expanded="true" signature="88:697" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="useraccounts-configuration.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="useraccounts-configuration.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/useraccounts-configuration.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="52" column="24" selection-start-line="52" selection-start-column="24" selection-end-line="52" selection-end-column="24" />
-              <folding>
-                <element signature="e#0#61#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="153">
+              <caret line="63" column="54" selection-start-line="63" selection-start-column="54" selection-end-line="63" selection-end-column="54" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -107,8 +108,8 @@
       <file leaf-file-name="nav.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/imports/ui/pages/nav.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+            <state relative-caret-position="170">
+              <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -179,14 +180,14 @@
         <option value="$PROJECT_DIR$/imports/ui/pages/map/map.html" />
         <option value="$PROJECT_DIR$/imports/ui/pages/logIn/logIn.html" />
         <option value="$PROJECT_DIR$/imports/ui/pages/home/home.js" />
-        <option value="$PROJECT_DIR$/imports/ui/pages/nav.js" />
         <option value="$PROJECT_DIR$/imports/ui/pages/home/home.html" />
         <option value="$PROJECT_DIR$/imports/startup/client/route.js" />
         <option value="$PROJECT_DIR$/client/head.html" />
         <option value="$PROJECT_DIR$/imports/ui/stylesheets/style.css" />
-        <option value="$PROJECT_DIR$/imports/ui/pages/nav.html" />
         <option value="$PROJECT_DIR$/imports/startup/client/useraccounts-configuration.js" />
         <option value="$PROJECT_DIR$/lib/useraccounts-configuration.js" />
+        <option value="$PROJECT_DIR$/imports/ui/pages/nav.js" />
+        <option value="$PROJECT_DIR$/imports/ui/pages/nav.html" />
       </list>
     </option>
   </component>
@@ -557,7 +558,7 @@
       <workItem from="1461808420433" duration="247000" />
       <workItem from="1461808683086" duration="28288000" />
       <workItem from="1461877061402" duration="2275000" />
-      <workItem from="1461879572376" duration="3738000" />
+      <workItem from="1461879572376" duration="5948000" />
     </task>
     <task id="LOCAL-00001" summary="remove default code">
       <created>1461808730895</created>
@@ -591,7 +592,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34548000" />
+    <option name="totallyTimeSpent" value="36758000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -654,10 +655,10 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1461881610481" expanded="true" signature="20:590" placeholder="..." />
-            <marker date="1461881610481" expanded="true" signature="28:578" placeholder="..." />
-            <marker date="1461881610481" expanded="true" signature="56:569" placeholder="..." />
-            <marker date="1461881610481" expanded="true" signature="88:558" placeholder="..." />
+            <marker date="1461887174271" expanded="true" signature="20:729" placeholder="..." />
+            <marker date="1461887174271" expanded="true" signature="28:717" placeholder="..." />
+            <marker date="1461887174271" expanded="true" signature="56:708" placeholder="..." />
+            <marker date="1461887174271" expanded="true" signature="88:697" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -928,6 +929,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/imports/startup/client/useraccounts-configuration.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/useraccounts-configuration.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="63" column="54" selection-start-line="63" selection-start-column="54" selection-end-line="63" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/imports/ui/pages/map/map.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -938,39 +955,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/imports/ui/pages/nav.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imports/startup/client/useraccounts-configuration.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+        <state relative-caret-position="170">
+          <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/imports/ui/pages/nav.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        <state relative-caret-position="85">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding>
-            <marker date="1461881610481" expanded="true" signature="20:590" placeholder="..." />
-            <marker date="1461881610481" expanded="true" signature="28:578" placeholder="..." />
-            <marker date="1461881610481" expanded="true" signature="56:569" placeholder="..." />
-            <marker date="1461881610481" expanded="true" signature="88:558" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/useraccounts-configuration.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="52" column="24" selection-start-line="52" selection-start-column="24" selection-end-line="52" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#61#0" expanded="true" />
+            <marker date="1461887174271" expanded="true" signature="20:729" placeholder="..." />
+            <marker date="1461887174271" expanded="true" signature="28:717" placeholder="..." />
+            <marker date="1461887174271" expanded="true" signature="56:708" placeholder="..." />
+            <marker date="1461887174271" expanded="true" signature="88:697" placeholder="..." />
           </folding>
         </state>
       </provider>
