@@ -5,7 +5,7 @@
 import '../../ui/pages/map/map.js';
 import '../../ui/pages/driver/registerDriver.js';
 import '../../ui/pages/townsman/registerTownsman.js';
-import '../../ui/pages/truck/registerTruck.js';
+import '../../ui/pages/truck/truck.js';
 import '../../ui/pages/home/home.js';
 
 import '../../ui/pages/footer.html';
@@ -60,6 +60,17 @@ Router.route('/registerTruck', function () {
     this.render('registerTruck');
     this.render('nav', {to: 'nav'});
 });
+
+Router.route('/updateTruck/:_id', function () {
+    this.layout('myLayout');
+    this.render('updateTruck', {
+        data: function () {
+            return Trucks.findOne({_id: this.params._id});
+        }
+    });
+    this.render('nav', {to: 'nav'});
+});
+
 
 Router.route('/home', function () {
     this.layout('myLayout');
