@@ -3,6 +3,9 @@
 
 
 import '../../ui/pages/map/map.js';
+import '../../ui/pages/driver/registerDriver.js';
+import '../../ui/pages/townsman/registerTownsman.js';
+import '../../ui/pages/truck/registerTruck.js';
 import '../../ui/pages/home/home.js';
 
 import '../../ui/pages/footer.html';
@@ -36,6 +39,25 @@ Router.route('/map', function () {
 Router.route('/', function () {
     this.layout('myLayout');
     this.render('home');
+    this.render('nav', {to: 'nav'});
+});
+
+Router.route('/registerDriver', function () {
+    this.layout('myLayout');
+    this.render('registerDriver');
+    this.render('nav', {to: 'nav'});
+});
+
+Router.route('/registerTownsman', function () {
+    this.layout('myLayout');
+    this.render('registerTownsman');
+    this.render('nav', {to: 'nav'});
+});
+
+
+Router.route('/registerTruck', function () {
+    this.layout('myLayout');
+    this.render('registerTruck');
     this.render('nav', {to: 'nav'});
 });
 

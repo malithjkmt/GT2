@@ -1,0 +1,19 @@
+
+
+<template name="registerDriver">
+
+    <div class="container">
+    <h3>Register Driver</h3>
+        {{#autoForm collection="Drivers" id="insertDriverForm" type="insert"}}
+
+
+                {{> afQuickField name='name' icon = "person"}}
+                {{> afQuickField name='employee' icon = "work"}}
+                {{> afQuickField name='nic' icon = "account_balance_wallet"}}
+                {{> afQuickField name='drivingLicense' icon = "drive_eta"}}
+                {{> afQuickField name='phone' icon = "call"}}
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+        {{/autoForm}}
+    </div>
+</template>

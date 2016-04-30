@@ -100,6 +100,8 @@
         <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/es5-shim/4.5.10/npm/node_modules/es5-shim/es5-shim.js" />
         <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/es5-shim/4.5.10/npm/node_modules/es5-shim/es5-sham.js" />
         <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/es5-shim/4.5.10/npm/node_modules/es5-shim/es5-shim.min.js" />
+        <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/aldeed_simple-schema/1.1.0/npm/node_modules/string/lib/string.min.js" />
+        <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/aldeed_simple-schema/1.1.0/npm/node_modules/string/lib/string.js" />
         <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/http/1.1.5/npm/node_modules/request/index.js" />
         <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/http/1.1.5/npm/node_modules/request/request.js" />
         <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/http/1.1.5/npm/node_modules/request/lib/helpers.js" />
@@ -326,6 +328,8 @@
       <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/es5-shim/4.5.10/npm/node_modules/es5-shim/es5-shim.js" />
       <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/es5-shim/4.5.10/npm/node_modules/es5-shim/es5-sham.js" />
       <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/es5-shim/4.5.10/npm/node_modules/es5-shim/es5-shim.min.js" />
+      <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/aldeed_simple-schema/1.1.0/npm/node_modules/string/lib/string.min.js" />
+      <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/aldeed_simple-schema/1.1.0/npm/node_modules/string/lib/string.js" />
       <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/http/1.1.5/npm/node_modules/request/index.js" />
       <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/http/1.1.5/npm/node_modules/request/request.js" />
       <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/http/1.1.5/npm/node_modules/request/lib/helpers.js" />

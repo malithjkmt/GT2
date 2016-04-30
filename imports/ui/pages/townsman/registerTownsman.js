@@ -1,0 +1,2 @@
+
+import './registerTownsman.html';

@@ -1,0 +1,17 @@
+
+
+<template name="registerTruck">
+
+    <div class="container">
+    <h3>Register Truck</h3>
+        {{#autoForm collection="Trucks" id="insertTruckForm" type="insert"}}
+
+
+                {{> afQuickField name='model' icon = "directions_bus"}}
+                {{> afQuickField name='license' icon = "book"}}
+                {{> afQuickField name='registerDate' icon = "date_range"}}
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+        {{/autoForm}}
+    </div>
+</template>

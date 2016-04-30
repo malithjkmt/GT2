@@ -1,0 +1,18 @@
+
+
+<template name="registerTownsman">
+
+    <div class="container">
+    <h3>Register Townsman</h3>
+        {{#autoForm collection="Townsmen" id="registerTownsmanForm" type="insert"}}
+
+
+                {{> afQuickField name='name' icon = "person"}}
+                {{> afQuickField name='nic' icon = "account_balance_wallet"}}
+                {{> afQuickField name='phone' icon = "call"}}
+                {{> afQuickField name='location' }}
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+        {{/autoForm}}
+    </div>
+</template>

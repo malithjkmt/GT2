@@ -1,10 +1,18 @@
 // If you want to override materialize sass variables you can uncomment the following:
- @import "{poetic:materialize-scss}/sass/components/_color.scss";
- $primary-color: #29B6F6;
- $secondary-color: #29B6F6;
 
- $font-stack:    Helvetica, sans-serif;
+@import "{poetic:materialize-scss}/sass/components/_color.scss";
+$primary-color: #29B6F6;
+$secondary-color: #29B6F6;
+
+$font-stack:    Helvetica, sans-serif;
 
 
 // import main scss file
 @import "{poetic:materialize-scss}/sass/materialize.scss";
+
+.medium-editor, .medium-editor-placeholder {
+  outline: none;
+  margin: 0 0 20px 0;
+  padding: 0 0 20px 0;
+  border-bottom: 1px solid #dbdbdb;
+}
