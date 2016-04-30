@@ -1,0 +1,26 @@
+<template name="viewTrucks">
+    <div class="container">
+        <h3>Trucks</h3>
+
+        <ul class="collection">
+        {{#each trucks}}
+            {{> truck}}
+        {{/each}}
+        </ul>
+
+    </div>
+</template>
+
+<template name="truck">
+
+    <li class="collection-item avatar">
+        <i class="material-icons circle blue">directions_bus</i>
+        <span class="title">{{model}}</span>
+        <p>License plate: {{license}} <br>
+            Registered Date: {{registerDate}}
+        </p>
+        <a href="/updateTruck/{{_id}}" class="secondary-content"><i class="material-icons">edit</i></a>
+    </li>
+
+
+</template>

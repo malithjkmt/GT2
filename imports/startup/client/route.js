@@ -54,6 +54,12 @@ Router.route('/registerTownsman', function () {
     this.render('nav', {to: 'nav'});
 });
 
+Router.route('/viewTrucks', function () {
+    this.layout('myLayout');
+    this.render('viewTrucks');
+    this.render('nav', {to: 'nav'});
+});
+
 
 Router.route('/registerTruck', function () {
     this.layout('myLayout');
