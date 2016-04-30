@@ -9,6 +9,19 @@ Template.viewTrucks.helpers({
     },
 });
 
-Template.registerHelper('formatDate', function(date) {
-    return moment(date).format('MM-DD-YYYY');
+Template.registerHelper('formatDate', function(timeStamp) {
+    var currentTime = new Date();
+    var currentDate = moment(currentTime).format('MM-DD-YYYY');
+
+    var timeStampDate =  moment(timeStamp).format('MM-DD-YYYY');
+    var timeStampTime =  moment(timeStamp).format('h:mm a');
+    
+    if(currentDate == timeStampDate){
+        return timeStampTime;
+    }
+    else{
+        return timeStampDate;
+    }
+
+
 });

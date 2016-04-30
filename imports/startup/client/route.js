@@ -7,6 +7,8 @@ import '../../ui/pages/driver/driver.js';
 import '../../ui/pages/townsman/registerTownsman.js';
 import '../../ui/pages/truck/truck.js';
 import '../../ui/pages/home/home.js';
+import '../../ui/pages/feedback/feedback.js';
+import '../../ui/pages/feedback/viewFeedback.js';
 
 import '../../ui/pages/footer.html';
 import '../../ui/pages/master_layout.html';
@@ -40,6 +42,20 @@ Router.route('/', function () {
     this.layout('myLayout');
     this.render('home');
     this.render('nav', {to: 'nav'});
+});
+
+Router.route('/feedback', function () {
+    this.layout('myLayout');
+    this.render('feedback');
+    this.render('nav', {to: 'nav'});
+
+});
+
+Router.route('/viewFeedback', function () {
+    this.layout('myLayout');
+    this.render('viewFeedback');
+    this.render('nav', {to: 'nav'});
+
 });
 
 Router.route('/viewDrivers', function () {

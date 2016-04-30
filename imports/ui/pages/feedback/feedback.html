@@ -1,0 +1,37 @@
+<template name="feedback">
+    <div class="container">
+
+
+
+            {{#each messages}}
+                {{> message}}
+            {{/each}}
+
+        {{>leaveFeedback}}
+    </div>
+
+</template>
+
+<template name="message">
+    <div class="row">
+        <div class="col s6 {{offset}} ">   <!-- Offset value will be null for townsman, s6 offset-s6 for system admin-->
+            <div class="card-panel light-blue lighten-4">
+          <span class="black-text">
+              {{message}}
+          </span>
+            </div>
+        </div>
+    </div>
+</template>
+
+<template name="leaveFeedback">
+    {{#autoForm collection="Feedbacks" id="leaveFeedbackForm" type="insert"}}
+
+        <div class="row">
+            <div class="col s10"> {{> afQuickField name='message' type = 'textarea'}}</div>
+            <div class="col s2"> <button id="submitBtn" class="btn-floating btn-large waves-effect waves-light" type="submit" ><i class="large material-icons">send</i></button></div>
+
+        </div>
+
+    {{/autoForm}}
+</template>

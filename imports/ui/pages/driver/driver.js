@@ -7,5 +7,5 @@ import './viewDrivers.html';
 Template.viewDrivers.helpers({
     drivers() {
         return Drivers.find({});
-    },
+    }
 });

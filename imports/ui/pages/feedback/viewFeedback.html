@@ -1,0 +1,22 @@
+<template name="viewFeedback">
+    <ul class="collection">
+
+        {{#each messageThreads}}
+            {{> messageThread}}
+        {{/each}}
+
+
+    </ul>
+</template>
+
+<template name="messageThread">
+
+    <li class="collection-item avatar">
+        <i class="material-icons circle">folder</i>
+        <span class="title">{{userName}}</span>
+        <p>{{message}}</p>
+        <a href="#!" class="secondary-content">{{formatDate timeStamp}}</a>
+    </li>
+
+
+</template>
