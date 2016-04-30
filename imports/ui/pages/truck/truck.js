@@ -8,3 +8,7 @@ Template.viewTrucks.helpers({
         return Trucks.find({});
     },
 });
+
+Template.registerHelper('formatDate', function(date) {
+    return moment(date).format('MM-DD-YYYY');
+});

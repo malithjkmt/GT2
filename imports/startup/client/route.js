@@ -3,7 +3,7 @@
 
 
 import '../../ui/pages/map/map.js';
-import '../../ui/pages/driver/registerDriver.js';
+import '../../ui/pages/driver/driver.js';
 import '../../ui/pages/townsman/registerTownsman.js';
 import '../../ui/pages/truck/truck.js';
 import '../../ui/pages/home/home.js';
@@ -42,11 +42,28 @@ Router.route('/', function () {
     this.render('nav', {to: 'nav'});
 });
 
+Router.route('/viewDrivers', function () {
+    this.layout('myLayout');
+    this.render('viewDrivers');
+    this.render('nav', {to: 'nav'});
+});
+
 Router.route('/registerDriver', function () {
     this.layout('myLayout');
     this.render('registerDriver');
     this.render('nav', {to: 'nav'});
 });
+
+Router.route('/updateDriver/:_id', function () {
+    this.layout('myLayout');
+    this.render('updateDriver', {
+        data: function () {
+            return Drivers.findOne({_id: this.params._id});
+        }
+    });
+    this.render('nav', {to: 'nav'});
+});
+
 
 Router.route('/registerTownsman', function () {
     this.layout('myLayout');

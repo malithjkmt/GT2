@@ -1,0 +1,28 @@
+<template name="viewDrivers">
+    <div class="container">
+        <h3>Drivers</h3>
+
+        <ul class="collection">
+        {{#each drivers}}
+            {{> driver}}
+        {{/each}}
+        </ul>
+
+    </div>
+</template>
+
+<template name="driver">
+
+    <li class="collection-item avatar">
+        <i class="material-icons circle blue">person</i>
+        <span class="title">{{name}}</span>
+        <p>Employee NO: {{employee}} <br>
+            NIC: {{nic}}<br>
+            Driving License: {{drivingLicense}}<br>
+            Phone: {{phone}}
+        </p>
+        <a href="/updateDriver/{{_id}}" class="secondary-content"><i class="material-icons">edit</i></a>
+    </li>
+
+
+</template>

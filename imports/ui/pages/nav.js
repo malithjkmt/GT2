@@ -1,11 +1,16 @@
 import './nav.html';
 
 Template.nav.rendered = function () {
-  $(".button-collapse").sideNav();
+  $(".button-collapse").sideNav({
+    closeOnClick: true
+  });
 };
 
 Template.nav.helpers({
   DisplayName: function() {
     return Meteor.user().profile.name;
+  },
+  notificationCount: function(){
+    return 4;  // should retrieve from notification Collection like, Notificatinos.find({userID = this._id})
   }
 });
