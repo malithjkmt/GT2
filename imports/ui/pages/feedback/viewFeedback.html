@@ -1,22 +1,42 @@
 <template name="viewFeedback">
-    <ul class="collection">
-
-        {{#each messageThreads}}
-            {{> messageThread}}
-        {{/each}}
+    <div class="container">
 
 
-    </ul>
+
+            {{#each this}}
+                {{setOthersUserId otherUser}}
+                {{> message2}}
+            {{/each}}
+        {{>adminLeaveFeedback}}
+
+    </div>
+
 </template>
 
-<template name="messageThread">
+<template name="message2">
+    <div class="row">
+        <div class="col {{offset}} ">   <!-- Offset value will be null for townsman, s6 offset-s6 for system admin-->
+            <div class="card-panel light-blue lighten-4">
+          <span class="black-text">
+              {{message}}
 
-    <li class="collection-item avatar">
-        <i class="material-icons circle">folder</i>
-        <span class="title">{{userName}}</span>
-        <p>{{message}}</p>
-        <a href="#!" class="secondary-content">{{formatDate timeStamp}}</a>
-    </li>
+          </span>
+            </div>
+        </div>
+    </div>
+</template>
 
+<template name="adminLeaveFeedback">
+    {{#autoForm collection="AdminFeedbacks" id="adminLeaveFeedbackForm" type="insert"}}
 
+        <div class="row">
+            <div class="col s10"> {{> afQuickField name='message' type = 'textarea'}}
+                {{> afQuickField name="otherUser" value=getOthersUserId }}
+                {{> afQuickField name="offset" value=getOffset }}
+            </div>
+            <div class="col s2"> <button id="submitBtn" class="btn-floating btn-large waves-effect waves-light" type="submit" ><i class="large material-icons">send</i></button></div>
+
+        </div>
+
+    {{/autoForm}}
 </template>

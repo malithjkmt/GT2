@@ -17,7 +17,9 @@
 
         <ul id="nav-mobile" class="right side-nav fixed">
 
-            <li class="{{isActiveRoute regex='feedback'}}"><a href="{{pathFor 'feedback'}}">Feedback</a></li>
+            <li class="{{isActiveRoute regex='feedbackThreads'}}"><a href="{{pathFor 'feedbackThreads'}}">View Feedbacks</a></li>
+
+            <li class="{{isActivePath '/feedback/:townsmanID'}}"><a href='/feedback/{{getTownsmanID}}'>Leave Feedback</a></li>
           <li class="{{isActivePath '/'}}"><a href="{{pathFor 'home'}}">Home</a></li>
           <li class="{{isActiveRoute regex='map'}}"><a href="{{pathFor 'map'}}">Map</a></li>
             <li class="{{isActiveRoute regex='viewDrivers'}}"><a href="{{pathFor 'viewDrivers'}}">Drivers</a></li>

@@ -9,6 +9,7 @@ import '../../ui/pages/truck/truck.js';
 import '../../ui/pages/home/home.js';
 import '../../ui/pages/feedback/feedback.js';
 import '../../ui/pages/feedback/viewFeedback.js';
+import '../../ui/pages/feedback/feedbackThreads.js';
 
 import '../../ui/pages/footer.html';
 import '../../ui/pages/master_layout.html';
@@ -44,16 +45,32 @@ Router.route('/', function () {
     this.render('nav', {to: 'nav'});
 });
 
-Router.route('/feedback', function () {
+
+Router.route('/feedback/:townsmanID', function () {
+    var adminID = 'HxGqztWygWCxco4d5';    // admin ID should be accuired from DB ??? only one admin or multiple???????
+    this.redirect('/feedback/' + this.params.townsmanID+ '/' + adminID);
+});
+
+Router.route('/feedback/:townsmanID/:adminID', function () {
     this.layout('myLayout');
-    this.render('feedback');
+    this.render('feedback', {
+        data: function () {
+
+            Session.set('adminID', this.params.adminID);
+            Session.set('townsmanID',this.params.townsmanID);
+            console.log(Session.get('townsmanID'));
+            
+            return Feedbacks.find({townsmanID: this.params.townsmanID} );  // query feedbacks only relevent to 'user'
+        }
+    });
     this.render('nav', {to: 'nav'});
 
 });
 
-Router.route('/viewFeedback', function () {
+
+Router.route('/feedbackThreads', function () {
     this.layout('myLayout');
-    this.render('viewFeedback');
+    this.render('feedbackThreads');
     this.render('nav', {to: 'nav'});
 
 });

@@ -1,0 +1,23 @@
+<template name="feedbackThreads">
+    <div class="collection">
+
+        {{#each messageThreads}}
+            {{> messageThread}}
+        {{/each}}
+
+
+    </div>
+</template>
+
+<template name="messageThread">
+
+     <a href="/feedback/{{townsmanID}}/{{adminID}}" class="collection-item avatar waves-effect waves-block waves-light"><span id="thread">
+        <i class="material-icons circle blue ">person</i>
+        <span class="title black-text">{{userName}}</span>
+        <p class="black-text">"{{message}}"</p>
+        <span class="secondary-content">{{formatDate timeStamp}}</span>
+         </span>
+    </a>
+
+
+</template>

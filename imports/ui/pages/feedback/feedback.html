@@ -2,22 +2,26 @@
     <div class="container">
 
 
+        {{#if this}}
 
-            {{#each messages}}
-                {{> message}}
-            {{/each}}
+        {{#each this}}
 
+            {{> messageT}}
+        {{/each}}
+        {{/if}}
         {{>leaveFeedback}}
+
     </div>
 
 </template>
 
-<template name="message">
+<template name="messageT">
     <div class="row">
-        <div class="col s6 {{offset}} ">   <!-- Offset value will be null for townsman, s6 offset-s6 for system admin-->
+        <div class="col s6 {{renderOffset from}} ">   <!-- Offset value will be null for townsman, s6 offset-s6 for system admin-->
             <div class="card-panel light-blue lighten-4">
           <span class="black-text">
               {{message}}
+
           </span>
             </div>
         </div>
@@ -25,10 +29,15 @@
 </template>
 
 <template name="leaveFeedback">
-    {{#autoForm collection="Feedbacks" id="leaveFeedbackForm" type="insert"}}
+    {{#autoForm collection="Feedbacks" id="feedbackForm" type="insert"}}
 
         <div class="row">
-            <div class="col s10"> {{> afQuickField name='message' type = 'textarea'}}</div>
+            <div class="col s10"> {{> afQuickField name='message' type = 'textarea'}}
+                {{> afQuickField name="townsmanID" value=getTownsmanID }}
+                {{> afQuickField name="adminID" value=getAdminID }}
+                {{> afQuickField name="offset" value=getOffset }}
+                {{> afQuickField name="from" value=getUserType }}
+            </div>
             <div class="col s2"> <button id="submitBtn" class="btn-floating btn-large waves-effect waves-light" type="submit" ><i class="large material-icons">send</i></button></div>
 
         </div>
