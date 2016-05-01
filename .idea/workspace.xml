@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="66e17441-ae0b-4dd1-b155-18502bbab159" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imports/ui/pages/feedback/feedbackThreads.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/schemas/AdminFeedbacks.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/imports/ui/pages/feedback/viewFeedback.html" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/imports/ui/pages/feedback/viewFeedback.js" afterPath="$PROJECT_DIR$/imports/ui/pages/feedback/feedbackThreads.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/startup/client/route.js" afterPath="$PROJECT_DIR$/imports/startup/client/route.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/ui/pages/feedback/feedback.html" afterPath="$PROJECT_DIR$/imports/ui/pages/feedback/feedback.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/ui/pages/feedback/feedback.js" afterPath="$PROJECT_DIR$/imports/ui/pages/feedback/feedback.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/ui/pages/nav.html" afterPath="$PROJECT_DIR$/imports/ui/pages/nav.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/ui/pages/nav.js" afterPath="$PROJECT_DIR$/imports/ui/pages/nav.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/collections.js" afterPath="$PROJECT_DIR$/lib/collections.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/schemas/Feedback.js" afterPath="$PROJECT_DIR$/lib/schemas/Feedback.js" />
     </list>
     <ignored path="GTracker.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -69,8 +58,8 @@
       <file leaf-file-name="feedbackThreads.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/imports/ui/pages/feedback/feedbackThreads.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+            <state relative-caret-position="255">
+              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
@@ -481,7 +470,7 @@
       <workItem from="1461966366025" duration="304000" />
       <workItem from="1461966675103" duration="820000" />
       <workItem from="1461967498563" duration="48000" />
-      <workItem from="1461967549085" duration="75252000" />
+      <workItem from="1461967549085" duration="75390000" />
     </task>
     <task id="LOCAL-00001" summary="remove default code">
       <created>1461808730895</created>
@@ -546,11 +535,18 @@
       <option name="project" value="LOCAL" />
       <updated>1462027144067</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Feedback service complete&#10;TODO:- add 'userType' filed to user accounts, refine register townsman function, filter functionality according to access privilege  (user type)">
+      <created>1462083737097</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1462083737097</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="122783000" />
+    <option name="totallyTimeSpent" value="122921000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -622,7 +618,8 @@
     <MESSAGE value="design &quot;update truck&quot; view&#10;Materialize - Avatar Content" />
     <MESSAGE value="add notification count display" />
     <MESSAGE value="design feedback view page" />
-    <option name="LAST_COMMIT_MESSAGE" value="design feedback view page" />
+    <MESSAGE value="Feedback service complete&#10;TODO:- add 'userType' filed to user accounts, refine register townsman function, filter functionality according to access privilege  (user type)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Feedback service complete&#10;TODO:- add 'userType' filed to user accounts, refine register townsman function, filter functionality according to access privilege  (user type)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1004,8 +1001,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/imports/ui/pages/feedback/feedbackThreads.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+        <state relative-caret-position="255">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
           </folding>
