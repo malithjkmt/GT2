@@ -10,6 +10,7 @@ import '../../ui/pages/home/home.js';
 import '../../ui/pages/feedback/feedback.js';
 import '../../ui/pages/feedback/viewFeedback.js';
 import '../../ui/pages/feedback/feedbackThreads.js';
+import '../../ui/pages/admin/createAdmin.js';
 
 import '../../ui/pages/footer.html';
 import '../../ui/pages/master_layout.html';
@@ -47,7 +48,7 @@ Router.route('/', function () {
 
 
 Router.route('/feedback/:townsmanID', function () {
-    var adminID = 'HxGqztWygWCxco4d5';    // admin ID should be accuired from DB ??? only one admin or multiple???????
+    var adminID = '6ekcRhqSWz6tijCKY';    // admin ID should be accuired from DB ??? only one admin or multiple???????
     this.redirect('/feedback/' + this.params.townsmanID+ '/' + adminID);
 });
 
@@ -73,6 +74,13 @@ Router.route('/feedbackThreads', function () {
     this.render('feedbackThreads');
     this.render('nav', {to: 'nav'});
 
+});
+
+
+Router.route('/createAdmin', function () {
+    this.layout('myLayout');
+    this.render('createAdmin');
+    this.render('nav', {to: 'nav'});
 });
 
 Router.route('/viewDrivers', function () {

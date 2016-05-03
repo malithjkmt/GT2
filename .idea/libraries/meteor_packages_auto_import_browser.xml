@@ -71,7 +71,9 @@
         <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/reload/1.1.8/web.browser/deprecated.js" />
         <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/gildaspk_autoform-materialize/0.0.26/web.browser/inputTypes/tel/tel.js" />
         <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/reload/1.1.8/web.browser/reload.js" />
+        <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/sergeyt_typeahead/0.11.1_8/web.browser/typeahead.bundle.js" />
         <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/retry/1.0.7/web.browser/retry.js" />
+        <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/sergeyt_typeahead/0.11.1_8/web.browser/index.js" />
         <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/gildaspk_autoform-materialize/0.0.26/web.browser/components/afFormGroup/afFormGroup.js" />
         <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/gildaspk_autoform-materialize/0.0.26/web.browser/components/quickForm/quickForm.js" />
         <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/babel-runtime/0.1.8/web.browser/babel-runtime.js" />
@@ -400,7 +402,9 @@
       <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/reload/1.1.8/web.browser/deprecated.js" />
       <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/gildaspk_autoform-materialize/0.0.26/web.browser/inputTypes/tel/tel.js" />
       <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/reload/1.1.8/web.browser/reload.js" />
+      <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/sergeyt_typeahead/0.11.1_8/web.browser/typeahead.bundle.js" />
       <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/retry/1.0.7/web.browser/retry.js" />
+      <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/sergeyt_typeahead/0.11.1_8/web.browser/index.js" />
       <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/gildaspk_autoform-materialize/0.0.26/web.browser/components/afFormGroup/afFormGroup.js" />
       <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/gildaspk_autoform-materialize/0.0.26/web.browser/components/quickForm/quickForm.js" />
       <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/babel-runtime/0.1.8/web.browser/babel-runtime.js" />
