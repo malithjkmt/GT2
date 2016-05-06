@@ -17,7 +17,9 @@ Template.createAdmin.rendered = function() {
 Template.createAdmin.events({
     'click #makeAdmin'(event) {
         // Prevent default browser form submit
-        console.log("clicked!!");
-        Meteor.call('test',"111111111");
+        event.preventDefault();
+        var nicDOM =  document.getElementById('userID').value;
+        console.log(nicDOM);
+        Meteor.call('makeAdmin',nicDOM);
     }
 });
