@@ -48,8 +48,20 @@ Router.route('/', function () {
 
 
 Router.route('/feedback/:townsmanID', function () {
-    var adminID = '6ekcRhqSWz6tijCKY';    // admin ID should be accuired from DB ??? only one admin or multiple???????
-    this.redirect('/feedback/' + this.params.townsmanID+ '/' + adminID);
+
+    // admin ID should be acquired from DB ??? only one admin or multiple???????
+    Meteor.call("findAdminID", function(error, result){
+        if(error){
+            console.log(error.reason);
+            return;
+        }
+        Session.set('adminID',result);
+        console.log("Admin found from DB " + result);
+    });
+
+    this.redirect('/feedback/' + this.params.townsmanID+ '/' + Session.get('adminID'));
+
+
 });
 
 Router.route('/feedback/:townsmanID/:adminID', function () {

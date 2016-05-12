@@ -13,26 +13,26 @@ Template.leaveFeedback.helpers({
 
         return Session.get('townsmanID');
     },
-    getOffset: function(){
-        //if user is an admin, offset = '', else offset = 'offset-s6'
-        return 'offset-s6 ';
-    },
     getUserType: function () {
-        return 'admin';  // Meteor.user().type (current user's type)
+        if(Meteor.user()) {
+            var type = Meteor.user().profile.userType;
+        }
+        return type;  
     },
 
 });
 
-
-
 Template.messageT.helpers({
     renderOffset: function (from) {
-        if (true) { // >>> from == Meteor.user().type (current user's type)
-            return 'offset-s6';
+        if(Meteor.user()) {
+            if (from == Meteor.user().profile.userType) { // >>> from == Meteor.user().type (current user's type)
+                return 'offset-s6';
+            }
+            else {
+                return ' ';
+            }
         }
-        else {
-            return ' ';
-        }
+        return '';
     }
 });
 
