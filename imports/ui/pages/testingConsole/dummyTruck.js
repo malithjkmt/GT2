@@ -1,8 +1,9 @@
-import './map.html';
+import './dummyTruck.html';
 
 var ZOOM_LEVEL = 10; // ideal zoom level for streets
+var demoTruck;
 
-Template.map.helpers({
+Template.dummyMap.helpers({
     geolocationError: function () {
         var error = Geolocation.error();
         return error && error.message;
@@ -47,37 +48,51 @@ Template.map.helpers({
 });
 
 
-Template.map.onCreated(function() {
+Template.dummyMap.onCreated(function() {
     var self = this;
-    var markers = [];
+    GoogleMaps.ready('dummyMap', function(dummyMap) {
+        console.log("Dummy map is ready!");
 
-    GoogleMaps.ready('myMap', function(myMap) {
-        console.log("I'm ready!");
-
-
-
-        google.maps.event.addListener(myMap.instance, 'click', function(event) {
-            Markers.insert({ lat: event.latLng.lat(), lng: event.latLng.lng() });
-        });
-
-        self.autorun(function () {
-            // Clear out the old markers.
-            markers.forEach(function (marker) {
-                marker.setMap(null);
+        var autoLocationUpdateMode = false //get this from a radio button..... or ... from dummy console view
+        if(autoLocationUpdateMode){
+            self.autorun(function () {
+                latLng = Geolocation.latLng();
+                if (!latLng){
+                    return;
+                }
+                // ......
             });
-            markers = [];
+        }
 
-            var markerCursor = Markers.find({});
+        google.maps.event.addListener(dummyMap.instance, 'click', function(event) {
+            if(demoTruck){
+                console.log('inside');
+                console.log(demoTruck._id);
+                Meteor.call('updateTruckLocation', demoTruck._id, event.latLng.lat(), event.latLng.lng());  // Error.... the DB isn't updating ??? y the Hell is that???
 
-            markerCursor.forEach(function (marker) {
+            }
 
-                markers.push(new google.maps.Marker({
-                    position: new google.maps.LatLng(marker.lat, marker.lng),
-                    map: myMap.instance,
-                }));
-
-            });
         });
 
     });
+});
+
+Template.truckFinder.helpers({
+    truckIDs: function() {
+        return Trucks.find({}).fetch().map(function(it){ return it.license; });
+    }
+});
+
+Template.truckFinder.rendered = function() {
+    Meteor.typeahead.inject();
+};
+
+Template.dummyMapView.events({
+    'click #demo'(event) {
+        // Prevent default browser form submit
+        event.preventDefault();
+        var license = document.getElementById('truckID').value;
+        demoTruck = Trucks.findOne({license:license});
+        console.log(demoTruck);
+    }
 });

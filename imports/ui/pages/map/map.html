@@ -1,10 +1,16 @@
 <template name="mapView">
+    {{>map}}
+</template>
 
-        <div class="container">
-            <div class="center">
-                <h3>mapView</h3>
 
-            </div>
+<template name="map">
+    {{#unless geolocationError}}
+        <div class="map-container">
+            {{> googleMap name="myMap" options=myMapOptions }}
         </div>
+    {{else}}
+        Geolocation failed: {{geolocationError}}
+        <h3>Check your internet connection or turn on Location</h3>
+    {{/unless}}
 
 </template>

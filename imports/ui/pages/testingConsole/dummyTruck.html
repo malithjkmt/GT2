@@ -1,0 +1,34 @@
+<template name="dummyMapView">
+    {{>dummyMap}}
+    {{>truckFinder}}
+    <div  id = "dummyConsoleDemoButton">
+        <button id="demo" class="btn waves-effect waves-light" type="click" name="action">Demo
+            <i class="material-icons right">ondemand_video</i>
+        </button>
+
+    </div>
+
+</template>
+
+
+<template name="dummyMap">
+    {{#unless geolocationError}}
+        <div class="map-container">
+            {{> googleMap name="dummyMap" options=myMapOptions }}
+        </div>
+    {{else}}
+        Geolocation failed: {{geolocationError}}
+        <h3>Check your internet connection or turn on Location</h3>
+    {{/unless}}
+
+</template>
+
+
+<template name="truckFinder">
+
+    <input id= "truckID" class="form-control typeahead" name="truckID" type="text"
+           placeholder="Truck ID"
+           autocomplete="off" spellcheck="off"
+           data-source="truckIDs"/>
+
+</template>

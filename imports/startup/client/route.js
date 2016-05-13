@@ -11,6 +11,7 @@ import '../../ui/pages/feedback/feedback.js';
 import '../../ui/pages/feedback/viewFeedback.js';
 import '../../ui/pages/feedback/feedbackThreads.js';
 import '../../ui/pages/admin/createAdmin.js';
+import '../../ui/pages/testingConsole/dummyTruck.js';
 
 import '../../ui/pages/footer.html';
 import '../../ui/pages/master_layout.html';
@@ -153,6 +154,13 @@ Router.route('/home', function () {
     this.render('home');
     this.render('nav', {to: 'nav'});
 });
+
+Router.route('/dummyConsole', function () {
+    this.layout('myLayout');
+    this.render('dummyMapView');
+    this.render('nav', {to: 'nav'});
+});
+
 
 
 //Routes

@@ -22,6 +22,8 @@
             <li class="{{isActivePath '/feedback/:townsmanID'}}"><a href='/feedback/{{getTownsmanID}}'>Leave Feedback</a></li>
           <li class="{{isActivePath '/'}}"><a href="{{pathFor 'home'}}">Home</a></li>
           <li class="{{isActiveRoute regex='map'}}"><a href="{{pathFor 'map'}}">Map</a></li>
+
+            <li class="{{isActiveRoute regex='dummyConsole'}}"><a href="{{pathFor 'dummyConsole'}}">dummyConsole</a></li>
             <li class="{{isActiveRoute regex='viewDrivers'}}"><a href="{{pathFor 'viewDrivers'}}">Drivers</a></li>
             <li class="{{isActiveRoute regex='viewTrucks'}}"><a href="{{pathFor 'viewTrucks'}}">Trucks</a></li>
             <li class="{{isActiveRoute regex='registerDriver'}}"><a href="{{pathFor 'registerDriver'}}">Register Driver</a></li>
