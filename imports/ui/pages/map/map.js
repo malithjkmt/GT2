@@ -67,13 +67,14 @@ Template.map.onCreated(function() {
             });
             markers = [];
 
-            var markerCursor = Markers.find({});
+            var TrucksFleet = Trucks.find({});
 
-            markerCursor.forEach(function (marker) {
+            TrucksFleet.forEach(function (truck) {
 
                 markers.push(new google.maps.Marker({
-                    position: new google.maps.LatLng(marker.lat, marker.lng),
+                    position: new google.maps.LatLng(truck.lat, truck.lng),
                     map: myMap.instance,
+                    title: truck.license
                 }));
 
             });

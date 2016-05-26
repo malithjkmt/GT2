@@ -2,6 +2,7 @@ import './dummyTruck.html';
 
 var ZOOM_LEVEL = 10; // ideal zoom level for streets
 var demoTruck;
+var self;
 
 Template.dummyMap.helpers({
     geolocationError: function () {
@@ -49,33 +50,22 @@ Template.dummyMap.helpers({
 
 
 Template.dummyMap.onCreated(function() {
-    var self = this;
+    self = this;
     GoogleMaps.ready('dummyMap', function(dummyMap) {
         console.log("Dummy map is ready!");
-
-        var autoLocationUpdateMode = false //get this from a radio button..... or ... from dummy console view
-        if(autoLocationUpdateMode){
-            self.autorun(function () {
-                latLng = Geolocation.latLng();
-                if (!latLng){
-                    return;
-                }
-                // ......
-            });
-        }
 
         google.maps.event.addListener(dummyMap.instance, 'click', function(event) {
             if(demoTruck){
                 console.log('inside');
                 console.log(demoTruck._id);
-                Meteor.call('updateTruckLocation', demoTruck._id, event.latLng.lat(), event.latLng.lng());  // Error.... the DB isn't updating ??? y the Hell is that???
-
+                Meteor.call('updateTruckLocation', demoTruck._id, event.latLng.lat(), event.latLng.lng());
             }
 
         });
 
     });
 });
+
 
 Template.truckFinder.helpers({
     truckIDs: function() {
@@ -93,6 +83,13 @@ Template.dummyMapView.events({
         event.preventDefault();
         var license = document.getElementById('truckID').value;
         demoTruck = Trucks.findOne({license:license});
-        console.log(demoTruck);
+
+        self.autorun(function () {
+            var latLng = Geolocation.latLng();
+            console.log("updating location" + latLng.lat);
+            if (latLng) {
+                Meteor.call('updateTruckLocation', demoTruck._id, latLng.lat, latLng.lng);
+            }
+        });
     }
 });
