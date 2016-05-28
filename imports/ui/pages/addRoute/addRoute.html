@@ -5,7 +5,7 @@
 
 <template name="addRouteMap">
     {{#unless geolocationError}}
-        <div class="map-container">
+        <div id = "map-container" class="map-container">
             {{> googleMap name="addRouteMap" options=myMapOptions }}
         </div>
     {{else}}
@@ -14,6 +14,8 @@
     {{/unless}}
 
     <div id="addRouteButtons1">
+
+
         <button id="startingPoint" class="btn waves-effect waves-light" type="click" name="startingPoint">Select Start
             Point
             <i class="material-icons right">my_location</i>
@@ -27,8 +29,14 @@
         </button>
     </div>
     <div id="addRouteButtons2">
+        <button id="undo" class="btn waves-effect waves-light" type="click" name="undo">Undo to last marker
+            <i class="material-icons right">my_location</i>
+        </button>
         <button id="addMarker" class="btn waves-effect waves-light" type="click" name="addMarker">Add New Marker
             <i class="material-icons right">location_on</i>
+        </button>
+        <button id="saveRoute" class="btn waves-effect waves-light" type="click" name="saveRoute">Save route
+            <i class="material-icons right">my_location</i>
         </button>
     </div>
 

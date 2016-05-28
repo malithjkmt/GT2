@@ -4,6 +4,7 @@
     <list default="true" id="66e17441-ae0b-4dd1-b155-18502bbab159" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/main.scss" afterPath="$PROJECT_DIR$/client/main.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/startup/client/index.js" afterPath="$PROJECT_DIR$/imports/startup/client/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/ui/pages/addRoute/addRoute.html" afterPath="$PROJECT_DIR$/imports/ui/pages/addRoute/addRoute.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/ui/pages/addRoute/addRoute.js" afterPath="$PROJECT_DIR$/imports/ui/pages/addRoute/addRoute.js" />
     </list>
@@ -29,28 +30,38 @@
       <file leaf-file-name="addRoute.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/imports/ui/pages/addRoute/addRoute.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+            <state relative-caret-position="160">
+              <caret line="37" column="29" selection-start-line="37" selection-start-column="20" selection-end-line="37" selection-end-column="29" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="addRoute.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="addRoute.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/imports/ui/pages/addRoute/addRoute.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="80" column="48" selection-start-line="80" selection-start-column="48" selection-end-line="80" selection-end-column="59" />
+            <state relative-caret-position="85">
+              <caret line="118" column="8" selection-start-line="118" selection-start-column="8" selection-end-line="118" selection-end-column="8" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/imports/startup/client/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/main.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="211">
-              <caret line="48" column="20" selection-start-line="48" selection-start-column="20" selection-end-line="48" selection-end-column="20" />
+            <state relative-caret-position="586">
+              <caret line="77" column="17" selection-start-line="77" selection-start-column="17" selection-end-line="77" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -121,10 +132,10 @@
         <option value="$PROJECT_DIR$/imports/startup/client/route.js" />
         <option value="$PROJECT_DIR$/imports/ui/pages/nav.html" />
         <option value="$PROJECT_DIR$/packages/google-maps/google-maps.js" />
-        <option value="$PROJECT_DIR$/imports/ui/pages/addRoute/addRoute.js" />
         <option value="$PROJECT_DIR$/imports/ui/pages/addRoute/addRoute.html" />
         <option value="$PROJECT_DIR$/client/main.scss" />
         <option value="$PROJECT_DIR$/imports/startup/client/index.js" />
+        <option value="$PROJECT_DIR$/imports/ui/pages/addRoute/addRoute.js" />
       </list>
     </option>
   </component>
@@ -636,7 +647,7 @@
       <workItem from="1463452654011" duration="1061000" />
       <workItem from="1463784024079" duration="96000" />
       <workItem from="1464229880144" duration="5604000" />
-      <workItem from="1464393509461" duration="19519000" />
+      <workItem from="1464393509461" duration="27909000" />
     </task>
     <task id="LOCAL-00001" summary="remove default code">
       <created>1461808730895</created>
@@ -764,11 +775,18 @@
       <option name="project" value="LOCAL" />
       <updated>1464401216013</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Complete Add route--&gt; drawing the route path on map function">
+      <created>1464426559417</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1464426559417</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="208197000" />
+    <option name="totallyTimeSpent" value="216587000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -832,7 +850,8 @@
     <MESSAGE value="Add header image to side nav bar" />
     <MESSAGE value="Add auto location update feature for a dummy Truck" />
     <MESSAGE value="Make 'addRoute' view and start developing route drawing on map functionality" />
-    <option name="LAST_COMMIT_MESSAGE" value="Make 'addRoute' view and start developing route drawing on map functionality" />
+    <MESSAGE value="Complete Add route--&gt; drawing the route path on map function" />
+    <option name="LAST_COMMIT_MESSAGE" value="Complete Add route--&gt; drawing the route path on map function" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1113,22 +1132,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/packages/google-maps/google-maps.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/google-maps/google-maps.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/head.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -1177,34 +1180,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/imports/ui/pages/addRoute/addRoute.html">
+    <entry file="file://$PROJECT_DIR$/packages/google-maps/google-maps.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+        <state relative-caret-position="272">
+          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/imports/ui/pages/addRoute/addRoute.js">
+    <entry file="file://$PROJECT_DIR$/packages/google-maps/google-maps.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="80" column="48" selection-start-line="80" selection-start-column="48" selection-end-line="80" selection-end-column="59" />
+        <state relative-caret-position="17">
+          <caret line="1" column="33" selection-start-line="1" selection-start-column="33" selection-end-line="1" selection-end-column="33" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/main.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="586">
+          <caret line="77" column="17" selection-start-line="77" selection-start-column="17" selection-end-line="77" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/imports/startup/client/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+        <state relative-caret-position="85">
+          <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/main.scss">
+    <entry file="file://$PROJECT_DIR$/imports/ui/pages/addRoute/addRoute.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="48" column="20" selection-start-line="48" selection-start-column="20" selection-end-line="48" selection-end-column="20" />
+        <state relative-caret-position="160">
+          <caret line="37" column="29" selection-start-line="37" selection-start-column="20" selection-end-line="37" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/ui/pages/addRoute/addRoute.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="118" column="8" selection-start-line="118" selection-start-column="8" selection-end-line="118" selection-end-column="8" />
           <folding />
         </state>
       </provider>

@@ -1,6 +1,6 @@
 import './addRoute.html';
 
-var ZOOM_LEVEL = 10; // ideal zoom level for streets
+var ZOOM_LEVEL = 15; // ideal zoom level for streets
 var startingPoint;
 var endingPoint;
 var waypointsArray = [];
@@ -9,6 +9,9 @@ var endSelectingState = false;
 var addMarkerState;
 var directionsDisplay;
 var directionsService;
+var backupResponse;
+var drawingHistory = [];
+var r;
 
 Template.addRouteMap.helpers({
     geolocationError: function () {
@@ -84,15 +87,47 @@ Template.addRouteMap.events({
 
             directionsDisplay.addListener('directions_changed', function () {
                 computeTotalDistance(directionsDisplay.getDirections());
+                var temp = directionsDisplay.directions;
+                drawingHistory.push(temp);
+
+                if(drawingHistory.length <2){
+                    document.getElementById('undo').disabled = true;
+                }
+                else{
+                    document.getElementById('undo').disabled = false;
+                }
+
             });
 
             displayRoute(startingPoint, endingPoint, directionsService,
                 directionsDisplay);
+
         })
 
-        document.getElementById('addRouteButtons1').style.height = 0;
-        document.getElementById('addRouteButtons1').style.visibility = 'hidden';
 
+        document.getElementById('addRouteButtons1').style.visibility = 'hidden';
+        document.getElementById('addRouteButtons1').style.height = 0;
+
+        document.getElementById('addRouteButtons2').style.visibility = 'visible';
+
+        document.getElementById('undo').disabled = true;
+
+
+    },
+    'click #undo'(event) {
+        // window.location.reload()
+        
+        // remove the current route from the history
+        drawingHistory.pop();
+        // get the previous route from the history and display it
+        directionsDisplay.setDirections(drawingHistory.pop());
+
+    },
+    'click #saveRoute'(event) {
+        // console.log(backupResponse);
+        //  console.log(directionsDisplay);
+        // backupResponse = directionsDisplay.directions;
+        console.log(drawingHistory);
     }
 
 });
@@ -126,7 +161,6 @@ Template.addRouteMap.onCreated(function () {
                 addMarkerState = false;
                 document.getElementById('addMarker').disabled = false;
             }
-
 
 
         });
