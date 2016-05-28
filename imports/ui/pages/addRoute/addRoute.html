@@ -1,0 +1,16 @@
+<template name="addRoute">
+    {{>addRouteMap}}
+</template>
+
+
+<template name="addRouteMap">
+    {{#unless geolocationError}}
+        <div class="map-container">
+            {{> googleMap name="addRouteMap" options=myMapOptions }}
+        </div>
+    {{else}}
+        Geolocation failed: {{geolocationError}}
+        <h3>Check your internet connection or turn on Location</h3>
+    {{/unless}}
+
+</template>

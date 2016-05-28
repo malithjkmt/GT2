@@ -1,8 +1,8 @@
-import './map.html';
+import './addRoute.html';
 
 var ZOOM_LEVEL = 10; // ideal zoom level for streets
 
-Template.map.helpers({
+Template.addRouteMap.helpers({
     geolocationError: function () {
         var error = Geolocation.error();
         return error && error.message;
@@ -47,39 +47,14 @@ Template.map.helpers({
 });
 
 
-Template.map.onCreated(function() {
-    var self = this;
-    var markers = [];
+Template.addRouteMap.onCreated(function() {
 
-    GoogleMaps.ready('myMap', function(myMap) {
+
+    GoogleMaps.ready('addRouteMap', function(addRouteMap) {
         console.log("I'm ready!");
 
 
 
-        google.maps.event.addListener(myMap.instance, 'click', function(event) {
-            Markers.insert({ lat: event.latLng.lat(), lng: event.latLng.lng() });
-        });
-
-        self.autorun(function () {
-
-            // Clear out the old markers.
-            markers.forEach(function (marker) {
-                marker.setMap(null);
-            });
-            markers = [];
-
-            //add current markers
-            var TrucksFleet = Trucks.find({});
-            TrucksFleet.forEach(function (truck) {
-                markers.push(new google.maps.Marker({
-                    position: new google.maps.LatLng(truck.lat, truck.lng),
-                    map: myMap.instance,
-                    title: truck.license
-                }));
-
-            });
-            //above is a brute force adding of markers... only add the changed ones... how?
-        });
 
     });
 });

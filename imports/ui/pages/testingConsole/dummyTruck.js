@@ -3,6 +3,7 @@ import './dummyTruck.html';
 var ZOOM_LEVEL = 10; // ideal zoom level for streets
 var demoTruck;
 var self;
+var myMarker;
 
 Template.dummyMap.helpers({
     geolocationError: function () {
@@ -56,8 +57,7 @@ Template.dummyMap.onCreated(function() {
 
         google.maps.event.addListener(dummyMap.instance, 'click', function(event) {
             if(demoTruck){
-                console.log('inside');
-                console.log(demoTruck._id);
+                myMarker.setPosition({lat:event.latLng.lat(), lng:event.latLng.lng()});
                 Meteor.call('updateTruckLocation', demoTruck._id, event.latLng.lat(), event.latLng.lng());
             }
 
@@ -84,12 +84,36 @@ Template.dummyMapView.events({
         var license = document.getElementById('truckID').value;
         demoTruck = Trucks.findOne({license:license});
 
-        self.autorun(function () {
-            var latLng = Geolocation.latLng();
-            console.log("updating location" + latLng.lat);
-            if (latLng) {
-                Meteor.call('updateTruckLocation', demoTruck._id, latLng.lat, latLng.lng);
-            }
+
+        GoogleMaps.ready('dummyMap', function(dummyMap) {
+            self.autorun(function () {
+                var latLng = Geolocation.latLng();
+                console.log("updating location" + latLng.lat);
+                if (latLng) {
+
+                    // if the user hasn't assign a marker
+                    if(!myMarker) {
+
+                        myMarker = new google.maps.Marker({
+                            position: latLng,
+                            map: dummyMap.instance,
+                            title: "me",
+                            animation: google.maps.Animation.DROP
+
+                        });
+                    }
+                    else{
+                        myMarker.setPosition(latLng);
+                    }
+
+                    Meteor.call('updateTruckLocation', demoTruck._id, latLng.lat, latLng.lng);
+                }
+            });
+
+
+
         });
+
+
     }
 });
