@@ -13,4 +13,29 @@
         <h3>Check your internet connection or turn on Location</h3>
     {{/unless}}
 
+    <div id="addRouteButtons1">
+        <button id="startingPoint" class="btn waves-effect waves-light" type="click" name="startingPoint">Select Start
+            Point
+            <i class="material-icons right">my_location</i>
+        </button>
+        <button id="endingPoint" class="btn waves-effect waves-light" type="click" name="endingPoint">Select End Point
+            <i class="material-icons right">my_location</i>
+        </button>
+        <button id="roughRoute" class="btn waves-effect waves-light" type="click" name="roughRoute">Genereate Rough
+            Route
+            <i class="material-icons right">location_on</i>
+        </button>
+    </div>
+    <div id="addRouteButtons2">
+        <button id="addMarker" class="btn waves-effect waves-light" type="click" name="addMarker">Add New Marker
+            <i class="material-icons right">location_on</i>
+        </button>
+    </div>
+
+    <div id="right-panel">
+        <p>Total Distance: <span id="total"></span></p>
+    </div>
+
+
+
 </template>
