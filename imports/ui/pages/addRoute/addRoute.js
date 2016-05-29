@@ -54,6 +54,9 @@ Template.addRouteMap.helpers({
             };
             return mapOptions;
         }
+    },
+    driversNames: function() {
+        return Drivers.find().fetch().map(function(it){ return it.name; });
     }
 
 });
@@ -278,3 +281,8 @@ function fx(o) {
         }
     }
 }
+
+Template.addRouteMap.rendered = function () {
+    $('.clockpicker').clockpicker();
+    Meteor.typeahead.inject();
+};

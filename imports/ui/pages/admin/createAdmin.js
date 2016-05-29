@@ -3,8 +3,6 @@ import './createAdmin.html';
 
 Template.createAdmin.helpers({
     userIDs: function() {
-
-
         return Meteor.users.find().fetch().map(function(it){ return it.username; });
     }
 });

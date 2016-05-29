@@ -5,7 +5,7 @@
 
 <template name="addRouteMap">
     {{#unless geolocationError}}
-        <div id = "map-container" class="map-container">
+        <div id="map-container" class="map-container">
             {{> googleMap name="addRouteMap" options=myMapOptions }}
         </div>
     {{else}}
@@ -45,7 +45,30 @@
     </div>
 
 
-    
+    <div class="container">
 
+        {{#autoForm collection="Routes" id="addNewRouteForm" type="insert"}}
+
+            <!-- input start time-->
+            <div class="input-group clockpicker" data-placement="right" data-align="top" data-autoclose="true">
+                {{> afQuickField name='startTime' icon = "query_builder"  type="text" }}
+                <span class="input-group-addon">
+                  <span class="glyphicon glyphicon-time"></span>
+                </span>
+            </div>
+
+            <!-- select garbage types-->
+            {{> afQuickField name='biodegradable' type="boolean-checkbox" }}
+            {{> afQuickField name='nonBiodegradable' type="boolean-checkbox" }}
+
+            <button type="submit" class="btn waves-effect ">Save Route</button>
+        {{/autoForm}}
+    </div>
+    <input id="drivers" class="form-control typeahead" name="drivers" type="text"
+           placeholder="Drivers"
+           autocomplete="off" spellcheck="off"
+           data-source="driversNames"/>
 
 </template>
+
+

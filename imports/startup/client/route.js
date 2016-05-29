@@ -174,3 +174,4 @@ Router.route('/addRoute', function () {
 
 AccountsTemplates.configureRoute('signIn');
 AccountsTemplates.configureRoute('signUp');
+
