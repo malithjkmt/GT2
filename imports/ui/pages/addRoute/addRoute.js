@@ -9,9 +9,10 @@ var endSelectingState = false;
 var addMarkerState;
 var directionsDisplay;
 var directionsService;
-var backupResponse;
 var drawingHistory = [];
-var r;
+var startingPointMarker = null;
+var endingPointMarker = null;
+
 
 Template.addRouteMap.helpers({
     geolocationError: function () {
@@ -59,10 +60,18 @@ Template.addRouteMap.helpers({
 
 Template.addRouteMap.events({
     'click #startingPoint'(event) {
+        if (startingPointMarker) {
+            startingPointMarker.setMap(null);
+        }
+
         startSelectingState = true;
         disableEnable(true);
     },
     'click #endingPoint'(event) {
+        if (endingPointMarker) {
+            endingPointMarker.setMap(null);
+        }
+
         endSelectingState = true;
         disableEnable(true);
 
@@ -72,7 +81,16 @@ Template.addRouteMap.events({
         addMarkerState = true;
         document.getElementById('addMarker').disabled = true;
     },
-    'click #roughRoute'(event) {
+    'click #basicRoute'(event) {
+        // Clear out the temporary markers.
+
+
+        if (startingPointMarker) {
+            startingPointMarker.setMap(null);
+        }
+        if (endingPointMarker) {
+            endingPointMarker.setMap(null);
+        }
 
         GoogleMaps.ready('addRouteMap', function (addRouteMap) {
             // clear previous values if..
@@ -90,10 +108,12 @@ Template.addRouteMap.events({
                 var temp = directionsDisplay.directions;
                 drawingHistory.push(temp);
 
-                if(drawingHistory.length <2){
+
+                // fx(temp.routes[0]);
+                if (drawingHistory.length < 2) {
                     document.getElementById('undo').disabled = true;
                 }
-                else{
+                else {
                     document.getElementById('undo').disabled = false;
                 }
 
@@ -116,7 +136,7 @@ Template.addRouteMap.events({
     },
     'click #undo'(event) {
         // window.location.reload()
-        
+
         // remove the current route from the history
         drawingHistory.pop();
         // get the previous route from the history and display it
@@ -142,7 +162,29 @@ Template.addRouteMap.onCreated(function () {
         startingPoint = new google.maps.LatLng(6.522755, 80.114548);
         endingPoint = new google.maps.LatLng(6.593758, 79.958979);
 
+
         google.maps.event.addListener(addRouteMap.instance, 'click', function (event) {
+
+
+            if (startSelectingState) {
+                startingPointMarker = new google.maps.Marker({
+                    position: new google.maps.LatLng(event.latLng.lat(), event.latLng.lng()),
+                    map: addRouteMap.instance,
+                    title: 'Starting Point',
+                    label: 'S'
+
+                });
+            }
+
+            if (endSelectingState) {
+                endingPointMarker = new google.maps.Marker({
+                    position: new google.maps.LatLng(event.latLng.lat(), event.latLng.lng()),
+                    map: addRouteMap.instance,
+                    title: 'Ending Point',
+                    label: 'E'
+                });
+            }
+
             if (startSelectingState) {
                 startingPoint = new google.maps.LatLng(event.latLng.lat(), event.latLng.lng());
                 startSelectingState = false;
@@ -184,6 +226,7 @@ function displayRoute(origin, destination, service, display) {
     }, function (response, status) {
         if (status === google.maps.DirectionsStatus.OK) {
             display.setDirections(response);
+            // fx(response.routes[0]);
         } else {
             alert('Could not display directions due to: ' + status);
         }
@@ -204,6 +247,34 @@ function disableEnable(value) {
     document.getElementById('startingPoint').disabled = value;
     document.getElementById('endingPoint').disabled = value;
     document.getElementById('addMarker').disabled = value;
-    document.getElementById('roughRoute').disabled = value;
+    document.getElementById('basicRoute').disabled = value;
 
+}
+
+function fx(o) {
+    if (o && o.legs) {
+        for (l = 0; l < o.legs.length; ++l) {
+            var leg = o.legs[l];
+            for (var s = 0; s < leg.steps.length; ++s) {
+                var step = leg.steps[s],
+                    a = (step.lat_lngs.length) ? step.lat_lngs[0] : step.start_point,
+                    z = (step.lat_lngs.length) ? step.lat_lngs[1] : step.end_point,
+
+                    dir = ((Math.atan2(z.lng() - a.lng(), z.lat() - a.lat()) * 180) / Math.PI) + 360,
+                    ico = ((dir - (dir % 3)) % 120);
+                new google.maps.Marker({
+                    position: a,
+                    icon: new google.maps.MarkerImage('http://maps.google.com/mapfiles/dir_' + ico + '.png',
+
+                        new google.maps.Size(24, 24),
+                        new google.maps.Point(0, 0),
+                        new google.maps.Point(12, 12),
+                    ),
+                    map: GoogleMaps.maps['addRouteMap'].instance,
+                    title: Math.round((dir > 360) ? dir - 360 : dir) + '°'
+                });
+
+            }
+        }
+    }
 }
