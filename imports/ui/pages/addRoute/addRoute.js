@@ -12,6 +12,8 @@ var directionsService;
 var drawingHistory = [];
 var startingPointMarker = null;
 var endingPointMarker = null;
+var startPointSelected = false;
+var endPointSelected = false;
 
 
 Template.addRouteMap.helpers({
@@ -55,9 +57,23 @@ Template.addRouteMap.helpers({
             return mapOptions;
         }
     },
-    driversNames: function() {
-        return Drivers.find().fetch().map(function(it){ return it.name; });
+    driversNames: function () {
+        var drivers =  Drivers.find().fetch();
+        var options = [];
+        drivers.forEach(function (driver) {
+            options.push({label:driver.name, value:driver.nic});
+        });
+        return options;
+    },
+    truckNo: function () {
+        var trucks =  Trucks.find().fetch();
+        var options = [];
+        trucks.forEach(function (truck) {
+            options.push({label:truck.license, value:truck.license});
+        });
+        return options;
     }
+
 
 });
 
@@ -66,7 +82,6 @@ Template.addRouteMap.events({
         if (startingPointMarker) {
             startingPointMarker.setMap(null);
         }
-
         startSelectingState = true;
         disableEnable(true);
     },
@@ -84,73 +99,12 @@ Template.addRouteMap.events({
         addMarkerState = true;
         document.getElementById('addMarker').disabled = true;
     },
-    'click #basicRoute'(event) {
-        // Clear out the temporary markers.
-
-
-        if (startingPointMarker) {
-            startingPointMarker.setMap(null);
-        }
-        if (endingPointMarker) {
-            endingPointMarker.setMap(null);
-        }
-
-        GoogleMaps.ready('addRouteMap', function (addRouteMap) {
-            // clear previous values if..
-
-            directionsService = new google.maps.DirectionsService;
-            directionsDisplay = new google.maps.DirectionsRenderer({
-                draggable: true,
-                map: addRouteMap.instance,
-                panel: document.getElementById('right-panel')
-            });
-
-
-            directionsDisplay.addListener('directions_changed', function () {
-                computeTotalDistance(directionsDisplay.getDirections());
-                var temp = directionsDisplay.directions;
-                drawingHistory.push(temp);
-
-
-                // fx(temp.routes[0]);
-                if (drawingHistory.length < 2) {
-                    document.getElementById('undo').disabled = true;
-                }
-                else {
-                    document.getElementById('undo').disabled = false;
-                }
-
-            });
-
-            displayRoute(startingPoint, endingPoint, directionsService,
-                directionsDisplay);
-
-        })
-
-
-        document.getElementById('addRouteButtons1').style.visibility = 'hidden';
-        document.getElementById('addRouteButtons1').style.height = 0;
-
-        document.getElementById('addRouteButtons2').style.visibility = 'visible';
-
-        document.getElementById('undo').disabled = true;
-
-
-    },
     'click #undo'(event) {
-        // window.location.reload()
-
         // remove the current route from the history
         drawingHistory.pop();
         // get the previous route from the history and display it
         directionsDisplay.setDirections(drawingHistory.pop());
 
-    },
-    'click #saveRoute'(event) {
-        // console.log(backupResponse);
-        //  console.log(directionsDisplay);
-        // backupResponse = directionsDisplay.directions;
-        console.log(drawingHistory);
     }
 
 });
@@ -177,26 +131,33 @@ Template.addRouteMap.onCreated(function () {
                     label: 'S'
 
                 });
-            }
+                startingPoint = new google.maps.LatLng(event.latLng.lat(), event.latLng.lng());
+                disableEnable(false);
 
-            if (endSelectingState) {
+                startPointSelected = true;
+                startSelectingState = false;
+                if (startPointSelected && endPointSelected) {
+                    generateRoute();
+                }
+            }
+            else if (endSelectingState) {
                 endingPointMarker = new google.maps.Marker({
                     position: new google.maps.LatLng(event.latLng.lat(), event.latLng.lng()),
                     map: addRouteMap.instance,
                     title: 'Ending Point',
                     label: 'E'
                 });
-            }
-
-            if (startSelectingState) {
-                startingPoint = new google.maps.LatLng(event.latLng.lat(), event.latLng.lng());
-                startSelectingState = false;
-                disableEnable(false);
-            }
-            else if (endSelectingState) {
                 endingPoint = new google.maps.LatLng(event.latLng.lat(), event.latLng.lng());
-                endSelectingState = false;
                 disableEnable(false);
+
+                endPointSelected = true;
+                endSelectingState = false;
+
+                if (startPointSelected && endPointSelected) {
+                    generateRoute();
+
+
+                }
             }
             else if (addMarkerState) {
                 waypointsArray.push({location: new google.maps.LatLng(event.latLng.lat(), event.latLng.lng())});
@@ -205,6 +166,7 @@ Template.addRouteMap.onCreated(function () {
                     directionsDisplay);
                 addMarkerState = false;
                 document.getElementById('addMarker').disabled = false;
+
             }
 
 
@@ -250,7 +212,6 @@ function disableEnable(value) {
     document.getElementById('startingPoint').disabled = value;
     document.getElementById('endingPoint').disabled = value;
     document.getElementById('addMarker').disabled = value;
-    document.getElementById('basicRoute').disabled = value;
 
 }
 
@@ -283,6 +244,78 @@ function fx(o) {
 }
 
 Template.addRouteMap.rendered = function () {
-    $('.clockpicker').clockpicker();
+    // $('.clockpicker').clockpicker();
     Meteor.typeahead.inject();
+    $('.tooltipped').tooltip({delay: 50});
+
 };
+
+/* <div class="input-group clockpicker" data-placement="right" data-align="top" data-autoclose="true">
+ {{> afQuickField name='startTime' icon = "query_builder"  type="text" }}
+ <span class="input-group-addon">
+ <span class="glyphicon glyphicon-time"></span>
+ </span>
+ </div>
+ */
+function generateRoute() {
+
+    if (startingPointMarker) {
+        startingPointMarker.setMap(null);
+    }
+    if (endingPointMarker) {
+        endingPointMarker.setMap(null);
+    }
+
+    GoogleMaps.ready('addRouteMap', function (addRouteMap) {
+        // clear previous values if..
+
+        directionsService = new google.maps.DirectionsService;
+        directionsDisplay = new google.maps.DirectionsRenderer({
+            draggable: true,
+            map: addRouteMap.instance,
+            panel: document.getElementById('right-panel')
+        });
+
+
+        directionsDisplay.addListener('directions_changed', function () {
+            computeTotalDistance(directionsDisplay.getDirections());
+            var temp = directionsDisplay.directions;
+            drawingHistory.push(temp);
+
+            // here I pass stringified JSON object to the mongo Collection.
+            // So when using it first parse
+            // eg:- console.log(JSON.parse(document.getElementById('routeMap').value));
+            document.getElementById('routeMap').value = JSON.stringify(temp);
+
+
+            // fx(temp.routes[0]);
+            if (drawingHistory.length < 2) {
+                document.getElementById('undo').disabled = true;
+            }
+            else {
+                document.getElementById('undo').disabled = false;
+            }
+
+        });
+
+        displayRoute(startingPoint, endingPoint, directionsService,
+            directionsDisplay);
+
+    })
+
+
+    document.getElementById('addRouteButtons1').style.visibility = 'hidden';
+    document.getElementById('addRouteButtons1').style.height = '0';
+
+    document.getElementById('addRouteButtons2').style.visibility = 'visible';
+    document.getElementById('addRouteButtons2').style.height = 'auto';
+
+    document.getElementById('navigationDetails').style.visibility = 'visible';
+    document.getElementById('navigationDetails').style.height = 'auto';
+
+
+    document.getElementById('undo').disabled = true;
+
+
+
+}

@@ -2,11 +2,7 @@ import './nav.html';
 
 
 
-Template.nav.rendered = function () {
-  $(".button-collapse").sideNav({
-    closeOnClick: true
-  });
-};
+
 
 Template.nav.helpers({
   DisplayName: function() {
@@ -20,6 +16,14 @@ Template.nav.helpers({
       return Meteor.user()._id;
     }
 
+
   }
 
+});
+
+Template.nav.onRendered(function () {
+  $('.button-collapse').sideNav({
+    closeOnClick: true,
+    menuWidth: 300, // Default is 240
+  });
 });

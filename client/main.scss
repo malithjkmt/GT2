@@ -32,21 +32,20 @@ $font-stack:    Helvetica, sans-serif;
 }
 
 #addRouteButtons1{
-  margin: 5% 5% 0 5%;
+  margin: 2% 5% 0 5%;
 }
 
 #addRouteButtons1 button {
   width: 100%;
-  margin-bottom: 2%;
 }
 
 #addRouteButtons2{
-  margin: 5% 5% 0 5%;
+  margin: 0 5% 0 5%;
+  position: absolute;
 }
 
 #addRouteButtons2 button {
   width: 100%;
-  margin-bottom: 2%;
 }
 
 #right-panel {
@@ -77,4 +76,20 @@ $font-stack:    Helvetica, sans-serif;
 
 #addRouteButtons2{
   visibility: hidden;
+  height: 0;
+}
+
+#navigationDetails{
+  visibility: hidden;
+  height: 0;
+}
+
+
+#addRoute{
+  float: right;
+  margin-top: 15%;
+}
+
+#routeForm{
+
 }

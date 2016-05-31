@@ -36,11 +36,5 @@ sergeyt:typeahead
 mdg:geolocation
 dburles:google-maps
 
-practicalmeteor:mocha   # Write package tests with mocha and run them in the browser or from the command line with spacejam
-xolvio:cleaner  #Gives you methods to clear your Mongo database and collections for testing purposes
-dburles:factory  #Factories for Meteor
-practicalmeteor:faker  # Generate massive amounts of fake data in node.js and in the browser
-hwillson:stub-collections   #Stub out Meteor collections with in-memory local collections
 
 
-alexgreg:materialize-clockpicker
