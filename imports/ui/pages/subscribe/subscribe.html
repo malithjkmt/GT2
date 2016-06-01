@@ -1,9 +1,5 @@
 <template name="subscribe">
-    <h1>subscribe</h1>
     <div class="container">
-        <button id="test" class="btn waves-effect waves-light" type="click" name="test">test
-            <i class="material-icons right">location_on</i>
-        </button>
         <ul>
             {{#each routes}}
                 <li>
@@ -14,9 +10,7 @@
                             <span class="card-title">Card Title</span>
                         </div>
                         <div class="card-content">
-                            Start Time: {{startTime}}
-                            Driver NIC: {{driverNIC}}
-                            Truck : {{TruckNO}}
+
 
                             {{#if biodegradable}}
                                 <div class="chip">
@@ -31,6 +25,10 @@
                                 </div>
 
                             {{/if}}
+                            <div id = "startTime">
+                                Start Time: {{startTime}}
+                            </div>
+
                         </div>
                         <div class="card-action">
                             <a href="#">Subscribe</a>

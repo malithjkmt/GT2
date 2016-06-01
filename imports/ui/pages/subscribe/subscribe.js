@@ -22,7 +22,7 @@ Template.subscribe.helpers({
 
 
 });
-
+/*
 
 Template.subscribe.events({
 
@@ -33,7 +33,7 @@ Template.subscribe.events({
 
 
 });
-
+*/
 Template.routeMap.helpers({
     geolocationError: function () {
         var error = Geolocation.error();

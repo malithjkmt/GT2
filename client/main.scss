@@ -19,9 +19,6 @@ $font-stack:    Helvetica, sans-serif;
 
 
 // map view styles
-.chip{
-  margin-bottom: 2%;
-}
 
 .map-container {
   width: 100%;
@@ -95,4 +92,20 @@ $font-stack:    Helvetica, sans-serif;
 
 #routeForm{
 
+}
+
+.chip{
+  margin: 0 2% 2% 0;
+}
+
+
+
+#startTime{
+  float:right;
+  color: #1B8DF9;
+}
+
+#navTitle{
+  margin: 16% 0 0 25%;
+  width: 100%;
 }
