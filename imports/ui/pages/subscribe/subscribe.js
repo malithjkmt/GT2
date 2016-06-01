@@ -6,6 +6,7 @@ var ZOOM_LEVEL = 5; // ideal zoom level for streets
 var count = 0;
 var readyCount = 1;
 var renderedCount = 1;
+var routesCursor;
 
 Template.subscribe.rendered = function () {
 
@@ -15,7 +16,8 @@ Template.subscribe.rendered = function () {
 Template.subscribe.helpers({
 
     routes: function () {
-        return Routes.find({});
+        routesCursor = Routes.find({});
+        return routesCursor;
     }
 
 
@@ -25,7 +27,8 @@ Template.subscribe.helpers({
 Template.subscribe.events({
 
     'click #test'(event) {
-        GoogleMaps.maps.map2.instance.setZoom(15);
+       // console.log(routesCursor.fetch()[20].mapRoute);
+        Meteor.call('dl');
     }
 
 
@@ -48,11 +51,12 @@ Template.routeMap.helpers({
         }
     },
     routes: function () {
+
         return Routes.find({});
     },
     index: function () {
         count++;
-        return "map"+count;
+        return "map" + count;
     }
 
 
@@ -60,31 +64,30 @@ Template.routeMap.helpers({
 
 Template.routeMap.onRendered(function () {
 
-        var mapName = "map" + renderedCount;
-        renderedCount++;
-        GoogleMaps.ready(mapName, function (map) {
-            console.log("map map" + readyCount + " is ready");
-            readyCount++;
+    var mapName = "map" + renderedCount;
+    renderedCount++;
+    GoogleMaps.ready(mapName, function (map) {
+        console.log("map map" + readyCount + " is ready");
 
+            var display = new google.maps.DirectionsRenderer({
+                draggable: false,
+                map: map.instance,
+            });
 
-      var display = new google.maps.DirectionsRenderer({
-     draggable: false,
-     map: map.instance,
-     });
+            var temp = JSON.parse(routesCursor.fetch()[readyCount-1].mapRoute);
+            display.setDirections(temp);
 
-     var temp = JSON.parse(Routes.findOne({_id: 'zKGjheNrBszRoXi68'}).mapRoute);
-     display.setDirections(temp);
+            directionsDisplayArray.push(display);
 
-     directionsDisplayArray.push(display);
-
-        });
+        readyCount++;
+    });
 
 
 });
 
 function setZm(mapName) {
     /*console.log(mapName.instance.getZoom());
-    mapName.instance.setZoom(15);*/
+     mapName.instance.setZoom(15);*/
 
 
 }
