@@ -5,6 +5,7 @@ var directionsDisplayArray = [];
 var ZOOM_LEVEL = 5; // ideal zoom level for streets
 var count = 0;
 var readyCount = 1;
+var renderedCount = 1;
 
 Template.subscribe.rendered = function () {
 
@@ -20,6 +21,15 @@ Template.subscribe.helpers({
 
 });
 
+
+Template.subscribe.events({
+
+    'click #test'(event) {
+        GoogleMaps.maps.map2.instance.setZoom(15);
+    }
+
+
+});
 
 Template.routeMap.helpers({
     geolocationError: function () {
@@ -42,31 +52,39 @@ Template.routeMap.helpers({
     },
     index: function () {
         count++;
-        return count;
+        return "map"+count;
     }
 
 
 });
 
 Template.routeMap.onRendered(function () {
-    console.log(GoogleMaps.maps);
 
-    GoogleMaps.ready('' + readyCount + '', function (map) {
-        console.log("map " + readyCount + " is ready");
-        readyCount++;
-        map.instance.setZoom(15);
-      /*  var display = new google.maps.DirectionsRenderer({
-            draggable: false,
-            map: map.instance,
+        var mapName = "map" + renderedCount;
+        renderedCount++;
+        GoogleMaps.ready(mapName, function (map) {
+            console.log("map map" + readyCount + " is ready");
+            readyCount++;
+
+
+      var display = new google.maps.DirectionsRenderer({
+     draggable: false,
+     map: map.instance,
+     });
+
+     var temp = JSON.parse(Routes.findOne({_id: 'zKGjheNrBszRoXi68'}).mapRoute);
+     display.setDirections(temp);
+
+     directionsDisplayArray.push(display);
+
         });
-
-        var temp = JSON.parse(Routes.findOne({_id: 'zKGjheNrBszRoXi68'}).mapRoute);
-        display.setDirections(temp);
-
-        directionsDisplayArray.push(display);*/
-
-    });
 
 
 });
 
+function setZm(mapName) {
+    /*console.log(mapName.instance.getZoom());
+    mapName.instance.setZoom(15);*/
+
+
+}
