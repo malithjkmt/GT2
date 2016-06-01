@@ -1,0 +1,45 @@
+<template name="subscribe">
+    <h1>subscribe</h1>
+    <div class="container">
+        <ul>
+            {{#each routes}}
+                <li>
+                    <div class="row">
+                        <div class="col s12 m7">
+                            <div class="card">
+                                <div class="card-image">
+                                   {{>routeMap}}
+                                    <span class="card-title">Card Title</span>
+                                </div>
+                                <div class="card-content">
+                                    <p>Start Time: {{startTime}}
+                                        Driver NIC: {{driverNIC}}</p>
+                                </div>
+                                <div class="card-action">
+                                    <a href="#">Subscribe</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+       </li>
+
+        {{/each}}
+</ul>
+    </div>
+
+</template>
+
+
+<template name="routeMap">
+    {{#unless geolocationError}}
+        <div class="map-container">
+            {{> googleMap name= index options=myMapOptions }}
+        </div>
+    {{else}}
+        Geolocation failed: {{geolocationError}}
+        <h3>Check your internet connection or turn on Location</h3>
+    {{/unless}}
+
+</template>

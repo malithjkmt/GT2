@@ -13,6 +13,7 @@ import '../../ui/pages/feedback/feedbackThreads.js';
 import '../../ui/pages/admin/createAdmin.js';
 import '../../ui/pages/testingConsole/dummyTruck.js';
 import '../../ui/pages/addRoute/addRoute.js';
+import '../../ui/pages/subscribe/subscribe.js';
 
 import '../../ui/pages/footer.html';
 import '../../ui/pages/master_layout.html';
@@ -168,6 +169,11 @@ Router.route('/addRoute', function () {
     this.render('nav', {to: 'nav'});
 });
 
+Router.route('/subscribe', function () {
+    this.layout('myLayout');
+    this.render('subscribe');
+    this.render('nav', {to: 'nav'});
+});
 
 
 //Routes
