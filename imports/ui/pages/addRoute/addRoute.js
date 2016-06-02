@@ -77,6 +77,10 @@ Template.addRouteMap.helpers({
 
 });
 
+
+Template.addRoute.helpers({
+});
+
 Template.addRouteMap.events({
     'click #startingPoint'(event) {
         if (startingPointMarker) {

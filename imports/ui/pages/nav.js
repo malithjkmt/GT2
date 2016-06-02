@@ -1,21 +1,5 @@
 import './nav.html';
 
-var navTitle = "Home";
-
-
-
-
-Template.nav.events({
-
-  'click #navSubscribe'(e) {
-   document.getElementById("navTitle").innerHTML = "Subscribe";
-  },
-  'click #navAddRoute' (e){
-    document.getElementById("navTitle").innerHTML  = "Add Route";
-  }
-});
-
-
 Template.nav.helpers({
 
  
@@ -30,10 +14,8 @@ Template.nav.helpers({
     if(Meteor.user()){
       return Meteor.user()._id;
     }
-  },
-  navTitle: function () {
-    return navTitle;
   }
+
 
 });
 

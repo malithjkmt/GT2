@@ -1,14 +1,17 @@
 <template name="nav">
+
+
     <nav>
         <div class="container">
             <div class="nav-wrapper">
 
                 <a class="button-collapse show-on-large" href="#" data-activates="nav-mobile"><i class="material-icons">reorder</i></a>
 
-                <ul>
+                <ul >
                     <li>
-                        <h5 id="navTitle">
-                            {{navTitle}}
+
+                        <h5 id="navTitle" style="float: left">
+                            {{this}}
                         </h5>
                     </li>
                 </ul>
@@ -38,26 +41,26 @@
 
                     <li id="navSubscribe" class="{{isActivePath '/subscribe'}}"><a href='/subscribe'>Subscribe</a></li>
                     <li id="navAddRoute" class="{{isActivePath '/addRoute'}}"><a href='/addRoute'>Add Route</a></li>
-                    <li class="{{isActiveRoute regex='feedbackThreads'}}"><a href="{{pathFor 'feedbackThreads'}}">View
+                    <li id="navFeedbacks" class="{{isActiveRoute regex='feedbackThreads'}}"><a href="{{pathFor 'feedbackThreads'}}">View
                         Feedbacks</a></li>
 
-                    <li class="{{isActivePath '/feedback/:townsmanID'}}"><a href='/feedback/{{getTownsmanID}}'>Leave
+                    <li id="navFeedback" class="{{isActivePath '/feedback/:townsmanID'}}"><a href='/feedback/{{getTownsmanID}}'>Leave
                         Feedback</a></li>
-                    <li class="{{isActivePath '/'}}"><a href="{{pathFor 'home'}}">Home</a></li>
-                    <li class="{{isActiveRoute regex='map'}}"><a href="{{pathFor 'map'}}">Map</a></li>
+                    <li id="navHome" class="{{isActivePath '/'}}"><a href="{{pathFor 'home'}}">Home</a></li>
+                    <li  id="navMap" class="{{isActiveRoute regex='map'}}"><a href="{{pathFor 'map'}}">Map</a></li>
 
-                    <li class="{{isActiveRoute regex='dummyConsole'}}"><a
+                    <li  id="navDummyConsole"  class="{{isActiveRoute regex='dummyConsole'}}"><a
                             href="{{pathFor 'dummyConsole'}}">dummyConsole</a></li>
-                    <li class="{{isActiveRoute regex='viewDrivers'}}"><a href="{{pathFor 'viewDrivers'}}">Drivers</a>
+                    <li id="navDrivers" class="{{isActiveRoute regex='viewDrivers'}}"><a href="{{pathFor 'viewDrivers'}}">Drivers</a>
                     </li>
-                    <li class="{{isActiveRoute regex='viewTrucks'}}"><a href="{{pathFor 'viewTrucks'}}">Trucks</a></li>
-                    <li class="{{isActiveRoute regex='registerDriver'}}"><a href="{{pathFor 'registerDriver'}}">Register
+                    <li id="navTrucks" class="{{isActiveRoute regex='viewTrucks'}}"><a href="{{pathFor 'viewTrucks'}}">Trucks</a></li>
+                    <li id="navRegDriver" class="{{isActiveRoute regex='registerDriver'}}"><a href="{{pathFor 'registerDriver'}}">Register
                         Driver</a></li>
-                    <li class="{{isActiveRoute regex='createAdmin'}}"><a href="{{pathFor 'createAdmin'}}">Create
+                    <li id="navCreateAdmin" class="{{isActiveRoute regex='createAdmin'}}"><a href="{{pathFor 'createAdmin'}}">Create
                         Admin</a></li>
-                    <li class="{{isActiveRoute regex='registerTruck'}}"><a href="{{pathFor 'registerTruck'}}">Register
+                    <li id="navRegTruck" class="{{isActiveRoute regex='registerTruck'}}"><a href="{{pathFor 'registerTruck'}}">Register
                         Truck</a></li>
-                    <li class="{{isActiveRoute regex='registerTownsman'}}"><a href="{{pathFor 'registerTownsman'}}">Register
+                    <li id="navRegTownsman" class="{{isActiveRoute regex='registerTownsman'}}"><a href="{{pathFor 'registerTownsman'}}">Register
                         Townsman</a></li>
                     <li>{{> atNavButton }}</li>
 
@@ -66,4 +69,5 @@
             </div>
         </div>
     </nav>
+
 </template>

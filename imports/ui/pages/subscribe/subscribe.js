@@ -20,7 +20,6 @@ Template.subscribe.helpers({
         return routesCursor;
     }
 
-
 });
 /*
 
