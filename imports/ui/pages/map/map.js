@@ -47,7 +47,11 @@ Template.map.helpers({
 });
 
 
+
 Template.map.onCreated(function() {
+    this.state = new ReactiveDict();
+    Meteor.subscribe('trucks');
+
     var self = this;
     var markers = [];
 

@@ -15,6 +15,11 @@ var endingPointMarker = null;
 var startPointSelected = false;
 var endPointSelected = false;
 
+Template.addRouteMap.onCreated(function bodyOnCreated() {
+    this.state = new ReactiveDict();
+    Meteor.subscribe('trucks');
+    Meteor.subscribe('drivers');
+});
 
 Template.addRouteMap.helpers({
     geolocationError: function () {

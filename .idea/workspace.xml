@@ -2,104 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="66e17441-ae0b-4dd1-b155-18502bbab159" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/Design - Architecture/4 Template for Software Architecture Document.docx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/Design - Architecture/Acitvity/Acttivity.vsdx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/Design - Architecture/Acitvity/addNewRoute.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/Design - Architecture/Acitvity/old/add new route.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/Design - Architecture/Acitvity/old/setup noti.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/Design - Architecture/Acitvity/old/signup.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/Design - Architecture/Acitvity/setupNoti.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/Design - Architecture/Acitvity/signUp.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/Design - Architecture/Acitvity/~$$Acttivity.~vsdx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/Design - Architecture/ClassDiagram.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/Design - Architecture/ClassDiagram.vsdx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/Design - Architecture/Deployment.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/Design - Architecture/Lecture 4 - Design.pdf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/Design - Architecture/Reference/110348H_Design_Specification.docx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/Design - Architecture/Reference/110383J_Software Design Specification.dot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/Design - Architecture/Reference/Software Architecture Document.docx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/Design - Architecture/Reference/Theory Book.pdf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/Design - Architecture/Reference/web/Content_Aggregator_Sofware_Architecture_Document_-_EX-Libris_Commons.DOC" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/Design - Architecture/Reference/web/HP_arch_template_vers13_withexamples.pdf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/Design - Architecture/Reference/web/SAD-OnlineCateringService.doc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/Design - Architecture/Reference/web/SAD_DTCPII_ver1.4.doc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/Design - Architecture/Reference/web/Software Architecture Document.doc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/Design - Architecture/Reference/web/sample_group13_sdd.doc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/Design - Architecture/Reference/web/system-architecture-template.doc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/Design - Architecture/SAD_Garbage_Truck_Tracker_130597L.docx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/Design - Architecture/SAD_Garbage_Truck_Tracker_130597LVersion1.pdf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/Design - Architecture/SAD_Garbage_Truck_Tracker_130597LVersion2.pdf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/Design - Architecture/SSD/SSD.vsdx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/Design - Architecture/SSD/newRoute.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/Design - Architecture/SSD/setupNItifi.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/Design - Architecture/SSD/signup.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/Design - Architecture/SSD/~$$SSD.~vsdx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/Design - Architecture/Usecase.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/Design - Architecture/Usecase.vsdx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/Design - Architecture/package/PackageDiagram.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/Design - Architecture/package/PackageDiagram.vsdx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/Design - Architecture/package/~$$PackageDiagram.~vsdx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/Design - Architecture/~$$ClassDiagram.~vsdx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/Design - Architecture/~$$Usecase.~vsdx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/Feasibility/130597L_GarbageTruckTracker.doc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/Feasibility/130597L_GarbageTruckTracker.pdf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/Feasibility/2 Template for Feasibility report.doc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/Feasibility/Lecture 2- Feasibility.pdf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/Lecture 4 - Design.pdf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/Moodle guidelines for general submission.pdf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/Progress Report 1/130597L_GarbageTruckTracker.pdf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/Progress Report 1/130597L_ProgressReport.docx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/Progress Report 1/5 Template for Progress_Report.docx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/Project Proposal/1 Template for Project Proposal (1).doc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/Project Proposal/Lecture 1 - Introduction.pdf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/Project Proposal/Moodle guidelines for proposal submission.pdf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/Project Proposal/Moodle guidelines for selecting a project idea.pdf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/Project Proposal/Project Proposal.doc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/Project Proposal/Project Proposal.pdf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/Project Schedule/130597L_GanttChart.pdf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/Project Schedule/130597L_GanttChart_Garbage_Truck_Tracker.mpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/Project Schedule/6=CS3202 - Guidelines for schedule preparation.pdf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/Project Schedule/Lec 2 - Creating Gantt Charts.pdf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/SRS/3 Template for Software Requirements Specification.docx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/SRS/Lecture 3- SRS.pdf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/SRS/NOTE!!!!!~.docx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/SRS/Reference/SRS.docx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/SRS/Reference/Software Requirements Specification.docx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/SRS/Reference/Software Requirements Specification.pdf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/SRS/Reference/web/EMSDirectory-SRS.doc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/SRS/Reference/web/SRS4.0.doc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/SRS/Reference/web/SRSExample-webapp.doc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/SRS/Reference/web/Software_Requirements_Specification_-_GParted.pdf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/SRS/Reference/web/SystemRequirementsSpecification_Mobilwebb.doc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/SRS/Reference/web/yh-rr-ss-jw1.doc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/SRS/SRS_Garbage_Truck_Tracker_130597L.docx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/SRS/SRS_Garbage_Truck_Tracker_130597L.pdf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/UI/03-512.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/UI/535106-user_512x512.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/UI/Capture.PNG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/UI/Screenshot_2016-04-10-09-59-46.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/UI/Screenshot_2016-04-10-10-05-18.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/UI/Screenshot_2016-04-10-10-05-43.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/UI/Screenshot_2016-04-10-10-10-42 - Copy.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/UI/Screenshot_2016-04-10-10-10-42.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/UI/Screenshot_2016-04-10-10-11-29.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/UI/bell.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/UI/truck (1).png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/meteor" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/imgs/material-graphite.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/imgs/material-navigation-background.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/Garbage Truck Tracker/Existing systems.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/desktop.ini" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobile-config.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/packages/google-maps/.versions" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/packages/google-maps/LICENSE.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/packages/google-maps/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/packages/google-maps/google-maps-tests.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/packages/google-maps/google-maps.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/packages/google-maps/google-maps.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/packages/google-maps/package.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/settings.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imports/ui/pages/home/client/registerTruck.tests.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imports/ui/test-helpers.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/GTracker.iml" afterPath="$PROJECT_DIR$/.idea/GTracker.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/meteor_packages_auto_import_browser.xml" afterPath="$PROJECT_DIR$/.idea/libraries/meteor_packages_auto_import_browser.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/meteor_packages_auto_import_npm.xml" afterPath="$PROJECT_DIR$/.idea/libraries/meteor_packages_auto_import_npm.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.meteor/packages" afterPath="$PROJECT_DIR$/.meteor/packages" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.meteor/versions" afterPath="$PROJECT_DIR$/.meteor/versions" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/ui/pages/addRoute/addRoute.js" afterPath="$PROJECT_DIR$/imports/ui/pages/addRoute/addRoute.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/ui/pages/driver/driver.js" afterPath="$PROJECT_DIR$/imports/ui/pages/driver/driver.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/ui/pages/feedback/feedbackThreads.js" afterPath="$PROJECT_DIR$/imports/ui/pages/feedback/feedbackThreads.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/ui/pages/home/home.html" afterPath="$PROJECT_DIR$/imports/ui/pages/home/home.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/ui/pages/home/home.js" afterPath="$PROJECT_DIR$/imports/ui/pages/home/home.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/ui/pages/map/map.js" afterPath="$PROJECT_DIR$/imports/ui/pages/map/map.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/ui/pages/subscribe/subscribe.js" afterPath="$PROJECT_DIR$/imports/ui/pages/subscribe/subscribe.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/ui/pages/truck/registerTruck.html" afterPath="$PROJECT_DIR$/imports/ui/pages/truck/registerTruck.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/ui/pages/truck/truck.js" afterPath="$PROJECT_DIR$/imports/ui/pages/truck/truck.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/ui/pages/truck/updateTruck.html" afterPath="$PROJECT_DIR$/imports/ui/pages/truck/updateTruck.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/publications.js" afterPath="$PROJECT_DIR$/lib/publications.js" />
     </list>
     <ignored path="GTracker.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -120,31 +41,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="subscribe.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/imports/ui/pages/subscribe/subscribe.html">
+      <file leaf-file-name="packages" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.meteor/packages">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-514">
-              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+            <state relative-caret-position="0">
+              <caret line="44" column="23" selection-start-line="44" selection-start-column="23" selection-end-line="44" selection-end-column="23" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="subscribe.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/imports/ui/pages/subscribe/subscribe.js">
+      <file leaf-file-name="publications.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lib/publications.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/imports/startup/client/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+            <state relative-caret-position="374">
+              <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -168,19 +79,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/imports/ui/pages/feedback/threads.js" />
-        <option value="$PROJECT_DIR$/imports/ui/pages/feedback/viewFeedback.js" />
-        <option value="$PROJECT_DIR$/imports/ui/pages/feedback/feedbackThreads.js" />
-        <option value="$PROJECT_DIR$/lib/useraccounts-configuration.js" />
-        <option value="$PROJECT_DIR$/imports/ui/pages/townsman/registerTownsman.js" />
-        <option value="$PROJECT_DIR$/imports/startup/client/autoform.js" />
-        <option value="$PROJECT_DIR$/lib/schemas/Feedback.js" />
-        <option value="$PROJECT_DIR$/imports/ui/pages/feedback/feedback.js" />
-        <option value="$PROJECT_DIR$/imports/ui/stylesheets/style.css" />
-        <option value="$USER_HOME$/AppData/Local/.meteor/packages/dburles_google-maps/1.1.5/web.browser/google-maps.js" />
-        <option value="$PROJECT_DIR$/settings.json" />
-        <option value="$PROJECT_DIR$/imports/api/trucks/trucks.js" />
-        <option value="$PROJECT_DIR$/server/main.js" />
         <option value="$PROJECT_DIR$/imports/api/markers/markers.js" />
         <option value="$PROJECT_DIR$/imports/ui/pages/map/map.html" />
         <option value="$PROJECT_DIR$/lib/schemas/AdminFeedbacks.js" />
@@ -189,24 +87,18 @@
         <option value="$PROJECT_DIR$/imports/ui/pages/testingConsole/dummyTruck.js" />
         <option value="$PROJECT_DIR$/packages/google-maps/google-maps.js" />
         <option value="$PROJECT_DIR$/.meteor/versions" />
-        <option value="$PROJECT_DIR$/imports/ui/test-helpers.js" />
         <option value="$PROJECT_DIR$/lib/collections.js" />
-        <option value="$PROJECT_DIR$/.meteor/packages" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/lib/schemas/Routes.js" />
         <option value="$PROJECT_DIR$/imports/ui/pages/setupNotifications/setupNotifications.js" />
         <option value="$PROJECT_DIR$/imports/ui/pages/setupNotifications/setupNotifications.html" />
-        <option value="$PROJECT_DIR$/imports/ui/pages/map/map.js" />
         <option value="$PROJECT_DIR$/lib/methods.js" />
         <option value="$PROJECT_DIR$/imports/ui/pages/subscribe/subscribe.html" />
         <option value="$PROJECT_DIR$/imports/ui/pages/addRoute/addRoute.html" />
         <option value="$PROJECT_DIR$/imports/ui/pages/nav.js" />
-        <option value="$PROJECT_DIR$/imports/ui/pages/addRoute/addRoute.js" />
         <option value="$PROJECT_DIR$/imports/ui/pages/admin/createAdmin.js" />
         <option value="$PROJECT_DIR$/imports/ui/pages/nav.html" />
         <option value="$PROJECT_DIR$/imports/startup/client/route.js" />
-        <option value="$PROJECT_DIR$/imports/ui/pages/truck/registerTruck.html" />
-        <option value="$PROJECT_DIR$/imports/ui/pages/truck/updateTruck.html" />
         <option value="$PROJECT_DIR$/imports/ui/pages/truck/viewTrucks.html" />
         <option value="$PROJECT_DIR$/imports/ui/pages/driver/updateDriver.html" />
         <option value="$PROJECT_DIR$/imports/ui/pages/driver/viewDrivers.html" />
@@ -218,7 +110,26 @@
         <option value="$PROJECT_DIR$/imports/ui/pages/feedback/viewFeedback.html" />
         <option value="$PROJECT_DIR$/client/main.scss" />
         <option value="$PROJECT_DIR$/imports/startup/client/index.js" />
+        <option value="$PROJECT_DIR$/imports/ui/test-helpers.js" />
+        <option value="$PROJECT_DIR$/imports/ui/pages/truck/registerTruck.html" />
+        <option value="$PROJECT_DIR$/imports/ui/pages/truck/updateTruck.html" />
+        <option value="$PROJECT_DIR$/lib/schemas/subscriptions.js" />
+        <option value="$PROJECT_DIR$/imports/ui/pages/tests/registerTruck.tests.js" />
+        <option value="$PROJECT_DIR$/lib/registerTruck.tests.js" />
+        <option value="$PROJECT_DIR$/imports/ui/pages/truck/registerTruck.tests.js" />
+        <option value="$PROJECT_DIR$/imports/ui/pages/home/registerTruck.tests.js" />
+        <option value="$PROJECT_DIR$/.meteor/packages" />
+        <option value="$PROJECT_DIR$/imports/ui/pages/home/home.html" />
+        <option value="$PROJECT_DIR$/imports/ui/pages/home/client/registerTruck.tests.js" />
+        <option value="$PROJECT_DIR$/imports/ui/pages/truck/truck.js" />
+        <option value="$PROJECT_DIR$/lib/subscriptions.js" />
         <option value="$PROJECT_DIR$/imports/ui/pages/subscribe/subscribe.js" />
+        <option value="$PROJECT_DIR$/imports/ui/pages/map/map.js" />
+        <option value="$PROJECT_DIR$/imports/ui/pages/home/home.js" />
+        <option value="$PROJECT_DIR$/imports/ui/pages/feedback/feedbackThreads.js" />
+        <option value="$PROJECT_DIR$/lib/publications.js" />
+        <option value="$PROJECT_DIR$/imports/ui/pages/driver/driver.js" />
+        <option value="$PROJECT_DIR$/imports/ui/pages/addRoute/addRoute.js" />
       </list>
     </option>
   </component>
@@ -259,7 +170,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -327,10 +238,6 @@
               <option name="myItemId" value="ui" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -353,10 +260,6 @@
               <option name="myItemId" value="pages" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="subscribe" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -369,107 +272,13 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="imports" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ui" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="addRoute" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GTracker" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GTracker" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="imports" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ui" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GTracker" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GTracker" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="imports" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="startup" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GTracker" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GTracker" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="imports" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GTracker" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GTracker" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GTracker" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GTracker" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value=".meteor" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
         <option name="show-excluded-files" value="false" />
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -486,19 +295,19 @@
     <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="S:\Meteor\GTracker\lib" />
+      <recent name="S:\Meteor\GTracker\imports\ui" />
+      <recent name="S:\Meteor\GTracker\imports\ui\pages\home\client" />
+      <recent name="S:\Meteor\GTracker\imports\ui\pages\home" />
+      <recent name="S:\Meteor\GTracker\imports\ui\pages\truck" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\SuperWorkspace\GTracker\imports\ui\pages\feedback" />
       <recent name="C:\SuperWorkspace\GTracker\imports\ui\pages\driver" />
       <recent name="C:\SuperWorkspace\GTracker\imports\ui\pages\truck" />
       <recent name="C:\SuperWorkspace\GTracker\lib\schemas" />
       <recent name="C:\SuperWorkspace\GTracker\client" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="S:\Meteor\GTracker\imports\ui\pages\map" />
-      <recent name="C:\SuperWorkspace\GTracker\lib" />
-      <recent name="C:\SuperWorkspace\GTracker\lib\schemas" />
-      <recent name="C:\SuperWorkspace\GTracker\imports\startup\client" />
-      <recent name="C:\SuperWorkspace\GTracker\lib\config" />
     </key>
   </component>
   <component name="RunManager" selected="Meteor.Run Meteor">
@@ -633,7 +442,9 @@
       <workItem from="1464753169366" duration="56000" />
       <workItem from="1464753246942" duration="10864000" />
       <workItem from="1464767312255" duration="22100000" />
-      <workItem from="1464903709134" duration="9988000" />
+      <workItem from="1464903709134" duration="28355000" />
+      <workItem from="1464964412473" duration="8096000" />
+      <workItem from="1464994472407" duration="1256000" />
     </task>
     <task id="LOCAL-00001" summary="remove default code">
       <created>1461808730895</created>
@@ -838,11 +649,18 @@
       <option name="project" value="LOCAL" />
       <updated>1464930142396</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Add the not added  files, next - testing">
+      <created>1464930251174</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1464930251174</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="332747000" />
+    <option name="totallyTimeSpent" value="360466000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -857,13 +675,13 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18303572" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21354167" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16830066" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17839608" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16530278" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2667758" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34697217" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39905363" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -888,7 +706,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add handlebar to display signed in user name on nav bar" />
     <MESSAGE value="Configure Iron router to load data from DB to update form" />
     <MESSAGE value="design &quot;update truck&quot; view&#10;Materialize - Avatar Content" />
     <MESSAGE value="add notification count display" />
@@ -913,7 +730,8 @@
     <MESSAGE value="Navigation bar styled" />
     <MESSAGE value="Finalize navigation title, complete basic UI" />
     <MESSAGE value="Right before begin testing" />
-    <option name="LAST_COMMIT_MESSAGE" value="Right before begin testing" />
+    <MESSAGE value="Add the not added  files, next - testing" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add the not added  files, next - testing" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -922,77 +740,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/lib/schemas/ns/ns.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imports/ui/pages/driver/driver.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="3" column="28" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imports/ui/pages/feedback/feedbackThreads.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="39" column="5" selection-start-line="36" selection-start-column="4" selection-end-line="39" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/schemas/AdminFeedbacks.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="19" column="23" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imports/ui/test-helpers.js" />
-    <entry file="file://$PROJECT_DIR$/.meteor/versions">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-170">
-          <caret line="43" column="12" selection-start-line="43" selection-start-column="12" selection-end-line="43" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="85">
-            <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/settings.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="72" selection-start-line="3" selection-start-column="72" selection-end-line="3" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/schemas/Trucks.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/collections.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="40" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
         </state>
       </provider>
     </entry>
@@ -1010,14 +761,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/imports/ui/pages/map/map.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/head.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -1030,13 +773,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="17" selection-start-line="0" selection-start-column="17" selection-end-line="0" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imports/ui/pages/truck/truck.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1077,13 +813,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/imports/ui/pages/admin/createAdmin.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/imports/ui/pages/driver/updateDriver.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -1108,54 +837,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/imports/ui/pages/nav.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="12" column="60" selection-start-line="12" selection-start-column="60" selection-end-line="12" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imports/ui/pages/truck/updateTruck.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="34" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imports/ui/pages/truck/viewTrucks.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="34" selection-start-line="1" selection-start-column="34" selection-end-line="1" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imports/ui/pages/truck/registerTruck.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="34" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/imports/ui/pages/townsman/registerTownsman.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imports/ui/pages/feedback/viewFeedback.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="31" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imports/ui/pages/feedback/viewFeedback.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1166,22 +848,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="34" selection-start-line="1" selection-start-column="34" selection-end-line="1" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imports/ui/pages/feedback/feedback.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imports/ui/pages/feedback/feedbackThreads.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
           <folding />
         </state>
       </provider>
@@ -1206,9 +872,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="182">
           <caret line="107" column="0" selection-start-line="107" selection-start-column="0" selection-end-line="107" selection-end-column="0" />
-          <folding>
-            <element signature="e#35#66#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1216,23 +879,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imports/ui/pages/map/map.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.meteor/packages">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1240,23 +886,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="28" column="23" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imports/startup/client/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/publications.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1264,15 +893,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="328">
           <caret line="25" column="26" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imports/ui/pages/addRoute/addRoute.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="80" column="27" selection-start-line="80" selection-start-column="27" selection-end-line="80" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1280,30 +900,233 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="561">
           <caret line="33" column="14" selection-start-line="33" selection-start-column="14" selection-end-line="33" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/startup/client/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/.meteor/packages/blaze/2.1.7/web.browser/view.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="664" column="0" selection-start-line="664" selection-start-column="0" selection-end-line="664" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/ui/pages/nav.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="60" selection-start-line="12" selection-start-column="60" selection-end-line="12" selection-end-column="60" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/imports/ui/pages/addRoute/addRoute.html">
+    <entry file="file://$PROJECT_DIR$/lib/collections.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-799">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        <state relative-caret-position="119">
+          <caret line="7" column="35" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/schemas/Trucks.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="28" column="19" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/ui/pages/home/client/registerTruck.tests.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/ui/test-helpers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="80" selection-start-line="15" selection-start-column="76" selection-end-line="15" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/ui/pages/home/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="45" selection-start-line="7" selection-start-column="45" selection-end-line="7" selection-end-column="45" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/imports/ui/pages/subscribe/subscribe.html">
+    <entry file="file://$PROJECT_DIR$/.meteor/packages">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-514">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="44" column="23" selection-start-line="44" selection-start-column="23" selection-end-line="44" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/ui/pages/truck/registerTruck.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="10" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/ui/pages/truck/truck.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="13" column="14" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/ui/pages/truck/viewTrucks.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="26" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/ui/pages/truck/updateTruck.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/subscriptions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/imports/ui/pages/subscribe/subscribe.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+        <state relative-caret-position="316">
+          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/ui/pages/map/map.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/ui/pages/map/map.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="52" column="28" selection-start-line="52" selection-start-column="28" selection-end-line="52" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/ui/pages/home/home.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/ui/pages/subscribe/subscribe.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="28" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/ui/pages/feedback/feedbackThreads.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/ui/pages/feedback/viewFeedback.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/ui/pages/feedback/viewFeedback.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="26" column="3" selection-start-line="26" selection-start-column="3" selection-end-line="26" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/ui/pages/feedback/feedbackThreads.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#32#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/ui/pages/feedback/feedback.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/ui/pages/driver/driver.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/ui/pages/addRoute/addRoute.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="19" column="28" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/ui/pages/addRoute/addRoute.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/ui/pages/admin/createAdmin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="2" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/publications.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
           <folding />
         </state>
       </provider>

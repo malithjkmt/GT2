@@ -16,7 +16,6 @@ standard-minifier-js    # JS minifier run for production mode
 es5-shim                # ECMAScript 5 compatibility for older browsers.
 ecmascript              # Enable ECMAScript2015+ syntax in app code
 
-autopublish             # Publish all data to the clients (for prototyping)
 insecure                # Allow all DB writes from clients (for prototyping)
 accounts-password
 useraccounts:materialize
@@ -38,3 +37,10 @@ dburles:google-maps
 
 
 
+
+practicalmeteor:mocha   #Write package tests with mocha and run them in the browser or from the command line with spacejam
+xolvio:cleaner    #Gives you methods to clear your Mongo database and collections for testing purposes
+dburles:factory    #Factories for Meteor
+practicalmeteor:faker #Generate massive amounts of fake data in node.js and in the browser
+hwillson:stub-collections   #Stub out Meteor collections with in-memory local collections
+reactive-dict

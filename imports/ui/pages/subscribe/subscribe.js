@@ -11,7 +11,7 @@ var routesArray = [];
 
 Template.subscribe.helpers({
 
-    routes: function () {
+    routes: () =>{
         routesCursor = Routes.find({});
         return routesCursor;
     }
@@ -29,12 +29,20 @@ Template.subscribe.helpers({
 
  });
  */
+
+
+Template.subscribe.onCreated(function bodyOnCreated() {
+    this.state = new ReactiveDict();
+    Meteor.subscribe('routes');
+});
+
+
 Template.routeMap.helpers({
-    geolocationError: function () {
+    geolocationError: ()=>{
         var error = Geolocation.error();
         return error && error.message;
     },
-    myMapOptions: function () {
+    myMapOptions: ()=> {
 
         if (GoogleMaps.loaded()) {
 
@@ -69,11 +77,11 @@ Template.routeMap.helpers({
             return mapOptions;
         }
     },
-    routes: function () {
+    routes: ()=> {
 
         return Routes.find({});
     },
-    index: function () {
+    index: ()=> {
         count++;
         return "map" + count;
     }
@@ -81,14 +89,14 @@ Template.routeMap.helpers({
 
 });
 
-Template.routeMap.onCreated(function () {
+Template.routeMap.onCreated(()=> {
 
     var mapName = "map" + renderedCount;
     renderedCount++;
     console.log("map "+ mapName+" created");
 
 
-    GoogleMaps.ready(mapName, function (map) {
+    GoogleMaps.ready(mapName, map => {
         console.log("map map" + readyCount + " is ready");
 
         var display = new google.maps.DirectionsRenderer({

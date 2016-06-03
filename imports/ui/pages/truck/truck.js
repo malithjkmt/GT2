@@ -3,6 +3,13 @@ import './registerTruck.html';
 import './updateTruck.html';
 import './viewTrucks.html';
 
+
+Template.viewTrucks.onCreated(function bodyOnCreated() {
+    this.state = new ReactiveDict();
+    Meteor.subscribe('trucks');
+});
+
+
 Template.viewTrucks.helpers({
     trucks() {
         return Trucks.find({});

@@ -4,6 +4,11 @@ import './feedbackThreads.html';
 
 import { Meteor } from 'meteor/meteor'
 
+Template.feedbackThreads.onCreated(function bodyOnCreated() {
+    this.state = new ReactiveDict();
+    Meteor.subscribe('feedbacks');
+});
+
 Template.feedbackThreads.helpers({
     messageThreads() {
 
