@@ -2,10 +2,104 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="66e17441-ae0b-4dd1-b155-18502bbab159" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/Design - Architecture/4 Template for Software Architecture Document.docx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/Design - Architecture/Acitvity/Acttivity.vsdx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/Design - Architecture/Acitvity/addNewRoute.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/Design - Architecture/Acitvity/old/add new route.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/Design - Architecture/Acitvity/old/setup noti.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/Design - Architecture/Acitvity/old/signup.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/Design - Architecture/Acitvity/setupNoti.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/Design - Architecture/Acitvity/signUp.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/Design - Architecture/Acitvity/~$$Acttivity.~vsdx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/Design - Architecture/ClassDiagram.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/Design - Architecture/ClassDiagram.vsdx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/Design - Architecture/Deployment.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/Design - Architecture/Lecture 4 - Design.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/Design - Architecture/Reference/110348H_Design_Specification.docx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/Design - Architecture/Reference/110383J_Software Design Specification.dot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/Design - Architecture/Reference/Software Architecture Document.docx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/Design - Architecture/Reference/Theory Book.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/Design - Architecture/Reference/web/Content_Aggregator_Sofware_Architecture_Document_-_EX-Libris_Commons.DOC" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/Design - Architecture/Reference/web/HP_arch_template_vers13_withexamples.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/Design - Architecture/Reference/web/SAD-OnlineCateringService.doc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/Design - Architecture/Reference/web/SAD_DTCPII_ver1.4.doc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/Design - Architecture/Reference/web/Software Architecture Document.doc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/Design - Architecture/Reference/web/sample_group13_sdd.doc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/Design - Architecture/Reference/web/system-architecture-template.doc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/Design - Architecture/SAD_Garbage_Truck_Tracker_130597L.docx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/Design - Architecture/SAD_Garbage_Truck_Tracker_130597LVersion1.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/Design - Architecture/SAD_Garbage_Truck_Tracker_130597LVersion2.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/Design - Architecture/SSD/SSD.vsdx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/Design - Architecture/SSD/newRoute.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/Design - Architecture/SSD/setupNItifi.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/Design - Architecture/SSD/signup.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/Design - Architecture/SSD/~$$SSD.~vsdx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/Design - Architecture/Usecase.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/Design - Architecture/Usecase.vsdx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/Design - Architecture/package/PackageDiagram.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/Design - Architecture/package/PackageDiagram.vsdx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/Design - Architecture/package/~$$PackageDiagram.~vsdx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/Design - Architecture/~$$ClassDiagram.~vsdx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/Design - Architecture/~$$Usecase.~vsdx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/Feasibility/130597L_GarbageTruckTracker.doc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/Feasibility/130597L_GarbageTruckTracker.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/Feasibility/2 Template for Feasibility report.doc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/Feasibility/Lecture 2- Feasibility.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/Lecture 4 - Design.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/Moodle guidelines for general submission.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/Progress Report 1/130597L_GarbageTruckTracker.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/Progress Report 1/130597L_ProgressReport.docx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/Progress Report 1/5 Template for Progress_Report.docx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/Project Proposal/1 Template for Project Proposal (1).doc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/Project Proposal/Lecture 1 - Introduction.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/Project Proposal/Moodle guidelines for proposal submission.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/Project Proposal/Moodle guidelines for selecting a project idea.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/Project Proposal/Project Proposal.doc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/Project Proposal/Project Proposal.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/Project Schedule/130597L_GanttChart.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/Project Schedule/130597L_GanttChart_Garbage_Truck_Tracker.mpp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/Project Schedule/6=CS3202 - Guidelines for schedule preparation.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/Project Schedule/Lec 2 - Creating Gantt Charts.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/SRS/3 Template for Software Requirements Specification.docx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/SRS/Lecture 3- SRS.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/SRS/NOTE!!!!!~.docx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/SRS/Reference/SRS.docx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/SRS/Reference/Software Requirements Specification.docx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/SRS/Reference/Software Requirements Specification.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/SRS/Reference/web/EMSDirectory-SRS.doc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/SRS/Reference/web/SRS4.0.doc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/SRS/Reference/web/SRSExample-webapp.doc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/SRS/Reference/web/Software_Requirements_Specification_-_GParted.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/SRS/Reference/web/SystemRequirementsSpecification_Mobilwebb.doc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/SRS/Reference/web/yh-rr-ss-jw1.doc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/SRS/SRS_Garbage_Truck_Tracker_130597L.docx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/SRS/SRS_Garbage_Truck_Tracker_130597L.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/UI/03-512.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/UI/535106-user_512x512.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/UI/Capture.PNG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/UI/Screenshot_2016-04-10-09-59-46.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/UI/Screenshot_2016-04-10-10-05-18.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/UI/Screenshot_2016-04-10-10-05-43.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/UI/Screenshot_2016-04-10-10-10-42 - Copy.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/UI/Screenshot_2016-04-10-10-10-42.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/UI/Screenshot_2016-04-10-10-11-29.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/UI/bell.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/UI/truck (1).png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/meteor" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/imgs/material-graphite.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/imgs/material-navigation-background.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/Garbage Truck Tracker/Existing systems.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SE project/desktop.ini" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobile-config.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/packages/google-maps/.versions" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/packages/google-maps/LICENSE.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/packages/google-maps/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/packages/google-maps/google-maps-tests.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/packages/google-maps/google-maps.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/packages/google-maps/google-maps.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/packages/google-maps/package.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/settings.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/main.scss" afterPath="$PROJECT_DIR$/client/main.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/startup/client/index.js" afterPath="$PROJECT_DIR$/imports/startup/client/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/ui/pages/subscribe/subscribe.js" afterPath="$PROJECT_DIR$/imports/ui/pages/subscribe/subscribe.js" />
     </list>
     <ignored path="GTracker.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -39,8 +133,8 @@
       <file leaf-file-name="subscribe.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/imports/ui/pages/subscribe/subscribe.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+            <state relative-caret-position="102">
+              <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -539,7 +633,7 @@
       <workItem from="1464753169366" duration="56000" />
       <workItem from="1464753246942" duration="10864000" />
       <workItem from="1464767312255" duration="22100000" />
-      <workItem from="1464903709134" duration="9880000" />
+      <workItem from="1464903709134" duration="9988000" />
     </task>
     <task id="LOCAL-00001" summary="remove default code">
       <created>1461808730895</created>
@@ -737,11 +831,18 @@
       <option name="project" value="LOCAL" />
       <updated>1464832362082</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Right before begin testing">
+      <created>1464930142396</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1464930142396</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="332639000" />
+    <option name="totallyTimeSpent" value="332747000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -759,8 +860,8 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18303572" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16830066" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16830066" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2667758" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -787,7 +888,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="move user config file in to lib&#10;(to run on both client and server)" />
     <MESSAGE value="add handlebar to display signed in user name on nav bar" />
     <MESSAGE value="Configure Iron router to load data from DB to update form" />
     <MESSAGE value="design &quot;update truck&quot; view&#10;Materialize - Avatar Content" />
@@ -812,7 +912,8 @@
     <MESSAGE value="TODO: query routes from db by createdAt" />
     <MESSAGE value="Navigation bar styled" />
     <MESSAGE value="Finalize navigation title, complete basic UI" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finalize navigation title, complete basic UI" />
+    <MESSAGE value="Right before begin testing" />
+    <option name="LAST_COMMIT_MESSAGE" value="Right before begin testing" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1115,6 +1216,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1200,8 +1302,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/imports/ui/pages/subscribe/subscribe.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+        <state relative-caret-position="102">
+          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
           <folding />
         </state>
       </provider>
