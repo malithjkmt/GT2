@@ -43,4 +43,6 @@ xolvio:cleaner    #Gives you methods to clear your Mongo database and collection
 dburles:factory    #Factories for Meteor
 practicalmeteor:faker #Generate massive amounts of fake data in node.js and in the browser
 hwillson:stub-collections   #Stub out Meteor collections with in-memory local collections
-reactive-dict
+
+reactive-dict   #Reactive dictionary, a general-purpose reactive datatype for use with tracker
+crosswalk

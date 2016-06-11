@@ -21,6 +21,7 @@ caching-html-compiler@1.0.6
 callback-hook@1.0.8
 check@1.2.1
 coffeescript@1.0.17
+crosswalk@1.6.2
 dburles:factory@1.0.0
 dburles:google-maps@1.1.5
 ddp@1.2.5
