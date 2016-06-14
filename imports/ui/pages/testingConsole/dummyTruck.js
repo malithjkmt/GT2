@@ -51,6 +51,7 @@ Template.dummyMap.helpers({
 
 
 Template.dummyMap.onCreated(function() {
+    Meteor.subscribe('trucks');
     self = this;
     GoogleMaps.ready('dummyMap', function(dummyMap) {
         console.log("Dummy map is ready!");
@@ -98,6 +99,7 @@ Template.dummyMapView.events({
                             position: latLng,
                             map: dummyMap.instance,
                             title: "me",
+                            draggable:true,
                             animation: google.maps.Animation.DROP
 
                         });

@@ -21,9 +21,19 @@ $font-stack:    Helvetica, sans-serif;
 // map view styles
 
 .map-container {
-  width: 100%;
-  max-width: 100%;
   height: 500px;
+}
+
+.map-container-subscribe {
+  height: 400px;
+}
+
+#cardBox{
+  margin: 10px;
+}
+
+#cardImage{
+  height: 400px;
 }
 
 #dummyConsoleDemoButton{
@@ -82,6 +92,12 @@ $font-stack:    Helvetica, sans-serif;
 #navigationDetails{
   visibility: hidden;
   height: 0;
+}
+
+#cardTitle{
+  color: #339AFC;
+  text-shadow: 2px 2px #ffffff;
+  padding: 0 20px 20px 6px;
 }
 
 

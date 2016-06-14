@@ -1,3 +1,6 @@
+import { Meteor } from 'meteor/meteor';
+import { Template } from 'meteor/templating';
+
 import './subscribe.html';
 
 var directionsDisplayArray = [];
@@ -5,6 +8,7 @@ var directionsDisplayArray = [];
 var ZOOM_LEVEL = 5;
 var count = 0;
 var readyCount = 1;
+var titleCount = 1;
 var renderedCount = 1;
 var routesCursor;
 var routesArray = [];
@@ -14,19 +18,24 @@ Template.subscribe.helpers({
     routes: () =>{
         routesCursor = Routes.find({});
         return routesCursor;
+    },
+    resetCounters(){
+        count = 0;
+        readyCount = 1;
+        renderedCount = 1;
+        titleCount=0;
+    },
+    title(){
+        return ++titleCount;
     }
 
 });
 /*
-
  Template.subscribe.events({
-
  'click #test'(event) {
  // console.log(routesCursor.fetch()[20].mapRoute);
  Meteor.call('dl');
  }
-
-
  });
  */
 
@@ -42,10 +51,10 @@ Template.routeMap.helpers({
         var error = Geolocation.error();
         return error && error.message;
     },
-    myMapOptions: ()=> {
-
+    myMapOptions(){
+        count--;  // if  we can't go inside the if block below, balance the count. Because index function is called from the template already
         if (GoogleMaps.loaded()) {
-
+            count++;  // balance count
             // Map options
             var mapOptions = {
                 zoom: ZOOM_LEVEL,
@@ -55,7 +64,7 @@ Template.routeMap.helpers({
 
                 // map controls
                 zoomControl: false,
-                mapTypeControl: true,
+                mapTypeControl: false,
                 scaleControl: true,
                 streetViewControl: true,
                 rotateControl: true,
@@ -81,7 +90,7 @@ Template.routeMap.helpers({
 
         return Routes.find({});
     },
-    index: ()=> {
+    index(){
         count++;
         return "map" + count;
     }
@@ -89,7 +98,10 @@ Template.routeMap.helpers({
 
 });
 
-Template.routeMap.onCreated(()=> {
+
+
+Template.routeMap.onRendered(()=> {
+    
 
     var mapName = "map" + renderedCount;
     renderedCount++;
@@ -97,19 +109,18 @@ Template.routeMap.onCreated(()=> {
 
 
     GoogleMaps.ready(mapName, map => {
-        console.log("map map" + readyCount + " is ready");
+
+        console.log("map map" + mapName + " is ready");
 
         var display = new google.maps.DirectionsRenderer({
             draggable: false,
             map: map.instance,
         });
 
-        var temp = JSON.parse(routesCursor.fetch()[readyCount - 1].mapRoute);
+        var temp = JSON.parse(routesCursor.fetch()[mapName.substring(3,4) - 1].mapRoute);
         display.setDirections(temp);
 
         directionsDisplayArray.push(display);
-
-        readyCount++;
     });
 
 

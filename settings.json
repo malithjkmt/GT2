@@ -3,6 +3,9 @@
     "env": {
       "MONGO_URL": "mongodb://malith:123123@ds015740.mlab.com:15740/tracker"
     }
+  },
+  "public": {
+    "googleApiKey": "AIzaSyAHM8gxbuwZEThMNM0DUYbP-vgvIxUQELs"
   }
 }
 
