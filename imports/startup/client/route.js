@@ -14,6 +14,7 @@ import '../../ui/pages/admin/createAdmin.js';
 import '../../ui/pages/testingConsole/dummyTruck.js';
 import '../../ui/pages/addRoute/addRoute.js';
 import '../../ui/pages/subscribe/subscribe.js';
+import '../../ui/pages/setupNotifications/setupNotifications.js';
 
 import '../../ui/pages/footer.html';
 import '../../ui/pages/master_layout.html';
@@ -22,6 +23,8 @@ import '../../ui/pages/nav.js';
 import '../../ui/pages/page_not_found.html';
 
 import '../../ui/layouts/myLayout.js';
+
+Meteor.subscribe('trucks', 'routes', 'feedbacks');
 
 
 Router.configure({
@@ -238,6 +241,22 @@ Router.route('/subscribe', function () {
         }
     });
     this.render('subscribe');
+    this.render('nav', {to: 'nav'});
+
+});
+
+Router.route('/setupNotifications/:route_id/:user_id', function () {
+    this.layout('myLayout', {
+        data: function () {
+            return "Notifications";
+        }
+    });
+    this.render('setupNotifications', {
+        data: {
+            route_id: this.params.route_id,
+            user_id: this.params.user_id
+        }
+    });
     this.render('nav', {to: 'nav'});
 
 });

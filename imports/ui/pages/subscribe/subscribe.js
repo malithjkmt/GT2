@@ -30,14 +30,14 @@ Template.subscribe.helpers({
     }
 
 });
-/*
+
  Template.subscribe.events({
- 'click #test'(event) {
- // console.log(routesCursor.fetch()[20].mapRoute);
- Meteor.call('dl');
+ 'click .subscribeRoute'(event) {
+     console.log(event.target);
+
  }
  });
- */
+
 
 
 Template.subscribe.onCreated(function bodyOnCreated() {
@@ -65,10 +65,10 @@ Template.routeMap.helpers({
                 // map controls
                 zoomControl: false,
                 mapTypeControl: false,
-                scaleControl: true,
-                streetViewControl: true,
-                rotateControl: true,
-                fullscreenControl: true,
+                scaleControl: false,
+                streetViewControl: false,
+                rotateControl: false,
+                fullscreenControl: false,
 
                 // modify map type control
                 mapTypeControlOptions: {
@@ -101,7 +101,7 @@ Template.routeMap.helpers({
 
 
 Template.routeMap.onRendered(()=> {
-    
+
 
     var mapName = "map" + renderedCount;
     renderedCount++;
