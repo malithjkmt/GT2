@@ -1,28 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="66e17441-ae0b-4dd1-b155-18502bbab159" name="Default" comment="Complete setup My location view">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imports/ui/pages/townsman/setupMyLocation.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imports/ui/pages/townsman/setupMyLocation.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/imports/ui/pages/setupNotifications/geolocation-marker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/imports/ui/pages/townsman/registerTownsman.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/imports/ui/pages/townsman/registerTownsman.js" afterPath="" />
+    <list default="true" id="66e17441-ae0b-4dd1-b155-18502bbab159" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/main.scss" afterPath="$PROJECT_DIR$/client/main.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/startup/client/route.js" afterPath="$PROJECT_DIR$/imports/startup/client/route.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/ui/pages/SetupNotifications/setupNotifications.html" afterPath="$PROJECT_DIR$/imports/ui/pages/SetupNotifications/setupNotifications.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/ui/pages/SetupNotifications/setupNotifications.js" afterPath="$PROJECT_DIR$/imports/ui/pages/SetupNotifications/setupNotifications.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/ui/pages/addRoute/addRoute.html" afterPath="$PROJECT_DIR$/imports/ui/pages/addRoute/addRoute.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/ui/pages/nav.html" afterPath="$PROJECT_DIR$/imports/ui/pages/nav.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/ui/pages/subscribe/subscribe.js" afterPath="$PROJECT_DIR$/imports/ui/pages/subscribe/subscribe.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/ui/pages/testingConsole/dummyTruck.js" afterPath="$PROJECT_DIR$/imports/ui/pages/testingConsole/dummyTruck.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/ui/pages/truck/registerTruck.html" afterPath="$PROJECT_DIR$/imports/ui/pages/truck/registerTruck.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/collections.js" afterPath="$PROJECT_DIR$/lib/collections.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/methods.js" afterPath="$PROJECT_DIR$/lib/methods.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/publications.js" afterPath="$PROJECT_DIR$/lib/publications.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/schemas/Routes.js" afterPath="$PROJECT_DIR$/lib/schemas/Routes.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/schemas/Trucks.js" afterPath="$PROJECT_DIR$/lib/schemas/Trucks.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/main.js" afterPath="$PROJECT_DIR$/server/main.js" />
     </list>
     <ignored path="GTracker.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -43,16 +26,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="dummyTruck.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/imports/ui/pages/testingConsole/dummyTruck.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="28" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="methods.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/methods.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -63,11 +36,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="setupNotifications.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/imports/ui/pages/setupNotifications/setupNotifications.js">
+      <file leaf-file-name="dummyTruck.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/imports/ui/pages/testingConsole/dummyTruck.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="135" column="42" selection-start-line="135" selection-start-column="42" selection-end-line="135" selection-end-column="42" />
+            <state relative-caret-position="0">
+              <caret line="0" column="28" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dummyTruck.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/imports/ui/pages/testingConsole/dummyTruck.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="335">
+              <caret line="221" column="22" selection-start-line="221" selection-start-column="22" selection-end-line="221" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="publications.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/publications.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="400">
+              <caret line="25" column="17" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -126,11 +119,9 @@
         <option value="$PROJECT_DIR$/imports/ui/pages/subscribe/subscribe.js" />
         <option value="$PROJECT_DIR$/imports/ui/pages/setupNotifications/setupNotifications.html" />
         <option value="$PROJECT_DIR$/lib/collections.js" />
-        <option value="$PROJECT_DIR$/imports/ui/pages/setupNotifications/setupNotifications.js" />
         <option value="$PROJECT_DIR$/lib/schemas/Routes.js" />
         <option value="$PROJECT_DIR$/lib/schemas/Trucks.js" />
         <option value="$PROJECT_DIR$/imports/ui/pages/truck/registerTruck.html" />
-        <option value="$PROJECT_DIR$/lib/publications.js" />
         <option value="$PROJECT_DIR$/server/main.js" />
         <option value="$PROJECT_DIR$/imports/ui/pages/townsman/registerTownsman.html" />
         <option value="$PROJECT_DIR$/imports/ui/pages/nav.html" />
@@ -139,9 +130,11 @@
         <option value="$PROJECT_DIR$/imports/ui/pages/addRoute/addRoute.html" />
         <option value="$PROJECT_DIR$/client/main.scss" />
         <option value="$PROJECT_DIR$/imports/ui/pages/townsman/setupMyLocation.html" />
-        <option value="$PROJECT_DIR$/imports/ui/pages/testingConsole/dummyTruck.js" />
         <option value="$PROJECT_DIR$/lib/methods.js" />
         <option value="$PROJECT_DIR$/imports/ui/pages/townsman/setupMyLocation.js" />
+        <option value="$PROJECT_DIR$/imports/ui/pages/setupNotifications/setupNotifications.js" />
+        <option value="$PROJECT_DIR$/lib/publications.js" />
+        <option value="$PROJECT_DIR$/imports/ui/pages/testingConsole/dummyTruck.js" />
       </list>
     </option>
   </component>
@@ -657,7 +650,7 @@
       <workItem from="1465818430198" duration="86000" />
       <workItem from="1465840896038" duration="41000" />
       <workItem from="1465865496413" duration="54135000" />
-      <workItem from="1466006366039" duration="10081000" />
+      <workItem from="1466006366039" duration="11699000" />
     </task>
     <task id="LOCAL-00001" summary="remove default code">
       <created>1461808730895</created>
@@ -918,11 +911,18 @@
       <option name="project" value="LOCAL" />
       <updated>1465973125845</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary=" Complete setup My location view">
+      <created>1466016478090</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1466016478090</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="446125000" />
+    <option name="totallyTimeSpent" value="447743000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -968,7 +968,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add readme file" />
     <MESSAGE value="Add google map API, create a dummy marker Collection, create dummy console view and modify Truck Collection to add lat lng to a truck" />
     <MESSAGE value="Add header image to side nav bar" />
     <MESSAGE value="Add auto location update feature for a dummy Truck" />
@@ -993,7 +992,8 @@
     <MESSAGE value="Setup Notifications route, basic map" />
     <MESSAGE value="Before doing the big change to display waypoints correctly&#10;( a.lat() is not a functions debubbing)" />
     <MESSAGE value="Debug successful.&#10;( a.lat() is not a functions debubbing)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Debug successful.&#10;( a.lat() is not a functions debubbing)" />
+    <MESSAGE value=" Complete setup My location view" />
+    <option name="LAST_COMMIT_MESSAGE" value=" Complete setup My location view" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1225,6 +1225,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="215">
           <caret line="40" column="6" selection-start-line="40" selection-start-column="6" selection-end-line="40" selection-end-column="6" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1232,14 +1233,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/publications.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="23" column="11" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
           <folding />
         </state>
       </provider>
@@ -1342,22 +1335,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/imports/ui/pages/testingConsole/dummyTruck.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="72" column="61" selection-start-line="72" selection-start-column="61" selection-end-line="72" selection-end-column="61" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/methods.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="48" column="43" selection-start-line="48" selection-start-column="43" selection-end-line="48" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/imports/ui/pages/townsman/setupMyLocation.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="179">
@@ -1376,8 +1353,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/imports/ui/pages/setupNotifications/setupNotifications.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="135" column="42" selection-start-line="135" selection-start-column="42" selection-end-line="135" selection-end-column="42" />
+        <state relative-caret-position="298">
+          <caret line="149" column="32" selection-start-line="149" selection-start-column="32" selection-end-line="149" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/methods.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="48" column="43" selection-start-line="48" selection-start-column="43" selection-end-line="48" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/publications.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="25" column="17" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/ui/pages/testingConsole/dummyTruck.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="221" column="22" selection-start-line="221" selection-start-column="22" selection-end-line="221" selection-end-column="22" />
           <folding />
         </state>
       </provider>

@@ -54,6 +54,7 @@ Template.dummyMap.onCreated(function () {
     Meteor.subscribe('trucks');
     Meteor.subscribe('notifications')
     Meteor.subscribe('routes');
+    Meteor.subscribe('allUsers')
 
     self = this;
     GoogleMaps.ready('dummyMap', function (dummyMap) {
@@ -210,7 +211,12 @@ Template.dummyMapView.events({
 
                         var range = distance(noti.lat, noti.lng, truck.lat, truck.lng);
                         if (range < 50) {
-                            console.log('inside noti cirlce!! user_id is ' + notification.user_id+ " distance is "+ range);
+                            var notiUserLoc = Meteor.users.findOne({_id:notification.user_id}).profile.location;
+                            console.log(notiUserLoc);
+
+                            var distanceToTruck = distance(notiUserLoc.lat, notiUserLoc.lng, truck.lat, truck.lng)   // get distance to user from the truck
+
+                            console.log('inside noti cirlce!! user_id is ' + notification.user_id+ " range is "+ range +" distance is "+distanceToTruck);
 
                         }
                     })

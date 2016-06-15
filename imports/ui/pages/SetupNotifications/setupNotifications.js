@@ -146,15 +146,8 @@ Template.setupNotifications.events({
 
     },
     'click #save'(event) {
-        //save the notification (notiCircles) to route with user_id
-   /*
-   notifications{
-            {noti:, user_id},
 
-        }
-    */
         console.log(notiPoints);
-
         Meteor.call('saveNoti', JSON.stringify(notiPoints), routeID, userID);
         notiPoints = null;
     }
