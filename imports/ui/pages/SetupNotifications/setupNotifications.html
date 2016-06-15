@@ -1,0 +1,29 @@
+<template name="setupNotifications">
+
+    {{saveRoute_id route_id}}
+    {{saveUser_id user_id}}
+
+            <div class="container">
+                {{>notiMap}}
+            </div>
+
+
+
+
+
+
+
+</template>
+
+
+<template name="notiMap">
+    {{#unless geolocationError}}
+        <div class="map-container">
+            {{> googleMap name="notiMap" options=myMapOptions }}
+        </div>
+    {{else}}
+        Geolocation failed: {{geolocationError}}
+        <h3>Check your internet connection or turn on Location</h3>
+    {{/unless}}
+
+</template>

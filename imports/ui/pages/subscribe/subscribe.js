@@ -108,7 +108,7 @@ Template.routeMap.onRendered(()=> {
     console.log("map "+ mapName+" created");
 
 
-    GoogleMaps.ready(mapName, map => {
+    GoogleMaps.ready(mapName, function(map) {
 
         console.log("map map" + mapName + " is ready");
 
@@ -118,6 +118,7 @@ Template.routeMap.onRendered(()=> {
         });
 
         var temp = JSON.parse(routesCursor.fetch()[mapName.substring(3,4) - 1].mapRoute);
+        console.log(temp);
         display.setDirections(temp);
 
         directionsDisplayArray.push(display);

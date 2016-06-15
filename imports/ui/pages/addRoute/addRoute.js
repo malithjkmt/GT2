@@ -26,7 +26,7 @@ Template.addRouteMap.helpers({
         var error = Geolocation.error();
         return error && error.message;
     },
-    myMapOptions: function () {
+    myMapOptions() {
         latLng = Geolocation.latLng();
 
         if (GoogleMaps.loaded() && latLng) {
@@ -62,7 +62,7 @@ Template.addRouteMap.helpers({
             return mapOptions;
         }
     },
-    driversNames: function () {
+    driversNames() {
         var drivers =  Drivers.find().fetch();
         var options = [];
         drivers.forEach(function (driver) {
@@ -70,7 +70,7 @@ Template.addRouteMap.helpers({
         });
         return options;
     },
-    truckNo: function () {
+    truckNo() {
         var trucks =  Trucks.find().fetch();
         var options = [];
         trucks.forEach(function (truck) {
@@ -170,7 +170,7 @@ Template.addRouteMap.onCreated(function () {
             }
             else if (addMarkerState) {
                 waypointsArray.push({location: new google.maps.LatLng(event.latLng.lat(), event.latLng.lng())});
-                console.log(waypointsArray);
+               // console.log(waypointsArray);
                 displayRoute(startingPoint, endingPoint, directionsService,
                     directionsDisplay);
                 addMarkerState = false;
@@ -278,8 +278,8 @@ function generateRoute() {
     GoogleMaps.ready('addRouteMap', function (addRouteMap) {
         // clear previous values if..
 
-        directionsService = new google.maps.DirectionsService;
-        directionsDisplay = new google.maps.DirectionsRenderer({
+        directionsService = new google.maps.DirectionsService; //ser
+        directionsDisplay = new google.maps.DirectionsRenderer({   //ren
             draggable: true,
             map: addRouteMap.instance,
             panel: document.getElementById('right-panel')
@@ -288,13 +288,13 @@ function generateRoute() {
 
         directionsDisplay.addListener('directions_changed', function () {
             computeTotalDistance(directionsDisplay.getDirections());
-            var temp = directionsDisplay.directions;
+            var temp = directionsDisplay.getDirections();
             drawingHistory.push(temp);
 
             // here I pass stringified JSON object to the mongo Collection.
             // So when using it first parse
             // eg:- console.log(JSON.parse(document.getElementById('routeMap').value));
-            document.getElementById('routeMap').value = JSON.stringify(temp);
+            document.getElementById('routeMap').value = JSON.stringify(directionsDisplay.getDirections());
 
 
             // fx(temp.routes[0]);
