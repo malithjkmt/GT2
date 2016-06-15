@@ -4,7 +4,7 @@ import '../../ui/pages/nav.js';
 
 import '../../ui/pages/map/map.js';
 import '../../ui/pages/driver/driver.js';
-import '../../ui/pages/townsman/registerTownsman.js';
+import '../../ui/pages/townsman/setupMyLocation.js';
 import '../../ui/pages/truck/truck.js';
 import '../../ui/pages/home/home.js';
 import '../../ui/pages/feedback/feedback.js';
@@ -158,13 +158,13 @@ Router.route('/updateDriver/:_id', function () {
 });
 
 
-Router.route('/registerTownsman', function () {
+Router.route('/setupMyLocation', function () {
     this.layout('myLayout', {
         data: function () {
-            return "Register Townsman";
+            return "My Location";
         }
     });
-    this.render('registerTownsman');
+    this.render('setupMyLocation');
     this.render('nav', {to: 'nav'});
 });
 
@@ -248,7 +248,7 @@ Router.route('/subscribe', function () {
 Router.route('/setupNotifications/:route_id/:user_id', function () {
     this.layout('myLayout', {
         data: function () {
-            return "Notifications";
+            return "Setup Notifications";
         }
     });
     this.render('setupNotifications', {

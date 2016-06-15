@@ -110,6 +110,7 @@ Template.routeMap.onRendered(()=> {
 
         console.log("map map" + mapName + " is ready");
 
+        //#############  draw the route on  map: begin
         var ren = new google.maps.DirectionsRenderer({
             draggable: false,
             map: map.instance,
@@ -132,9 +133,9 @@ Template.routeMap.onRendered(()=> {
         }, function (res, sts) {
             if (sts == 'OK')ren.setDirections(res);
         })
+        //#############  draw the route on  map: end
 
-
-        // directionsDisplayArray.push(display);
+       
     });
 
 

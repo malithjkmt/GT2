@@ -1,0 +1,21 @@
+
+
+<template name="setupMyLocation">
+
+{{>myLocMap}}
+    <button id="saveLoc" type="submit" class="btn waves-effect">Save My Location</button>
+</template>
+
+<template name="myLocMap">
+    {{#unless geolocationError}}
+        <div class="map-container">
+            {{> googleMap name="myLocMap" options=myMapOptions }}
+        </div>
+    {{else}}
+        Geolocation failed: {{geolocationError}}
+        <h3>Check your internet connection or turn on Location</h3>
+    {{/unless}}
+
+
+
+</template>

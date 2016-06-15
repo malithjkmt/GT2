@@ -3,15 +3,23 @@
     {{saveRoute_id route_id}}
     {{saveUser_id user_id}}
 
-            <div class="container">
-                {{>notiMap}}
-            </div>
+    {{>notiMap}}
 
 
+    <div class="row" id="notiButtons">
+        <div class="col s6">
+            <button id="undo" class="btn waves-effect waves-light " type="click" name="undo">Undo
+                <i class="material-icons right">assignment_return</i>
+            </button>
 
+        </div>
+        <div class="col s6">
+            <button id="save" class="btn waves-effect waves-light" type="click" name="save">Save
+                <i class="material-icons right">assignment_turned_in</i>
+            </button>
+        </div>
 
-
-
+    </div>
 
 </template>
 

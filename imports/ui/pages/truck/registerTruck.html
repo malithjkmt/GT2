@@ -1,5 +1,3 @@
-
-
 <template name="registerTruck">
 
 
@@ -7,9 +5,10 @@
         {{#autoForm collection="Trucks" id="insertTruckForm" type="insert"}}
 
 
-                {{> afQuickField name='model' icon = "directions_bus"}}
-                {{> afQuickField name='license' icon = "book"}}
-                {{> afQuickField name='registerDate' icon = "date_range"}}
+            {{> afQuickField name='model' icon = "directions_bus"}}
+            {{> afQuickField name='license' icon = "book"}}
+            {{> afQuickField name='registerDate' icon = "date_range"}}
+            {{> afQuickField name='onDuty' value='false' }}
 
             <button type="submit" class="btn waves-effect ">Submit</button>
         {{/autoForm}}
