@@ -170,7 +170,7 @@ Template.addRouteMap.onCreated(function () {
             }
             else if (addMarkerState) {
                 waypointsArray.push({location: new google.maps.LatLng(event.latLng.lat(), event.latLng.lng())});
-               // console.log(waypointsArray);
+                console.log(waypointsArray);
                 displayRoute(startingPoint, endingPoint, directionsService,
                     directionsDisplay);
                 addMarkerState = false;
@@ -291,10 +291,40 @@ function generateRoute() {
             var temp = directionsDisplay.getDirections();
             drawingHistory.push(temp);
 
+            var data = {};
+            var w=[];
+            var wp = [];
+
+            var route = directionsDisplay.directions.routes[0];
+
+            console.log(route);
+
+            data.start = {'lat': route.legs[0].start_location.lat(), 'lng':route.legs[0].start_location.lng()};
+
+            var j;
+            for( j=0; j< directionsDisplay.directions.routes[0].legs.length;j++){
+
+                wp = directionsDisplay.directions.routes[0].legs[j].via_waypoints;
+                for(var i=0;i<wp.length;i++){
+                    w.push([wp[i].lat(),wp[i].lng()]);
+                }
+                w.push([ route.legs[j].end_location.lat(), route.legs[j].end_location.lng()]);
+            }
+            w.pop();
+            data.end = {'lat': route.legs[j-1].end_location.lat(), 'lng':route.legs[j-1].end_location.lng()};
+
+
+            data.waypoints = w;
+
+            console.log(data);
+            var str = JSON.stringify(data)
+
+
+
             // here I pass stringified JSON object to the mongo Collection.
             // So when using it first parse
             // eg:- console.log(JSON.parse(document.getElementById('routeMap').value));
-            document.getElementById('routeMap').value = JSON.stringify(directionsDisplay.getDirections());
+            document.getElementById('routeMap').value = str;
 
 
             // fx(temp.routes[0]);
@@ -324,7 +354,6 @@ function generateRoute() {
 
 
     document.getElementById('undo').disabled = true;
-
 
 
 }

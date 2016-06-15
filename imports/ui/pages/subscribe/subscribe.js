@@ -1,5 +1,5 @@
-import { Meteor } from 'meteor/meteor';
-import { Template } from 'meteor/templating';
+import {Meteor} from 'meteor/meteor';
+import {Template} from 'meteor/templating';
 
 import './subscribe.html';
 
@@ -15,7 +15,7 @@ var routesArray = [];
 
 Template.subscribe.helpers({
 
-    routes: () =>{
+    routes: () => {
         routesCursor = Routes.find({});
         return routesCursor;
     },
@@ -23,7 +23,7 @@ Template.subscribe.helpers({
         count = 0;
         readyCount = 1;
         renderedCount = 1;
-        titleCount=0;
+        titleCount = 0;
     },
     title(){
         return ++titleCount;
@@ -31,13 +31,12 @@ Template.subscribe.helpers({
 
 });
 
- Template.subscribe.events({
- 'click .subscribeRoute'(event) {
-     console.log(event.target);
+Template.subscribe.events({
+    'click .subscribeRoute'(event) {
+        console.log(event.target);
 
- }
- });
-
+    }
+});
 
 
 Template.subscribe.onCreated(function bodyOnCreated() {
@@ -47,7 +46,7 @@ Template.subscribe.onCreated(function bodyOnCreated() {
 
 
 Template.routeMap.helpers({
-    geolocationError: ()=>{
+    geolocationError: ()=> {
         var error = Geolocation.error();
         return error && error.message;
     },
@@ -99,29 +98,43 @@ Template.routeMap.helpers({
 });
 
 
-
 Template.routeMap.onRendered(()=> {
 
 
     var mapName = "map" + renderedCount;
     renderedCount++;
-    console.log("map "+ mapName+" created");
+    console.log("map " + mapName + " created");
 
 
-    GoogleMaps.ready(mapName, function(map) {
+    GoogleMaps.ready(mapName, function (map) {
 
         console.log("map map" + mapName + " is ready");
 
-        var display = new google.maps.DirectionsRenderer({
+        var ren = new google.maps.DirectionsRenderer({
             draggable: false,
             map: map.instance,
         });
 
-        var temp = JSON.parse(routesCursor.fetch()[mapName.substring(3,4) - 1].mapRoute);
-        console.log(temp);
-        display.setDirections(temp);
+        var os = JSON.parse(routesCursor.fetch()[mapName.substring(3, 4) - 1].mapRoute);
+        console.log(os);
 
-        directionsDisplayArray.push(display);
+        ser = new google.maps.DirectionsService();
+
+        var wp = [];
+        for (var i = 0; i < os.waypoints.length; i++)
+            wp[i] = {'location': new google.maps.LatLng(os.waypoints[i][0], os.waypoints[i][1]), 'stopover': false}
+
+        ser.route({
+            'origin': new google.maps.LatLng(os.start.lat, os.start.lng),
+            'destination': new google.maps.LatLng(os.end.lat, os.end.lng),
+            'waypoints': wp,
+            'travelMode': google.maps.DirectionsTravelMode.DRIVING
+        }, function (res, sts) {
+            if (sts == 'OK')ren.setDirections(res);
+        })
+
+
+        // directionsDisplayArray.push(display);
     });
 
 

@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="66e17441-ae0b-4dd1-b155-18502bbab159" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imports/ui/pages/SetupNotifications/setupNotifications.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imports/ui/pages/SetupNotifications/setupNotifications.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imports/ui/pages/setupNotifications/geolocation-marker.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/startup/client/index.js" afterPath="$PROJECT_DIR$/imports/startup/client/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/ui/pages/addRoute/addRoute.js" afterPath="$PROJECT_DIR$/imports/ui/pages/addRoute/addRoute.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/ui/pages/subscribe/subscribe.js" afterPath="$PROJECT_DIR$/imports/ui/pages/subscribe/subscribe.js" />
     </list>
@@ -72,10 +68,10 @@
       <file leaf-file-name="subscribe.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/imports/ui/pages/subscribe/subscribe.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="436">
-              <caret line="121" column="8" selection-start-line="121" selection-start-column="8" selection-end-line="121" selection-end-column="35" />
+            <state relative-caret-position="226">
+              <caret line="129" column="27" selection-start-line="129" selection-start-column="25" selection-end-line="129" selection-end-column="27" />
               <folding>
-                <element signature="e#0#39#0" expanded="true" />
+                <element signature="e#0#37#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -84,8 +80,8 @@
       <file leaf-file-name="addRoute.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/imports/ui/pages/addRoute/addRoute.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="301" column="64" selection-start-line="301" selection-start-column="64" selection-end-line="301" selection-end-column="64" />
+            <state relative-caret-position="492">
+              <caret line="316" column="31" selection-start-line="316" selection-start-column="31" selection-end-line="316" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -740,7 +736,7 @@
       <workItem from="1465817931142" duration="245000" />
       <workItem from="1465818430198" duration="86000" />
       <workItem from="1465840896038" duration="41000" />
-      <workItem from="1465865496413" duration="33684000" />
+      <workItem from="1465865496413" duration="37810000" />
     </task>
     <task id="LOCAL-00001" summary="remove default code">
       <created>1461808730895</created>
@@ -987,11 +983,18 @@
       <option name="project" value="LOCAL" />
       <updated>1465952374139</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="Before doing the big change to display waypoints correctly&#10;( a.lat() is not a functions debubbing)">
+      <created>1465968981425</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1465968981425</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="415593000" />
+    <option name="totallyTimeSpent" value="419719000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -1037,7 +1040,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="MakeAdmin() method completed&#10;make a normal townsman profile an admin one." />
     <MESSAGE value="Complete users, Feedback, routing functions" />
     <MESSAGE value="Add readme file" />
     <MESSAGE value="Add google map API, create a dummy marker Collection, create dummy console view and modify Truck Collection to add lat lng to a truck" />
@@ -1062,7 +1064,8 @@
     <MESSAGE value="Debug map loading issue" />
     <MESSAGE value="Setup Notifications route" />
     <MESSAGE value="Setup Notifications route, basic map" />
-    <option name="LAST_COMMIT_MESSAGE" value="Setup Notifications route, basic map" />
+    <MESSAGE value="Before doing the big change to display waypoints correctly&#10;( a.lat() is not a functions debubbing)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Before doing the big change to display waypoints correctly&#10;( a.lat() is not a functions debubbing)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1373,16 +1376,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/imports/ui/pages/subscribe/subscribe.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="436">
-          <caret line="121" column="8" selection-start-line="121" selection-start-column="8" selection-end-line="121" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1447,10 +1440,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/imports/ui/pages/subscribe/subscribe.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="129" column="27" selection-start-line="129" selection-start-column="25" selection-end-line="129" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/imports/ui/pages/addRoute/addRoute.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="301" column="64" selection-start-line="301" selection-start-column="64" selection-end-line="301" selection-end-column="64" />
+        <state relative-caret-position="492">
+          <caret line="316" column="31" selection-start-line="316" selection-start-column="31" selection-end-line="316" selection-end-column="31" />
           <folding />
         </state>
       </provider>
