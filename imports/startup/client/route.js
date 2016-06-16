@@ -224,15 +224,6 @@ Router.route('/dummyConsole', function () {
     this.render('nav', {to: 'nav'});
 });
 
-Router.route('/addRoute', function () {
-    this.layout('myLayout', {
-        data: function () {
-            return "Add Route";
-        }
-    });
-    this.render('addRoute');
-    this.render('nav', {to: 'nav'});
-});
 
 Router.route('/subscribe', function () {
     this.layout('myLayout', {
@@ -260,6 +251,38 @@ Router.route('/setupNotifications/:route_id/:user_id', function () {
     this.render('nav', {to: 'nav'});
 
 });
+
+Router.route('/addRoute', function () {
+    this.layout('myLayout', {
+        data: function () {
+            return "Add Route";
+        }
+    });
+    this.render('addRoute');
+    this.render('nav', {to: 'nav'});
+});
+
+Router.route('/addRouteDateTime', function () {
+    this.layout('myLayout', {
+        data: function () {
+            return "Add Route";
+        }
+    });
+    this.render('addRouteDateTime');
+    this.render('nav', {to: 'nav'});
+});
+
+Router.route('/addRouteTruckDriver', function () {
+    this.layout('myLayout', {
+        data: function () {
+            return "Add Route";
+        }
+    });
+    this.render('addRouteTruckDriver');
+    this.render('nav', {to: 'nav'});
+});
+
+
 
 
 //Routes

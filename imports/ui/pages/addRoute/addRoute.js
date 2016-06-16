@@ -1,4 +1,6 @@
 import './addRoute.html';
+import './addRouteDateTime.html';
+import './addRouteTruckDriver.html';
 
 var ZOOM_LEVEL = 15; // ideal zoom level for streets
 var startingPoint;
@@ -13,13 +15,20 @@ var drawingHistory = [];
 var startingPointMarker = null;
 var endingPointMarker = null;
 var startPointSelected = false;
-var endPointSelected = false;
+var endPointSelected = false
 
-Template.addRouteMap.onCreated(function bodyOnCreated() {
-    this.state = new ReactiveDict();
+
+
+Template.addRouteTruckDriver.onCreated(function () {
     Meteor.subscribe('trucks');
     Meteor.subscribe('drivers');
 });
+
+/*
+Template.addRouteMap.onRendered(function () {
+    startTime = document.getElementById('startTime').value;
+});
+*/
 
 Template.addRouteMap.helpers({
     geolocationError: function () {
@@ -61,40 +70,11 @@ Template.addRouteMap.helpers({
             };
             return mapOptions;
         }
-    },
-    driversNames() {
-        var drivers = Drivers.find().fetch();
-        var options = [];
-        drivers.forEach(function (driver) {
-            options.push({label: driver.name, value: driver.nic});
-        });
-        return options;
-    },
-    truckNo() {
-        var trucks = Trucks.find().fetch();
-        var options = [];
-        trucks.forEach(function (truck) {
-            options.push({label: truck.license, value: truck.license});
-        });
-        return options;
-    },
-    dayOptions(){
-        return [
-            {label: "Monday", value: 'Monday'},
-            {label: "Tuesday", value: 'Tuesday'},
-            {label: "Wednesday", value: 'Wednesday'},
-            {label: "Thursday", value: 'Thursday'},
-            {label: "Friday", value: 'Friday'},
-            {label: "Saturday", value: 'Saturday'},
-            {label: "Sunday", value: 'Sunday'}
-        ];
     }
 
 
 });
 
-
-Template.addRoute.helpers({});
 
 Template.addRouteMap.events({
     'click #startingPoint'(event) {
@@ -125,22 +105,86 @@ Template.addRouteMap.events({
         directionsDisplay.setDirections(drawingHistory.pop());
 
     },
+    'click #next'(event) {
+        Router.go('/addRouteDateTime');
+    }
+
+
+});
+
+Template.addRouteDateTime.events({
+    'click #next'(event){
+        var startTime = document.getElementById('startTime').value;
+
+       var  startDay = document.getElementById('startDay').value;
+        Session.set('startTime', startTime);
+        Session.set('startDay', startDay);
+
+
+        if (startTime && startDay)
+            Router.go('/addRouteTruckDriver');
+    }
+});
+
+Template.addRouteDateTime.helpers({
+    dayOptions(){
+        return [
+            {label: "Monday", value: 'Monday'},
+            {label: "Tuesday", value: 'Tuesday'},
+            {label: "Wednesday", value: 'Wednesday'},
+            {label: "Thursday", value: 'Thursday'},
+            {label: "Friday", value: 'Friday'},
+            {label: "Saturday", value: 'Saturday'},
+            {label: "Sunday", value: 'Sunday'}
+        ];
+    }
+});
+
+Template.addRouteTruckDriver.events({
     'click #addRoute'(event){
 
-        var driverNIC =  document.getElementById('driverNIC').value;
+        var driverNIC = document.getElementById('driverNIC').value;
         var truckNO = document.getElementById('truckNO').value
-        var startTime = document.getElementById('startTime').value
-        var map= document.getElementById('routeMap').value
-        var day = document.getElementById('routeDay').value;
 
-        if( startTime && driverNIC && truckNO && map && day){
-            Meteor.call('occupyTime', startTime, day, driverNIC, truckNO );
+
+        if (driverNIC && truckNO) {
+            Meteor.call('occupyTime', Session.get('startTime'), Session.get('startDay'), driverNIC, truckNO);
         }
 
 
     }
-
 });
+
+Template.addRouteTruckDriver.helpers({
+    driversNames() {
+        var drivers = Drivers.find().fetch();
+        var options = [];
+        drivers.forEach(function (driver) {
+            options.push({label: driver.name, value: driver.nic});
+        });
+        return options;
+    },
+    truckNo() {
+        console.log(Session.get('startTime'));
+        console.log(Session.get('startDay'));
+
+        var trucks = Trucks.find().fetch();
+        var options = [];
+        trucks.forEach(function (truck) {
+            options.push({label: truck.license, value: truck.license});
+        });
+        return options;
+    },
+    get_completeRoute(){
+        return Session.get('completeRoute');
+    },
+    get_startTime(){
+        return Session.get('startTime');
+    },
+    get_startDay(){
+        return Session.get('startDay');
+    }
+})
 
 Template.addRouteMap.onCreated(function () {
 
@@ -278,9 +322,9 @@ function fx(o) {
 
 Template.addRouteMap.rendered = function () {
     // $('.clockpicker').clockpicker();
-    Meteor.typeahead.inject();
-    $('.tooltipped').tooltip({delay: 50});
-
+    /*  Meteor.typeahead.inject();
+     $('.tooltipped').tooltip({delay: 50});
+     */
 };
 
 /* <div class="input-group clockpicker" data-placement="right" data-align="top" data-autoclose="true">
@@ -347,7 +391,10 @@ function generateRoute() {
             // here I pass stringified JSON object to the mongo Collection.
             // So when using it first parse
             // eg:- console.log(JSON.parse(document.getElementById('routeMap').value));
-            document.getElementById('routeMap').value = str;
+
+            // document.getElementById('routeMap').value = str;
+            completeRoute = str;
+            Session.set('completeRoute', str);
 
 
             // fx(temp.routes[0]);

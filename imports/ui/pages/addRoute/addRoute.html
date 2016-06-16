@@ -48,50 +48,6 @@
         </div>
     </div>
 
-    <div class="container" id="routeForm">
-
-        {{#autoForm collection="Routes" id="addNewRouteForm" type="insert"}}
-
-            <div class="card checkBoxCard">
-                <!-- input start time-->
-                {{> afQuickField name='startTime' id='startTime' icon = "query_builder"  type="time" placeholder = "9:00 AM"}}
-            </div>
-            <div class="card checkBoxCard">
-                <!-- select garbage types-->
-                {{> afQuickField name='biodegradable' type="boolean-checkbox" value=true }}
-                {{> afQuickField name='nonBiodegradable' type="boolean-checkbox" }}
-
-            </div>
-            <div class="card checkBoxCard">
-                <!-- select days-->
-                {{> afFieldInput name="day" id='routeDay' firstOption="Select day" type="select" options=dayOptions}}
-
-            </div>
-
-            <div class="card checkBoxCard">
-                <div class="row">
-                    <div class="col s4">
-                        {{> afFieldInput name="driverNIC" id='driverNIC' options=driversNames type="select" firstOption="Select a driver"}}
-
-                    </div>
-                    <div class="col s4">
-                        {{> afFieldInput name="TruckNO" id='truckNO' options=truckNo type="select" firstOption="Select a truck" }}
-                    </div>
-                    {{> afQuickField name="mapRoute" id='routeMap'}}
-                    {{> afQuickField name="active" value=true}}
-
-
-
-                    <div class="col s4">
-                        <button id="addRoute" type="submit" class="btn waves-effect">Save Route</button>
-                    </div>
-                </div>
-            </div>
-
-        {{/autoForm}}
-
-
-    </div>
     <div class="container" id="navigationDetails">
         {{#autoForm collection="Routes" id="addNewRouteForm" type="insert"}}
             <div class="card">
@@ -105,9 +61,10 @@
                 </div>
             </div>
         {{/autoForm}}
+        <button id="next" type="click" class="btn waves-effect">Next</button>
     </div>
 
 
-</template>
 
+</template>
 
