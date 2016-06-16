@@ -4,6 +4,13 @@ var ZOOM_LEVEL = 10; // ideal zoom level for streets
 var demoTruck;
 var self;
 var myMarker;
+var assignedRoute;
+var fillColors = ['#FFFF99','#66FFFF', '#b30000', '#00b33c', '#ff4dd2','#FFFF99','#66FFFF',
+    '#b30000', '#00b33c', '#ff4dd2','#FFFF99','#66FFFF', '#b30000', '#00b33c', '#ff4dd2',
+    '#FFFF99','#66FFFF', '#b30000', '#00b33c', '#ff4dd2','#FFFF99','#66FFFF', '#b30000',
+    '#00b33c', '#ff4dd2','#FFFF99','#66FFFF', '#b30000', '#00b33c', '#ff4dd2','#FFFF99',
+    '#66FFFF', '#b30000', '#00b33c', '#ff4dd2','#FFFF99','#66FFFF', '#b30000', '#00b33c',
+    '#ff4dd2','#FFFF99','#66FFFF', '#b30000', '#00b33c', '#ff4dd2'];  // make this a random generator......
 
 Template.dummyMap.helpers({
     geolocationError: function () {
@@ -115,9 +122,9 @@ Template.dummyMapView.events({
 
             truckNo = Trucks.findOne({_id: demoTruck._id}).license;
             // get the active route_id ( at the registering route section, it has make sure no truck will assigned to multiple active routes)
-            var assignedRoute_id = Routes.find({TruckNO: truckNo}, {active: true}).fetch()[0]._id;
+            assignedRoute = Routes.findOne({TruckNO: truckNo}, {active: true});
+            var assignedRoute_id = assignedRoute._id;
             console.log(assignedRoute_id);
-
 
             var notifications = Notifications.find({route_id: assignedRoute_id}).fetch();
 
@@ -144,16 +151,16 @@ Template.dummyMapView.events({
             });
 
             //#############  draw the route on  map: end
-
+            var i = 0;
             // ############### draw notification circles on map: begin
             notifications.forEach(function (notification) {
 
                 JSON.parse(notification.points).forEach(function (point) {
                     new google.maps.Circle({
-                        strokeColor: '#006699',
+                        strokeColor: '#000000',
                         strokeOpacity: 0.8,
-                        strokeWeight: 2,
-                        fillColor: '#66FFFF',
+                        strokeWeight: 1,
+                        fillColor: fillColors[i],
                         fillOpacity: 0.35,
                         map: dummyMap.instance,
                         center: new google.maps.LatLng(point.lat, point.lng),
@@ -161,6 +168,7 @@ Template.dummyMapView.events({
                         clickable: false
                     })
                 });
+                i++;
             })
             // ############### draw notification circles on map: end
 
@@ -212,9 +220,16 @@ Template.dummyMapView.events({
                             var notiUserLoc = Meteor.users.findOne({_id:notification.user_id}).profile.location;
                             console.log(notiUserLoc);
 
-                            var distanceToTruck = distance(notiUserLoc.lat, notiUserLoc.lng, truck.lat, truck.lng)   // get distance to user from the truck
+                            var distanceToTruck = Math.ceil(distance(notiUserLoc.lat, notiUserLoc.lng, truck.lat, truck.lng));   // get distance to user from the truck
 
                             console.log('inside noti cirlce!! user_id is ' + notification.user_id+ " range is "+ range +" distance is "+distanceToTruck);
+                            Push.send({
+                                from: 'Dummy',
+                                title: 'Garbage Truck Tracker',
+                                text: " distance is "+distanceToTruck + "m",
+                                badge: 12,
+                                query: {userId:notification.user_id}
+                            });
 
                         }
                     })

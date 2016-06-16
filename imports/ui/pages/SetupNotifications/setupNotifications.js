@@ -150,6 +150,7 @@ Template.setupNotifications.events({
         console.log(notiPoints);
         Meteor.call('saveNoti', JSON.stringify(notiPoints), routeID, userID);
         notiPoints = null;
+        notiPoints =[];
     }
 
 });
