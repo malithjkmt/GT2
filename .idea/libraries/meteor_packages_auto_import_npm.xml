@@ -1735,6 +1735,22 @@
         <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/practicalmeteor_faker/3.0.1_1/npm/node_modules/faker/lib/locales/ru/date/weekday.js" />
         <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/practicalmeteor_faker/3.0.1_1/npm/node_modules/faker/lib/locales/ru/date/month.js" />
         <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/practicalmeteor_faker/3.0.1_1/npm/node_modules/faker/lib/locales/ru/name/female_middle_name.js" />
+        <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/raix_push/3.0.2/npm/node_modules/node-gcm/lib/node-gcm.js" />
+        <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/raix_push/3.0.2/npm/node_modules/node-gcm/lib/sender.js" />
+        <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/raix_push/3.0.2/npm/node_modules/node-gcm/lib/message.js" />
+        <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/raix_push/3.0.2/npm/node_modules/node-gcm/lib/multicastresult.js" />
+        <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/raix_push/3.0.2/npm/node_modules/node-gcm/lib/constants.js" />
+        <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/raix_push/3.0.2/npm/node_modules/node-gcm/lib/result.js" />
+        <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/raix_push/3.0.2/npm/node_modules/node-gcm/index.js" />
+        <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/raix_push/3.0.2/npm/node_modules/apn/lib/device.js" />
+        <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/raix_push/3.0.2/npm/node_modules/apn/lib/errors.js" />
+        <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/raix_push/3.0.2/npm/node_modules/apn/lib/feedback.js" />
+        <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/raix_push/3.0.2/npm/node_modules/apn/lib/notification.js" />
+        <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/raix_push/3.0.2/npm/node_modules/apn/lib/credentials.js" />
+        <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/raix_push/3.0.2/npm/node_modules/apn/lib/util.js" />
+        <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/raix_push/3.0.2/npm/node_modules/apn/lib/connection.js" />
+        <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/raix_push/3.0.2/npm/node_modules/apn/lib/socket.js" />
+        <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/raix_push/3.0.2/npm/node_modules/apn/index.js" />
       </sourceFilesUrls>
     </properties>
     <CLASSES>
@@ -3471,6 +3487,22 @@
       <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/practicalmeteor_faker/3.0.1_1/npm/node_modules/faker/lib/locales/ru/date/weekday.js" />
       <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/practicalmeteor_faker/3.0.1_1/npm/node_modules/faker/lib/locales/ru/date/month.js" />
       <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/practicalmeteor_faker/3.0.1_1/npm/node_modules/faker/lib/locales/ru/name/female_middle_name.js" />
+      <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/raix_push/3.0.2/npm/node_modules/node-gcm/lib/node-gcm.js" />
+      <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/raix_push/3.0.2/npm/node_modules/node-gcm/lib/sender.js" />
+      <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/raix_push/3.0.2/npm/node_modules/node-gcm/lib/message.js" />
+      <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/raix_push/3.0.2/npm/node_modules/node-gcm/lib/multicastresult.js" />
+      <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/raix_push/3.0.2/npm/node_modules/node-gcm/lib/constants.js" />
+      <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/raix_push/3.0.2/npm/node_modules/node-gcm/lib/result.js" />
+      <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/raix_push/3.0.2/npm/node_modules/node-gcm/index.js" />
+      <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/raix_push/3.0.2/npm/node_modules/apn/lib/device.js" />
+      <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/raix_push/3.0.2/npm/node_modules/apn/lib/errors.js" />
+      <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/raix_push/3.0.2/npm/node_modules/apn/lib/feedback.js" />
+      <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/raix_push/3.0.2/npm/node_modules/apn/lib/notification.js" />
+      <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/raix_push/3.0.2/npm/node_modules/apn/lib/credentials.js" />
+      <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/raix_push/3.0.2/npm/node_modules/apn/lib/util.js" />
+      <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/raix_push/3.0.2/npm/node_modules/apn/lib/connection.js" />
+      <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/raix_push/3.0.2/npm/node_modules/apn/lib/socket.js" />
+      <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/raix_push/3.0.2/npm/node_modules/apn/index.js" />
     </CLASSES>
     <SOURCES />
   </library>

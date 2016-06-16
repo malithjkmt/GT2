@@ -111,8 +111,10 @@ Template.dummyMapView.events({
 
         GoogleMaps.ready('dummyMap', function (dummyMap) {
 
-            // get the assigned route number for this truck
+
+
             truckNo = Trucks.findOne({_id: demoTruck._id}).license;
+            // get the active route_id ( at the registering route section, it has make sure no truck will assigned to multiple active routes)
             var assignedRoute_id = Routes.find({TruckNO: truckNo}, {active: true}).fetch()[0]._id;
             console.log(assignedRoute_id);
 
@@ -195,20 +197,16 @@ Template.dummyMapView.events({
                 }
 
 
-                // Check if truck has entered to a notification circle (point)
 
 
-                // get the active route_id ( at the registering route section, it has make sure no truck will assigned to multiple active routes)
-                /*     var assignedRoute_id = Routes.find({active:true}).fetch()[0]._id;
-                 console.log(assignedRoute_id);*/
-
-
+                // when ever the DB changes the variable truck will also change, then the autorun() will be called
                 var truck = Trucks.findOne({_id: demoTruck._id});
 
                 notifications.forEach(function (notification) {
                     var notipoints = JSON.parse(notification.points);
                     notipoints.forEach(function (noti) {
 
+                        // Check if truck has entered to a notification circle (point)
                         var range = distance(noti.lat, noti.lng, truck.lat, truck.lng);
                         if (range < 50) {
                             var notiUserLoc = Meteor.users.findOne({_id:notification.user_id}).profile.location;
