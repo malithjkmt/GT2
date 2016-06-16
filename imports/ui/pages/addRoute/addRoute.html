@@ -5,70 +5,86 @@
 
 
 <template name="addRouteMap">
-    {{#unless geolocationError}}
-        <div id="map-container" class="map-container">
-            {{> googleMap name="addRouteMap" options=myMapOptions }}
-        </div>
-    {{else}}
-        Geolocation failed: {{geolocationError}}
-        <h3>Check your internet connection or turn on Location</h3>
-    {{/unless}}
-
-
-
-    <div class="row" id="addRouteButtons1">
-        <div class="col s6">
-            <button id="startingPoint" class="btn waves-effect waves-light " type="click" name="startingPoint">Start Point
-                <i class="material-icons right">my_location</i>
-            </button>
-
-        </div>
-        <div class="col s6">
-            <button id="endingPoint" class="btn waves-effect waves-light" type="click" name="endingPoint">End Point
-                <i class="material-icons right">my_location</i>
-            </button>
-        </div>
-
+    <div id="mapCont">
+        {{#unless geolocationError}}
+            <div id="map-container" class="map-container">
+                {{> googleMap name="addRouteMap" options=myMapOptions }}
+            </div>
+        {{else}}
+            Geolocation failed: {{geolocationError}}
+            <h3>Check your internet connection or turn on Location</h3>
+        {{/unless}}
     </div>
 
-    <div class="row" id="addRouteButtons2">
-        <div class="col s6">
-            <button id="undo" class="btn waves-effect waves-light" type="click" name="undo">Undo
-                <i class="material-icons right">my_location</i>
-            </button>
-        </div>
-        <div class="col s6">
-            <button id="addMarker" class="btn waves-effect waves-light" type="click" name="addMarker">Add Marker
-                <i class="material-icons right">location_on</i>
-            </button>
+    <div id="parentAddButtons">
+        <div class="row" id="addRouteButtons1">
+            <div class="col s6">
+                <button id="startingPoint" class="btn waves-effect waves-light " type="click" name="startingPoint">Start
+                    Point
+                    <i class="material-icons right">my_location</i>
+                </button>
+
+            </div>
+            <div class="col s6">
+                <button id="endingPoint" class="btn waves-effect waves-light" type="click" name="endingPoint">End Point
+                    <i class="material-icons right">my_location</i>
+                </button>
+            </div>
+
         </div>
 
+        <div class="row" id="addRouteButtons2">
+            <div class="col s6">
+                <button id="undo" class="btn waves-effect waves-light" type="click" name="undo">Undo
+                    <i class="material-icons right">my_location</i>
+                </button>
+            </div>
+            <div class="col s6">
+                <button id="addMarker" class="btn waves-effect waves-light" type="click" name="addMarker">Add Marker
+                    <i class="material-icons right">location_on</i>
+                </button>
+            </div>
+
+        </div>
     </div>
 
-
-    <div class="container" id = "routeForm">
+    <div class="container" id="routeForm">
 
         {{#autoForm collection="Routes" id="addNewRouteForm" type="insert"}}
 
-            <!-- input start time-->
-            {{> afQuickField name='startTime' icon = "query_builder"  type="time" placeholder = "9:00 AM"}}
+            <div class="card checkBoxCard">
+                <!-- input start time-->
+                {{> afQuickField name='startTime' id='startTime' icon = "query_builder"  type="time" placeholder = "9:00 AM"}}
+            </div>
+            <div class="card checkBoxCard">
+                <!-- select garbage types-->
+                {{> afQuickField name='biodegradable' type="boolean-checkbox" value=true }}
+                {{> afQuickField name='nonBiodegradable' type="boolean-checkbox" }}
 
-            <!-- select garbage types-->
-            {{> afQuickField name='biodegradable' type="boolean-checkbox" }}
-            {{> afQuickField name='nonBiodegradable' type="boolean-checkbox" }}
+            </div>
+            <div class="card checkBoxCard">
+                <!-- select days-->
+                {{> afFieldInput name="day" id='routeDay' firstOption="Select day" type="select" options=dayOptions}}
 
-            <div class="row">
-                <div class="col s4">
-                    {{> afFieldInput name="driverNIC" options=driversNames type="select" firstOption="(Select a driver)"}}
+            </div>
 
-                </div>
-                <div class="col s4">
-                    {{> afFieldInput name="TruckNO" options=truckNo type="select" firstOption="(Select a truck)" }}
-                </div>
-                {{> afQuickField name="mapRoute" id='routeMap'}}
-                {{> afQuickField name="active" value=true}}
-                <div class="col s4">
-                    <button id="addRoutej" type="submit" class="btn waves-effect">Save Route</button>
+            <div class="card checkBoxCard">
+                <div class="row">
+                    <div class="col s4">
+                        {{> afFieldInput name="driverNIC" id='driverNIC' options=driversNames type="select" firstOption="Select a driver"}}
+
+                    </div>
+                    <div class="col s4">
+                        {{> afFieldInput name="TruckNO" id='truckNO' options=truckNo type="select" firstOption="Select a truck" }}
+                    </div>
+                    {{> afQuickField name="mapRoute" id='routeMap'}}
+                    {{> afQuickField name="active" value=true}}
+
+
+
+                    <div class="col s4">
+                        <button id="addRoute" type="submit" class="btn waves-effect">Save Route</button>
+                    </div>
                 </div>
             </div>
 

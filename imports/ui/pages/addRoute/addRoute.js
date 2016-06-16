@@ -63,28 +63,38 @@ Template.addRouteMap.helpers({
         }
     },
     driversNames() {
-        var drivers =  Drivers.find().fetch();
+        var drivers = Drivers.find().fetch();
         var options = [];
         drivers.forEach(function (driver) {
-            options.push({label:driver.name, value:driver.nic});
+            options.push({label: driver.name, value: driver.nic});
         });
         return options;
     },
     truckNo() {
-        var trucks =  Trucks.find().fetch();
+        var trucks = Trucks.find().fetch();
         var options = [];
         trucks.forEach(function (truck) {
-            options.push({label:truck.license, value:truck.license});
+            options.push({label: truck.license, value: truck.license});
         });
         return options;
+    },
+    dayOptions(){
+        return [
+            {label: "Monday", value: 'Monday'},
+            {label: "Tuesday", value: 'Tuesday'},
+            {label: "Wednesday", value: 'Wednesday'},
+            {label: "Thursday", value: 'Thursday'},
+            {label: "Friday", value: 'Friday'},
+            {label: "Saturday", value: 'Saturday'},
+            {label: "Sunday", value: 'Sunday'}
+        ];
     }
 
 
 });
 
 
-Template.addRoute.helpers({
-});
+Template.addRoute.helpers({});
 
 Template.addRouteMap.events({
     'click #startingPoint'(event) {
@@ -113,6 +123,20 @@ Template.addRouteMap.events({
         drawingHistory.pop();
         // get the previous route from the history and display it
         directionsDisplay.setDirections(drawingHistory.pop());
+
+    },
+    'click #addRoute'(event){
+
+        var driverNIC =  document.getElementById('driverNIC').value;
+        var truckNO = document.getElementById('truckNO').value
+        var startTime = document.getElementById('startTime').value
+        var map= document.getElementById('routeMap').value
+        var day = document.getElementById('routeDay').value;
+
+        if( startTime && driverNIC && truckNO && map && day){
+            Meteor.call('occupyTime', startTime, day, driverNIC, truckNO );
+        }
+
 
     }
 
@@ -292,33 +316,32 @@ function generateRoute() {
             drawingHistory.push(temp);
 
             var data = {};
-            var w=[];
+            var w = [];
             var wp = [];
 
             var route = directionsDisplay.directions.routes[0];
 
             console.log(route);
 
-            data.start = {'lat': route.legs[0].start_location.lat(), 'lng':route.legs[0].start_location.lng()};
+            data.start = {'lat': route.legs[0].start_location.lat(), 'lng': route.legs[0].start_location.lng()};
 
             var j;
-            for( j=0; j< directionsDisplay.directions.routes[0].legs.length;j++){
+            for (j = 0; j < directionsDisplay.directions.routes[0].legs.length; j++) {
 
                 wp = directionsDisplay.directions.routes[0].legs[j].via_waypoints;
-                for(var i=0;i<wp.length;i++){
-                    w.push([wp[i].lat(),wp[i].lng()]);
+                for (var i = 0; i < wp.length; i++) {
+                    w.push([wp[i].lat(), wp[i].lng()]);
                 }
-                w.push([ route.legs[j].end_location.lat(), route.legs[j].end_location.lng()]);
+                w.push([route.legs[j].end_location.lat(), route.legs[j].end_location.lng()]);
             }
             w.pop();
-            data.end = {'lat': route.legs[j-1].end_location.lat(), 'lng':route.legs[j-1].end_location.lng()};
+            data.end = {'lat': route.legs[j - 1].end_location.lat(), 'lng': route.legs[j - 1].end_location.lng()};
 
 
             data.waypoints = w;
 
             console.log(data);
             var str = JSON.stringify(data)
-
 
 
             // here I pass stringified JSON object to the mongo Collection.
@@ -343,8 +366,12 @@ function generateRoute() {
     })
 
 
-    document.getElementById('addRouteButtons1').style.visibility = 'hidden';
-    document.getElementById('addRouteButtons1').style.height = '0';
+    var parent = document.getElementById("parentAddButtons");
+    var child = document.getElementById("addRouteButtons1");
+    parent.removeChild(child);
+
+    /*document.getElementById('addRouteButtons1').style.visibility = 'hidden';
+     document.getElementById('addRouteButtons1').style.height = '0';*/
 
     document.getElementById('addRouteButtons2').style.visibility = 'visible';
     document.getElementById('addRouteButtons2').style.height = 'auto';
