@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="66e17441-ae0b-4dd1-b155-18502bbab159" name="Default" comment="Complete Add Route with only available drivers &amp; trucks">
+    <list default="true" id="66e17441-ae0b-4dd1-b155-18502bbab159" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="GTracker.iws" />
@@ -40,7 +40,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/imports/ui/pages/home/registerTruck.tests.js" />
         <option value="$PROJECT_DIR$/imports/ui/pages/home/home.html" />
         <option value="$PROJECT_DIR$/imports/ui/pages/home/client/registerTruck.tests.js" />
         <option value="$PROJECT_DIR$/lib/subscriptions.js" />
@@ -66,7 +65,6 @@
         <option value="$PROJECT_DIR$/imports/ui/pages/truck/registerTruck.html" />
         <option value="$PROJECT_DIR$/server/main.js" />
         <option value="$PROJECT_DIR$/imports/ui/pages/townsman/registerTownsman.html" />
-        <option value="$PROJECT_DIR$/imports/ui/pages/nav.html" />
         <option value="$PROJECT_DIR$/imports/ui/pages/map/map.html" />
         <option value="$PROJECT_DIR$/imports/ui/pages/townsman/setupMyLocation.html" />
         <option value="$PROJECT_DIR$/imports/ui/pages/townsman/setupMyLocation.js" />
@@ -91,6 +89,8 @@
         <option value="$PROJECT_DIR$/imports/ui/pages/addRoute/addRouteTruckDriver.html" />
         <option value="$PROJECT_DIR$/client/main.scss" />
         <option value="$PROJECT_DIR$/imports/ui/pages/addRoute/addRoute.js" />
+        <option value="$PROJECT_DIR$/imports/ui/pages/nav.js" />
+        <option value="$PROJECT_DIR$/imports/ui/pages/nav.html" />
       </list>
     </option>
   </component>
@@ -528,7 +528,7 @@
       <workItem from="1465865496413" duration="54135000" />
       <workItem from="1466006366039" duration="23303000" />
       <workItem from="1466047065493" duration="46572000" />
-      <workItem from="1466116728034" duration="5727000" />
+      <workItem from="1466116728034" duration="7697000" />
     </task>
     <task id="LOCAL-00001" summary="remove default code">
       <created>1461808730895</created>
@@ -845,11 +845,18 @@
       <option name="project" value="LOCAL" />
       <updated>1466122424642</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="Complete Add Route with only available drivers &amp; trucks">
+      <created>1466122462945</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1466122462945</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="511646000" />
+    <option name="totallyTimeSpent" value="513616000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -864,11 +871,11 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19568452" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19568452" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1767594" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1127451" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12765957" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.111292966" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25531915" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -1021,21 +1028,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/imports/ui/pages/nav.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imports/ui/pages/nav.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="66" column="41" selection-start-line="66" selection-start-column="41" selection-end-line="66" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/imports/ui/pages/map/map.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -1113,6 +1105,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1279,6 +1272,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
           <caret line="121" column="0" selection-start-line="121" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/ui/pages/nav.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/ui/pages/nav.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="62" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
           <folding />
         </state>
       </provider>
