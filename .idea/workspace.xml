@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="66e17441-ae0b-4dd1-b155-18502bbab159" name="Default" comment="">
+    <list default="true" id="66e17441-ae0b-4dd1-b155-18502bbab159" name="Default" comment="Complete Add Route with only available drivers &amp; trucks">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="GTracker.iws" />
@@ -528,7 +528,7 @@
       <workItem from="1465865496413" duration="54135000" />
       <workItem from="1466006366039" duration="23303000" />
       <workItem from="1466047065493" duration="46572000" />
-      <workItem from="1466116728034" duration="5684000" />
+      <workItem from="1466116728034" duration="5727000" />
     </task>
     <task id="LOCAL-00001" summary="remove default code">
       <created>1461808730895</created>
@@ -838,11 +838,18 @@
       <option name="project" value="LOCAL" />
       <updated>1466122365306</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="Complete Add Route with only available drivers &amp; trucks">
+      <created>1466122424642</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1466122424642</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="511603000" />
+    <option name="totallyTimeSpent" value="511646000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
