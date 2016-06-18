@@ -23,6 +23,9 @@ $font-stack:    Helvetica, sans-serif;
 .map-container {
   height: 500px;
 }
+.map-containerHome{
+  height: 600px;
+}
 
 .map-container-subscribe {
   height: 400px;
@@ -110,7 +113,12 @@ $font-stack:    Helvetica, sans-serif;
 
 #addRoute{
   float: right;
-  margin-top: 15%;
+  margin-right: 5%;
+}
+
+#addRouteBack{
+  margin-left: 5%;
+  float: left;
 }
 
 #routeForm{

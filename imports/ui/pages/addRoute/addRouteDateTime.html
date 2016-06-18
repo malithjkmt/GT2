@@ -1,0 +1,25 @@
+<template name="addRouteDateTime">
+
+    <div class="container" id="routeForm">
+
+        {{#autoForm collection="Routes" id="addNewRouteForm2" type="insert"}}
+
+            <div class="card checkBoxCard">
+                <!-- input start time-->
+                {{> afQuickField name='startTime' id='startTime' icon = "query_builder"  type="time" placeholder = "9:00 AM"}}
+            </div>
+
+            <div class="card checkBoxCard">
+                <!-- select days-->
+                {{> afQuickField name="day" id='startDay' icon = "date_range" firstOption="Select day" type="select" options=dayOptions}}
+
+            </div>
+
+        {{/autoForm}}
+
+
+        <button id="next" type="click" class="btn waves-effect">Next</button>
+
+    </div>
+
+</template>

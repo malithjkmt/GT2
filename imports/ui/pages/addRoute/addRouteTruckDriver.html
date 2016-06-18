@@ -1,0 +1,41 @@
+<template name="addRouteTruckDriver">
+
+
+    {{#autoForm collection="Routes" id="addNewRouteForm" type="insert"}}
+
+        {{> afFieldInput name="mapRoute" id='routeMap' value= get_completeRoute}}
+        {{> afFieldInput name="active" value=false}}
+
+
+    <div id="hiddenInputs">
+        {{> afQuickField name='startTime'  type="hidden" value= get_startTime}}
+        {{> afFieldInput name="day" type="hidden"  value= get_startDay}}
+
+
+    </div>
+        <div class="card checkBoxCard" >
+            <!-- select garbage types-->
+
+            {{> afQuickField name='biodegradable' id='biodegradable' type="boolean-checkbox" }}
+            {{> afQuickField name='nonBiodegradable' id='nonBiodegradable' type="boolean-checkbox"  }}
+        </div>
+
+        <div class="card checkBoxCard" id="pop">
+            <div class="row">
+                <div class="col s6">
+                    {{> afFieldInput name="driverNIC" id='driverNIC' options=driversNames type="select" firstOption="Select a driver"}}
+
+                </div>
+                <div class="col s6">
+                    {{> afFieldInput name="TruckNO" id='truckNO' options=truckNo type="select" firstOption="Select a truck" }}
+                </div>
+
+            </div>
+        </div>
+
+        <button id="addRouteBack" type="submit" class="btn waves-effect">Back</button>
+            <button id="addRoute" type="submit" class="btn waves-effect">Save</button>
+
+
+    {{/autoForm}}
+</template>

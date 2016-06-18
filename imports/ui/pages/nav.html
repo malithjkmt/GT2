@@ -7,7 +7,7 @@
 
                 <a class="button-collapse show-on-large" href="#" data-activates="nav-mobile"><i class="material-icons">reorder</i></a>
 
-                <ul >
+                <ul>
 
                     <li>
 
@@ -19,8 +19,9 @@
                 <ul class="right">
 
 
-                    <a class="waves-effect waves-light" href="{{pathFor 'feedbackThreads'}}">
-                        <li><i class="material-icons">notifications</i></li>{{notificationCount}}</a>
+                    <a class="waves-effect waves-light" href='/feedback/{{getTownsmanID}}'>
+                        <li><i class="material-icons">notifications</i></li>
+                    </a>
                 </ul>
 
                 <ul id="nav-mobile" class="left side-nav fixed">
@@ -29,12 +30,12 @@
 
                         <div class="card-image">
 
-                        <img  src="imgs/material-navigation-background.jpg">
+                            <img src="imgs/material-navigation-background.jpg">
                             <span class="card-title" style="padding: 0 0 0 17px">
                                 <img src="imgs/ua-logo.png" class="logo" style="width:30%">
-                             {{#if currentUser}}
-                                {{ DisplayName}}
-                            {{/if}}
+                                {{#if currentUser}}
+                                    {{ DisplayName}}
+                                {{/if}}
 
                             </span>
 
@@ -42,29 +43,42 @@
                     </li>
 
 
+                    {{#if isAdmin }}
+                        <li id="navAddRoute" class="{{isActivePath '/addRoute'}}"><a href='/addRoute'>Add Route</a>
+                        </li>
+                        <li id="navFeedbacks" class="{{isActiveRoute regex='feedbackThreads'}}"><a
+                                href="{{pathFor 'feedbackThreads'}}">View
+                            Feedbacks</a></li>
 
-                    <li id="navSubscribe" class="{{isActivePath '/subscribe'}}"><a href='/subscribe'>Subscribe</a></li>
-                    <li id="navAddRoute" class="{{isActivePath '/addRoute'}}"><a href='/addRoute'>Add Route</a></li>
-                    <li id="navFeedbacks" class="{{isActiveRoute regex='feedbackThreads'}}"><a href="{{pathFor 'feedbackThreads'}}">View
-                        Feedbacks</a></li>
 
-                    <li id="navFeedback" class="{{isActivePath '/feedback/:townsmanID'}}"><a href='/feedback/{{getTownsmanID}}'>Leave
-                        Feedback</a></li>
-                    <li id="navHome" class="{{isActivePath '/'}}"><a href="{{pathFor 'home'}}">Home</a></li>
-                    <li  id="navMap" class="{{isActiveRoute regex='map'}}"><a href="{{pathFor 'map'}}">Map</a></li>
+                        <li id="navDrivers" class="{{isActiveRoute regex='viewDrivers'}}"><a
+                                href="{{pathFor 'viewDrivers'}}">Drivers</a>
+                        </li>
+                        <li id="navTrucks" class="{{isActiveRoute regex='viewTrucks'}}"><a
+                                href="{{pathFor 'viewTrucks'}}">Trucks</a>
+                        </li>
+                        <li id="navDummyConsole" class="{{isActiveRoute regex='dummyConsole'}}"><a
+                                href="{{pathFor 'dummyConsole'}}">dummyConsole</a></li>
 
-                    <li  id="navDummyConsole"  class="{{isActiveRoute regex='dummyConsole'}}"><a
-                            href="{{pathFor 'dummyConsole'}}">dummyConsole</a></li>
-                    <li id="navDrivers" class="{{isActiveRoute regex='viewDrivers'}}"><a href="{{pathFor 'viewDrivers'}}">Drivers</a>
-                    </li>
-                    <li id="navTrucks" class="{{isActiveRoute regex='viewTrucks'}}"><a href="{{pathFor 'viewTrucks'}}">Trucks</a></li>
-                    <li id="navRegDriver" class="{{isActiveRoute regex='registerDriver'}}"><a href="{{pathFor 'registerDriver'}}">Register
-                        Driver</a></li>
-                    <li id="navCreateAdmin" class="{{isActiveRoute regex='createAdmin'}}"><a href="{{pathFor 'createAdmin'}}">Create
-                        Admin</a></li>
-                    <li id="navRegTruck" class="{{isActiveRoute regex='registerTruck'}}"><a href="{{pathFor 'registerTruck'}}">Register
-                        Truck</a></li>
-                    <li id="navMyLocation" class="{{isActiveRoute regex='setupMyLocation'}}"><a href="{{pathFor 'setupMyLocation'}}">My Location</a></li>
+
+
+                    {{/if}}
+
+
+                    {{#if isTownsman}}
+                        <li id="navSubscribe" class="{{isActivePath '/subscribe'}}"><a href='/subscribe'>Subscribe</a>
+                        </li>
+
+                        <li id="navFeedback" class="{{isActivePath '/feedback/:townsmanID'}}"><a
+                                href='/feedback/{{getTownsmanID}}'>Leave
+                            Feedback</a></li>
+                        <li id="navHome" class="{{isActivePath '/'}}"><a href="{{pathFor 'home'}}">My Subscriptions</a>
+                        </li>
+
+
+                        <li id="navMyLocation" class="{{isActiveRoute regex='setupMyLocation'}}"><a
+                                href="{{pathFor 'setupMyLocation'}}">My Location</a></li>
+                    {{/if}}
                     <li>{{> atNavButton }}</li>
 
                 </ul>

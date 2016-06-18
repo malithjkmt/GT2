@@ -14,6 +14,18 @@ Template.nav.helpers({
     if(Meteor.user()){
       return Meteor.user()._id;
     }
+  },
+  isAdmin:function () {
+    if(Meteor.user() && Meteor.user().profile.userType == 'admin'){
+      return true;
+    }
+    return false;
+  },
+  isTownsman:function () {
+    if(Meteor.user() && Meteor.user().profile.userType == 'townsman'){
+      return true;
+    }
+    return false;
   }
 
 

@@ -1,11 +1,13 @@
+
 <template name="mapView">
+    {{setRouteID this.route_id}}
     {{>map}}
 </template>
 
 
 <template name="map">
     {{#unless geolocationError}}
-        <div class="map-container">
+        <div class="map-containerHome">
             {{> googleMap name="myMap" options=myMapOptions }}
         </div>
     {{else}}

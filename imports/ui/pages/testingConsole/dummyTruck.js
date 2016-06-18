@@ -100,7 +100,14 @@ Template.truckFinder.helpers({
         return Trucks.find({}).fetch().map(function (it) {
             return it.license;
         });
+    },
+    routeIDs: function () {
+        return Routes.find({}).fetch().map(function (it) {
+            return it.TruckNO + ":" + it._id;
+        });
     }
+
+
 });
 
 Template.truckFinder.rendered = function () {
@@ -120,10 +127,17 @@ Template.dummyMapView.events({
 
 
 
-            truckNo = Trucks.findOne({_id: demoTruck._id}).license;
+         //   truckNo = Trucks.findOne({_id: demoTruck._id}).license;
             // get the active route_id ( at the registering route section, it has make sure no truck will assigned to multiple active routes)
-            assignedRoute = Routes.findOne({TruckNO: truckNo}, {active: true});
-            var assignedRoute_id = assignedRoute._id;
+          //  assignedRoute = Routes.findOne({TruckNO: truckNo}, {active: true});
+            var fullStr =  document.getElementById('RouteID').value;
+            console.log(fullStr);
+
+            var assignedRoute_id = fullStr.split(':')[1];
+            console.log(assignedRoute_id);
+
+            Meteor.call('setRouteActive', assignedRoute_id);
+
             console.log(assignedRoute_id);
 
             var notifications = Notifications.find({route_id: assignedRoute_id}).fetch();

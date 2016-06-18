@@ -37,22 +37,27 @@ Router.configure({
 });
 
 
-Router.route('/map', function () {
+Router.route('/map/:_id', function () {
     this.layout('myLayout', {
         data: function () {
-            return "GT2 Map";
+            return "GT2 Live";
         }
     });
-    this.render('mapView');
+    this.render('mapView', {
+        data: {
+            route_id: this.params._id
+        }
+    });
     this.render('nav', {to: 'nav'});
-
 });
+
+
 
 
 Router.route('/', function () {
     this.layout('myLayout', {
         data: function () {
-            return "GT2 Home";
+            return "GT2";
         }
     });
     this.render('home');

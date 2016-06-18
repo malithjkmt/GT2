@@ -18,17 +18,12 @@ var startPointSelected = false;
 var endPointSelected = false
 
 
-
 Template.addRouteTruckDriver.onCreated(function () {
+    // Subscribe to DB
     Meteor.subscribe('trucks');
     Meteor.subscribe('drivers');
 });
 
-/*
-Template.addRouteMap.onRendered(function () {
-    startTime = document.getElementById('startTime').value;
-});
-*/
 
 Template.addRouteMap.helpers({
     geolocationError: function () {
@@ -78,6 +73,7 @@ Template.addRouteMap.helpers({
 
 Template.addRouteMap.events({
     'click #startingPoint'(event) {
+        // Starting point
         if (startingPointMarker) {
             startingPointMarker.setMap(null);
         }
@@ -85,6 +81,7 @@ Template.addRouteMap.events({
         disableEnable(true);
     },
     'click #endingPoint'(event) {
+        // Ending point
         if (endingPointMarker) {
             endingPointMarker.setMap(null);
         }
@@ -94,10 +91,12 @@ Template.addRouteMap.events({
 
 
     },
+    // Add Marker
     'click #addMarker'(event) {
         addMarkerState = true;
         document.getElementById('addMarker').disabled = true;
     },
+    // Undo marker
     'click #undo'(event) {
         // remove the current route from the history
         drawingHistory.pop();
@@ -114,9 +113,9 @@ Template.addRouteMap.events({
 
 Template.addRouteDateTime.events({
     'click #next'(event){
+        // get values from inputs
         var startTime = document.getElementById('startTime').value;
-
-       var  startDay = document.getElementById('startDay').value;
+        var startDay = document.getElementById('startDay').value;
         Session.set('startTime', startTime);
         Session.set('startDay', startDay);
 
@@ -150,29 +149,98 @@ Template.addRouteTruckDriver.events({
         if (driverNIC && truckNO) {
             Meteor.call('occupyTime', Session.get('startTime'), Session.get('startDay'), driverNIC, truckNO);
         }
-
-
+    },
+    'click #addRouteBack'(event){
+        Router.go('/addRouteDateTime');
     }
 });
 
 Template.addRouteTruckDriver.helpers({
+    // return available driver names
     driversNames() {
+        var startTime = Session.get('startTime');
+        var startDay = Session.get('startDay');
+        var startTimeEnd = '2011-04-11T'+startTime;
+
+        var yu = new Date(startTimeEnd);
+        yu.setHours( yu.getHours() + 3 );   //  this 3 is the time to travel the route + rest time
+        startTimeEnd =  moment(yu).format('HH:mm');
+        console.log('startTime= '+ startTime +", startTimeEnd= "+startTimeEnd);
+
         var drivers = Drivers.find().fetch();
+
         var options = [];
+        var busyHours;
+
         drivers.forEach(function (driver) {
-            options.push({label: driver.name, value: driver.nic});
-        });
+            var busy = false;
+            if(driver.busyHours){ busyHours = JSON.parse(driver.busyHours);
+                busyHours.forEach(function (item) {
+                    if(item.day == startDay  ){
+                        // console.log(item.startTime);
+                        var time = '2011-04-11T'+item.startTime;
+                        var tt =  moment(time).format('HH:mm');
+
+                        if(tt > startTime && tt < startTimeEnd){
+                            busy = true;
+                            console.log('busy');
+                        }
+                    }
+                });}
+
+            if(!busy){
+                options.push({label: driver.name, value: driver.nic});
+            }
+
+       });
+        if(options.length == 0){
+            options.push({label: "no available drivers for that date time", value: 4456});
+        }
         return options;
     },
+    // return available trucks
     truckNo() {
-        console.log(Session.get('startTime'));
-        console.log(Session.get('startDay'));
+
+        var startTime = Session.get('startTime');
+        var startDay = Session.get('startDay');
+        var startTimeEnd = '2011-04-11T'+startTime;
+
+        var yu = new Date(startTimeEnd);
+        yu.setHours( yu.getHours() + 3 );   //  this 3 is the time to travel the route + rest time
+        startTimeEnd =  moment(yu).format('HH:mm');
+        console.log('startTime= '+ startTime +", startTimeEnd= "+startTimeEnd);
 
         var trucks = Trucks.find().fetch();
+
         var options = [];
+        var busyHours;
+
         trucks.forEach(function (truck) {
-            options.push({label: truck.license, value: truck.license});
+            var busy = false;
+            if(truck.busyHours){
+                busyHours = JSON.parse(truck.busyHours);
+                busyHours.forEach(function (item) {
+                    if(item.day == startDay  ){
+                        //  console.log(item.startTime);
+                        var time = '2011-04-11T'+item.startTime;
+                        var tt =  moment(time).format('HH:mm');
+
+                        if(tt > startTime && tt < startTimeEnd){
+                            busy = true;
+                            console.log('busy');
+                        }
+                    }
+                });
+            }
+
+            if(!busy){
+                options.push({label: truck.license, value: truck.license});
+            }
+
         });
+        if(options.length == 0){
+            options.push({label: "no available trucks for that date time", value: 4456});
+        }
         return options;
     },
     get_completeRoute(){
@@ -188,7 +256,7 @@ Template.addRouteTruckDriver.helpers({
 
 Template.addRouteMap.onCreated(function () {
 
-
+    // Run only after Google API loaded
     GoogleMaps.ready('addRouteMap', function (addRouteMap) {
         console.log("I'm ready!");
 
@@ -253,6 +321,7 @@ Template.addRouteMap.onCreated(function () {
     });
 });
 
+// ge the route path from Google API
 function displayRoute(origin, destination, service, display) {
     service.route({
         origin: origin,
@@ -292,6 +361,7 @@ function disableEnable(value) {
 
 }
 
+// add route direction arrows
 function fx(o) {
     if (o && o.legs) {
         for (l = 0; l < o.legs.length; ++l) {
@@ -320,20 +390,7 @@ function fx(o) {
     }
 }
 
-Template.addRouteMap.rendered = function () {
-    // $('.clockpicker').clockpicker();
-    /*  Meteor.typeahead.inject();
-     $('.tooltipped').tooltip({delay: 50});
-     */
-};
-
-/* <div class="input-group clockpicker" data-placement="right" data-align="top" data-autoclose="true">
- {{> afQuickField name='startTime' icon = "query_builder"  type="text" }}
- <span class="input-group-addon">
- <span class="glyphicon glyphicon-time"></span>
- </span>
- </div>
- */
+// genereate route according to the selected start and end points
 function generateRoute() {
 
     if (startingPointMarker) {
@@ -417,8 +474,6 @@ function generateRoute() {
     var child = document.getElementById("addRouteButtons1");
     parent.removeChild(child);
 
-    /*document.getElementById('addRouteButtons1').style.visibility = 'hidden';
-     document.getElementById('addRouteButtons1').style.height = '0';*/
 
     document.getElementById('addRouteButtons2').style.visibility = 'visible';
     document.getElementById('addRouteButtons2').style.height = 'auto';

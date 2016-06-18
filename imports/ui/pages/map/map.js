@@ -1,6 +1,15 @@
 import './map.html';
 
 var ZOOM_LEVEL = 10; // ideal zoom level for streets
+var routeID;
+
+Template.mapView.helpers({
+    setRouteID: function(route_id){
+        routeID = route_id;
+        console.log(routeID);
+    }
+
+});
 
 Template.map.helpers({
     geolocationError: function () {
@@ -51,16 +60,45 @@ Template.map.helpers({
 Template.map.onCreated(function() {
     this.state = new ReactiveDict();
     Meteor.subscribe('trucks');
+    Meteor.subscribe('routes');
 
     var self = this;
     var markers = [];
 
-    GoogleMaps.ready('myMap', function(myMap) {
+    GoogleMaps.ready('myMap', function(map) {
         console.log("I'm ready!");
 
+        //#############  draw the route on  map: begin
+        var ren = new google.maps.DirectionsRenderer({
+            draggable: false,
+            map: map.instance,
+        });
 
 
-        google.maps.event.addListener(myMap.instance, 'click', function(event) {
+        var os = JSON.parse(Routes.findOne({_id:routeID}).mapRoute);
+        console.log(os);
+
+        ser = new google.maps.DirectionsService();
+
+        var wp = [];
+        for (var i = 0; i < os.waypoints.length; i++)
+            wp[i] = {'location': new google.maps.LatLng(os.waypoints[i][0], os.waypoints[i][1]), 'stopover': false}
+
+        ser.route({
+            'origin': new google.maps.LatLng(os.start.lat, os.start.lng),
+            'destination': new google.maps.LatLng(os.end.lat, os.end.lng),
+            'waypoints': wp,
+            'travelMode': google.maps.DirectionsTravelMode.DRIVING
+        }, function (res, sts) {
+            if (sts == 'OK')ren.setDirections(res);
+        })
+        //#############  draw the route on  map: end
+
+        console.log('Route is drawin!');
+
+
+
+        google.maps.event.addListener(map.instance, 'click', function(event) {
             Markers.insert({ lat: event.latLng.lat(), lng: event.latLng.lng() });
         });
 
@@ -77,7 +115,7 @@ Template.map.onCreated(function() {
             TrucksFleet.forEach(function (truck) {
                 markers.push(new google.maps.Marker({
                     position: new google.maps.LatLng(truck.lat, truck.lng),
-                    map: myMap.instance,
+                    map: map.instance,
                     title: truck.license
                 }));
 
