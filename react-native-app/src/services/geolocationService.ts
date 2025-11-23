@@ -111,3 +111,107 @@ export const isWithinRadius = (
   );
   return distance <= radius;
 };
+
+/**
+ * Calculate Estimated Time of Arrival (SRS 3.1.2.1)
+ * @param truckLocation Current location of the truck
+ * @param userLocation User's location
+ * @param averageSpeed Average speed in km/h (default: 30 km/h for urban areas)
+ * @returns Estimated time in minutes
+ */
+export const calculateETA = (
+  truckLocation: Location,
+  userLocation: Location,
+  averageSpeed: number = 30, // km/h
+): number => {
+  const distanceMeters = calculateDistance(
+    truckLocation.latitude,
+    truckLocation.longitude,
+    userLocation.latitude,
+    userLocation.longitude,
+  );
+
+  const distanceKm = distanceMeters / 1000;
+  const timeHours = distanceKm / averageSpeed;
+  const timeMinutes = Math.ceil(timeHours * 60);
+
+  return timeMinutes;
+};
+
+/**
+ * Calculate ETA considering route waypoints (more accurate)
+ * @param truckLocation Current truck location
+ * @param userLocation User's location
+ * @param waypoints Remaining waypoints on the route
+ * @param averageSpeed Average speed in km/h
+ * @returns Estimated time in minutes
+ */
+export const calculateETAWithWaypoints = (
+  truckLocation: Location,
+  userLocation: Location,
+  waypoints: Location[],
+  averageSpeed: number = 30,
+): number => {
+  let totalDistance = 0;
+  let currentPoint = truckLocation;
+
+  // Find the nearest waypoint to user
+  let nearestWaypointIndex = -1;
+  let minDistanceToUser = Infinity;
+
+  waypoints.forEach((waypoint, index) => {
+    const dist = calculateDistance(
+      waypoint.latitude,
+      waypoint.longitude,
+      userLocation.latitude,
+      userLocation.longitude,
+    );
+    if (dist < minDistanceToUser) {
+      minDistanceToUser = dist;
+      nearestWaypointIndex = index;
+    }
+  });
+
+  // Calculate distance through waypoints
+  for (let i = 0; i <= nearestWaypointIndex && i < waypoints.length; i++) {
+    const distance = calculateDistance(
+      currentPoint.latitude,
+      currentPoint.longitude,
+      waypoints[i].latitude,
+      waypoints[i].longitude,
+    );
+    totalDistance += distance;
+    currentPoint = waypoints[i];
+  }
+
+  // Add final distance to user
+  totalDistance += calculateDistance(
+    currentPoint.latitude,
+    currentPoint.longitude,
+    userLocation.latitude,
+    userLocation.longitude,
+  );
+
+  const distanceKm = totalDistance / 1000;
+  const timeHours = distanceKm / averageSpeed;
+  const timeMinutes = Math.ceil(timeHours * 60);
+
+  return timeMinutes;
+};
+
+/**
+ * Format ETA for display
+ * @param minutes ETA in minutes
+ * @returns Formatted string (e.g., "15 min", "1h 30min")
+ */
+export const formatETA = (minutes: number): string => {
+  if (minutes < 0) return 'Unknown';
+  if (minutes === 0) return 'Arriving now';
+  if (minutes < 60) return `${minutes} min`;
+
+  const hours = Math.floor(minutes / 60);
+  const mins = minutes % 60;
+
+  if (mins === 0) return `${hours}h`;
+  return `${hours}h ${mins}min`;
+};

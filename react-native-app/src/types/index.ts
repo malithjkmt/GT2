@@ -12,6 +12,7 @@ export interface UserProfile {
   phoneNumber?: string;
   location?: Location;
   notificationArea?: NotificationArea;
+  notificationProfiles?: NotificationProfile[]; // SRS 3.1.2.2
 }
 
 export interface Location {
@@ -23,6 +24,16 @@ export interface Location {
 export interface NotificationArea {
   center: Location;
   radius: number; // in meters
+}
+
+// Notification Profile for custom notification settings (SRS 3.1.2.2)
+export interface NotificationProfile {
+  id: string;
+  routeIds: string[]; // Routes to track
+  advanceTime: number; // Minutes before truck arrives
+  enabled: boolean;
+  notificationMethod: 'push' | 'sms' | 'both'; // SRS mentions SMS service
+  createdAt: Date;
 }
 
 // Truck Types
@@ -54,10 +65,21 @@ export enum DayOfWeek {
   SATURDAY = 'Saturday',
 }
 
+// Garbage Types (SRS 3.1.1.1.5)
+export enum GarbageType {
+  PAPER = 'paper',
+  KITCHEN_WASTE = 'kitchen_waste',
+  PLASTIC = 'plastic',
+  GLASS = 'glass',
+  METAL = 'metal',
+  OTHER = 'other',
+}
+
 // Driver Types
 export interface Driver {
   id: string;
   nic: string; // National Identity Card
+  employeeNumber: string; // SRS 3.1.1.1.3 - Employee number required
   name: string;
   licenseNumber: string;
   phoneNumber: string;
@@ -93,6 +115,7 @@ export interface RouteSchedule {
   day: DayOfWeek;
   startTime: string; // "HH:mm" format
   estimatedDuration?: number; // in minutes
+  garbageTypes: GarbageType[]; // SRS 3.1.1.1.5 - Garbage types collected on this route
 }
 
 // Feedback Types
@@ -214,6 +237,8 @@ export interface RouteFormData {
   waypoints: RoutePoint[];
   day: DayOfWeek;
   startTime: string;
+  estimatedDuration?: number;
+  garbageTypes: GarbageType[];
   driverId?: string;
   truckId?: string;
 }
@@ -222,11 +247,14 @@ export interface TruckFormData {
   model: string;
   licenseNumber: string;
   registrationDate: Date;
+  busyHours?: BusyHour[];
 }
 
 export interface DriverFormData {
   nic: string;
+  employeeNumber: string; // SRS 3.1.1.1.3
   name: string;
   licenseNumber: string;
   phoneNumber: string;
+  busyHours?: BusyHour[];
 }
